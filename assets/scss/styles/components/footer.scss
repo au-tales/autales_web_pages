@@ -1,0 +1,63 @@
+@use "../partials/colorVariable" as colorVar;
+@use "../partials/mixin" as mix;
+
+/*      FOOTER      */
+
+footer {
+
+  .footer-top {
+
+    .footer-widget {
+
+      ul {
+
+        li {
+
+          a, .icon {
+
+            &, i {
+              //color: #fff;
+            }
+
+            &:hover, &:focus, &:active {
+
+              &, i {
+                //color: colorVar.$tertiary;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      .details, p {
+        color: #fff;
+      }
+
+    }
+
+  }
+
+  .copyright-area {
+  }
+
+}
+
+.back-to-top {
+  right: 85px;
+  bottom: 25px;
+}
+
+.nx-popup-backdrop.show {
+  z-index: 99999;
+}
+
+.grecaptcha {
+  //display: none !important;
+  opacity: 0 !important;
+}
+
+/*      /FOOTER      */

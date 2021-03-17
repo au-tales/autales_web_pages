@@ -1,0 +1,27 @@
+@use "../partials/colorVariable" as color;
+@use "../partials/mixin" as mix;
+
+.select2-container {
+
+  &.select2-container--open {
+
+    .select2-dropdown {
+
+      &.select2-dropdown--below {
+        border-top: 1px solid #ddd;
+        top: 0.25rem;
+      }
+
+    }
+
+  }
+
+}
+
+/* HOME */
+
+/*      Banner section      */
+
+/*      /Banner section      */
+
+/* HOME */

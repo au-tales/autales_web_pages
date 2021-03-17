@@ -1,0 +1,98 @@
+.search-popup.show .search-popup-inner-wrapper {
+  position: fixed;
+  z-index: 999999;
+}
+.search-popup.show .search-popup-inner-wrapper .search-form-warp {
+  border-radius: 0.5rem;
+  padding: 60px 40px;
+}
+.search-popup.show .search-popup-inner-wrapper .search-form-warp .form-group {
+  width: calc(100% / 2.5);
+}
+.search-popup.show .search-popup-inner-wrapper .search-form-warp .form-group .form-control {
+  border-radius: 0.2rem;
+}
+.search-popup.show .search-popup-inner-wrapper .search-form-warp .search-popup-close-btn {
+  border-radius: 0.5rem;
+  right: -10px;
+  top: -10px;
+}
+
+/*      /HEADER      */
+.header-style-03.header-variant-06 .logo-wrapper:after {
+  left: -30px;
+  top: -80px;
+}
+.header-style-03.header-variant-06 .navbar-area.nav-fixed .logo-wrapper:after {
+  height: 180px;
+  top: -100px !important;
+}
+
+/*      VARIABLES      */
+/*      VARIABLES      */
+.select2-container.select2-container--open .select2-dropdown.select2-dropdown--below {
+  border-top: 1px solid #ddd;
+  top: 0.25rem;
+}
+
+/* HOME */
+/*      Banner section      */
+.nx-popup-wrapper.notice-modal .nx-modal-inner-content-wrapper {
+  background-image: url("https://www.ivylabtech.com/assets/uploads/media-uploader/section-bg-021614084713.jpg");
+  background-size: cover;
+  position: relative;
+}
+.nx-popup-wrapper.notice-modal .nx-modal-inner-content-wrapper:before {
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  left: 0;
+  top: 0;
+}
+.nx-popup-wrapper.notice-modal .nx-modal-inner-content-wrapper .notice-modal-content-wrapper .right-side-content {
+  max-width: unset;
+}
+.nx-popup-wrapper.notice-modal .nx-modal-inner-content-wrapper .notice-modal-content-wrapper .right-side-content .title {
+  color: #fff;
+  text-align: center;
+}
+.nx-popup-wrapper.notice-modal .nx-modal-inner-content-wrapper .notice-modal-content-wrapper .right-side-content p {
+  color: #fff;
+  hyphens: none;
+  text-align: justify;
+}
+
+/*      /Banner section      */
+.logistic-counterup-item {
+  height: 100%;
+}
+
+/* HOME */
+.header-inner.logistics-home .btn-wrapper .logistics-btn {
+  min-width: 164px;
+  margin-top: 10px;
+  margin-left: 0 !important;
+}
+
+/*      VARIABLES      */
+/*      VARIABLES      */
+/*      FOOTER      */
+footer .footer-top .footer-widget .details, footer .footer-top .footer-widget p {
+  color: #fff;
+}
+.back-to-top {
+  right: 85px;
+  bottom: 25px;
+}
+
+.nx-popup-backdrop.show {
+  z-index: 99999;
+}
+
+.grecaptcha {
+  opacity: 0 !important;
+}
+
+/*      /FOOTER      */
