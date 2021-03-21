@@ -1,32 +1,29 @@
-/*      NORMALIZE      */
-
 /*     USE COLORS      */
 @use "styles/partials/colorVariable" as color;
 /*      /USE COLORS      */
-
-/*      FONTS      */
-@use "styles/partials/fonts" as font;
-/*      /FONTS      */
 
 /*      USE MIXINS      */
 @use "styles/partials/mixin" as mix;
 /*      /USE MIXINS      */
 
+/*      FONTS      */
+//@use "styles/partials/fonts" as font;
+/*      /FONTS      */
 
 /*      VARIABLES      */
 //@import "styles/partials/variable";
 /*      /VARIABLES      */
 
 /*      FONTS      */
-@import "styles/partials/fonts";
+//@import "styles/partials/fonts";
 /*      /FONTS      */
 
 /*      IMPORT DIMENSIONS      */
-//@import "styles/partials/dimensions";
+@use "styles/partials/dimensions";
 /*      /IMPORT DIMENSIONS      */
 
 /*      IMPORT SPACING      */
-//@import "styles/partials/spacing";
+@import "styles/partials/spacing";
 /*      /IMPORT SPACING      */
 
 /*      IMPORT BORDERS      */
@@ -38,11 +35,11 @@
 /*      /IMPORT BORDER RADIUS      */
 
 /*      IMPORT OVERFLOW      */
-//@import "styles/partials/overflow";
+@import "styles/partials/overflow";
 /*      /IMPORT OVERFLOW      */
 
 /*      IMPORT POSITIONS      */
-//@import "styles/partials/positions";
+@import "styles/partials/positions";
 /*      /IMPORT POSITIONS      */
 
 /*      IMPORT ROTATION      */
@@ -59,9 +56,46 @@ html {
   overflow-x: hidden;
 }
 
-//.no-outline-shadow {
-//  @include mix.noshadow;
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+h1, h2, h3, h4, h5, h6, .btn, a, caption, .form-control, label {
+  font-family: "Segoe UI", serif;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+body, h3, h4 {
+  font-weight: 400;
+}
+
+h5, h6 {
+  font-weight: 700;
+}
+
+caption {
+  font-weight: 300;
+}
+
+//a, caption, .form-control, label {
 //}
+
+.no-outline-shadow {
+  @include mix.noshadow;
+}
 
 .shadow {
   @include mix.shadow;
@@ -91,40 +125,111 @@ html {
   @include mix.shadow-dark-2;
 }
 
+small, label {
+  color: #8B8A8A;
+  font-size: 0.75rem;
+}
+
+small {
+
+  &.message {
+    margin-top: 0.25rem;
+    text-align: right;
+    display: block;
+  }
+
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  overflow: hidden;
+}
+
+.form-group {
+  margin-bottom: 1.825rem;
+
+  &.error {
+
+    label, .form-control, small {
+      color: color.$red;
+    }
+
+    .form-control::-webkit-input-placeholder {
+      color: color.$red;
+    }
+
+    .form-control::-moz-placeholder {
+      color: color.$red;
+    }
+
+    .form-control:-ms-input-placeholder {
+      color: color.$red;
+    }
+
+    .form-control::-ms-input-placeholder {
+      color: color.$red;
+    }
+
+    .form-control::placeholder {
+      color: color.$red;
+    }
+
+  }
+
+}
+
 .btn {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-weight: 400;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  text-decoration: none;
+  user-select: none;
+  text-align: center;
+  line-height: 1.25;
+  max-height: 45px;
+  //max-width: 155px;
+
+  &.btn-block {
+    display: block;
+    width: 100%;
+  }
+
+  .btn-lg {
+    padding: 1.125rem 1.875rem;
+    max-height: 50px;
+    font-size: 1.125rem;
+  }
+
+  .btn-sm {
+    padding: 0.625rem 1.5rem;
+    max-height: 34px;
+    font-size: 0.825rem;
+  }
 
   &:hover, &:focus, &:active {
     @include mix.noshadow;
-  }
-
-  &.btn-filter {
-    color: color.$tertiary;
-    background-color: transparent !important;
-    border-color: transparent !important;
-
-    &:hover, &:focus, &:active {
-      color: color.$primary;
-      border-color: transparent !important;
-    }
-
-  }
-
-  &.btn-gray {
-    @include mix.button-hover(color.$gray);
-
-    &:hover, &:focus, &:active {
-      @include mix.button-revert-hover(color.$gray);
-    }
-
-  }
-
-  &.btn-gray-revert {
-    @include mix.button-revert-hover(color.$gray);
-
-    &:hover, &:focus, &:active {
-      @include mix.button-hover(color.$gray);
-    }
-
   }
 
   &.btn-primary {
@@ -163,24 +268,6 @@ html {
 
   }
 
-  &.btn-tertiary {
-    @include mix.button-hover(color.$tertiary);
-
-    &:hover, &:focus, &:active {
-      @include mix.button-revert-hover(color.$tertiary);
-    }
-
-  }
-
-  &.btn-tertiary-revert {
-    @include mix.button-revert-hover(color.$tertiary);
-
-    &:hover, &:focus, &:active {
-      @include mix.button-hover(color.$tertiary);
-    }
-
-  }
-
 }
 
 .section-padding {
@@ -198,13 +285,25 @@ html {
   padding-bottom: 50px;
 }
 
-.form-control {
-  background-clip: unset;
+.spacer {
+  margin: .5rem auto 1.75rem;
 }
 
 .heading-separator {
-  width: 100px;
-  height: 1px;
+  width: 100%;
+  height: 2px;
+  margin: 0.5rem 0;
+  position: relative;
+  background: #E2E2E2;
+  @include mix.flex-both-center;
+
+  .separator-text {
+    background: #fff;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.625rem;
+    line-height: 1.6;
+  }
+
 }
 
 .heading-separator-small {
@@ -213,10 +312,10 @@ html {
 }
 
 .vertical-separator {
-  height: 43px;
+  height: 45px;
   width: 1px;
   display: block;
-  background: color.$gray-light;
+  background: color.$cararra;
 }
 
 .custom-radio, .custom-checkbox {
@@ -228,9 +327,9 @@ html {
       & ~ .custom-control-label {
 
         &::before {
-          color: color.$primary;
-          border-color: gray;
+          color: color.$secondary;
           background: color.$white;
+          border-color: color.$caption;
         }
 
       }
@@ -297,12 +396,11 @@ html {
 
 .custom-select {
   position: relative;
-  width: 100%;
   background-image: none;
 
   &:hover, &:focus, &:active {
     @include mix.noshadow;
-    border-color: color.$primary;
+    border-color: color.$secondary;
   }
 
 }
@@ -320,21 +418,22 @@ html {
 
   @keyframes pulse-animation {
     0% {
-      box-shadow: 0 0 0 0 rgba(40, 199, 111, 0.25);
+      box-shadow: 0 0 0 0 rgba(71, 161, 133, 0.25);
     }
     50% {
-      box-shadow: 0 0 0 0.3rem rgba(40, 199, 111, 0.125);
+      box-shadow: 0 0 0 0.3rem rgba(71, 161, 133, 0.125);
     }
     100% {
-      box-shadow: 0 0 0 0.6rem rgba(40, 199, 111, 0);
+      box-shadow: 0 0 0 0.6rem rgba(71, 161, 133, 0);
     }
   }
 
   &.regular {
+    background: color.$tertiary;
   }
 
   &.active {
-    background: #28C76F;
+    background: color.$secondary;
   }
 
 }

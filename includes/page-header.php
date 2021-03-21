@@ -1,5 +1,3 @@
-<div class="page-header-wrapper d-block d-lg-none px-3">
+<div class="page-header-wrapper d-block d-lg-none ">
     <?php require "components/partials/nav-brand.php" ?>
 </div>
-
-

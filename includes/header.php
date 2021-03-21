@@ -1,3 +1,5 @@
+<?php $login = true; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,14 +17,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-          rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/outer/normalize.css?<?php echo time() ?>">
+    <link rel="stylesheet" type="text/css" href="assets/css/outer/bootstrap.css?<?php echo time() ?>">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/outer/animate.css?<?php echo time() ?>">
 
     <!-- Place your stylesheet here-->
     <link rel="stylesheet" type="text/css" href="assets/css/defaults.css?<?php echo time() ?>">
+
+    <?php if ($login) ?>
+    <link rel="stylesheet" type="text/css" href="assets/css/registration.css?<?php echo time() ?>">
+    <?php ?>
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css?<?php echo time() ?>">
-    <link rel="stylesheet" type="text/css" href="assets/css/media.css?<?php echo time() ?>">
+    <link rel="stylesheet" type="text/css" href="assets/css/medias.css?<?php echo time() ?>">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js does not work if you view the page via file -->
@@ -34,6 +43,3 @@
 </head>
 <body>
 
-<!--    Header Starts   -->
-<?php require "components/partials/header_section.php" ?>
-<!--    Header Ends   -->
