@@ -2,29 +2,30 @@
 
 @for $i from 0 through 50 {
   // pixels
+
   .wx-#{$i} {
     width: $i*1px !important;
-  }
-
-  .mnwx-#{$i} {
-    min-width: $i*1px !important;
-  }
-
-  .mwx-#{$i} {
-    max-width: $i*1px !important;
   }
 
   .hx-#{$i} {
     height: $i*1px !important;
   }
 
-  .mnhx-#{$i} {
-    min-height: $i*1px !important;
-  }
-
-  .mhx-#{$i} {
-    max-height: $i*1px !important;
-  }
+  //.mnwx-#{$i} {
+  //  min-width: $i*1px !important;
+  //}
+  //
+  //.mwx-#{$i} {
+  //  max-width: $i*1px !important;
+  //}
+  //
+  //.mnhx-#{$i} {
+  //  min-height: $i*1px !important;
+  //}
+  //
+  //.mhx-#{$i} {
+  //  max-height: $i*1px !important;
+  //}
 
 }
 
@@ -38,26 +39,26 @@
   .hp-#{$i} {
     height: $i*1% !important;
   }
-
-  @if ($i/5 == 0) {
-
-    .mnwp-#{$i} {
-      min-width: $i*1% !important;
-    }
-
-    .mwp-#{$i} {
-      max-width: $i*1% !important;
-    }
-
-    .mnhp-#{$i} {
-      min-height: $i*1% !important;
-    }
-
-    .mhp-#{$i} {
-      max-height: $i*1% !important;
-    }
-
-  }
+  //
+  //@if ($i/5 == 0) {
+  //
+  //  .mnwp-#{$i} {
+  //    min-width: $i*1% !important;
+  //  }
+  //
+  //  .mwp-#{$i} {
+  //    max-width: $i*1% !important;
+  //  }
+  //
+  //  .mnhp-#{$i} {
+  //    min-height: $i*1% !important;
+  //  }
+  //
+  //  .mhp-#{$i} {
+  //    max-height: $i*1% !important;
+  //  }
+  //
+  //}
 
   // /%age
 
@@ -102,25 +103,25 @@
       height: $i*1% !important;
     }
 
-    @if ($i/5 == 0) {
-
-      .mnwp-sm-#{$i} {
-        min-width: $i*1% !important;
-      }
-
-      .mwp-sm-#{$i} {
-        max-width: $i*1% !important;
-      }
-
-      .mnhp-sm-#{$i} {
-        min-height: $i*1% !important;
-      }
-
-      .mhp-sm-#{$i} {
-        max-height: $i*1% !important;
-      }
-
-    }
+    //@if ($i/5 == 0) {
+    //
+    //  .mnwp-sm-#{$i} {
+    //    min-width: $i*1% !important;
+    //  }
+    //
+    //  .mwp-sm-#{$i} {
+    //    max-width: $i*1% !important;
+    //  }
+    //
+    //  .mnhp-sm-#{$i} {
+    //    min-height: $i*1% !important;
+    //  }
+    //
+    //  .mhp-sm-#{$i} {
+    //    max-height: $i*1% !important;
+    //  }
+    //
+    //}
 
     // /%age
 
@@ -167,25 +168,25 @@
       height: $i*1% !important;
     }
 
-    @if ($i/5 == 0) {
-
-      .mnwp-md-#{$i} {
-        min-width: $i*1% !important;
-      }
-
-      .mwp-md-#{$i} {
-        max-width: $i*1% !important;
-      }
-
-      .mnhp-md-#{$i} {
-        min-height: $i*1% !important;
-      }
-
-      .mhp-md-#{$i} {
-        max-height: $i*1% !important;
-      }
-
-    }
+    //@if ($i/5 == 0) {
+    //
+    //  .mnwp-md-#{$i} {
+    //    min-width: $i*1% !important;
+    //  }
+    //
+    //  .mwp-md-#{$i} {
+    //    max-width: $i*1% !important;
+    //  }
+    //
+    //  .mnhp-md-#{$i} {
+    //    min-height: $i*1% !important;
+    //  }
+    //
+    //  .mhp-md-#{$i} {
+    //    max-height: $i*1% !important;
+    //  }
+    //
+    //}
 
     // /%age
 
@@ -231,25 +232,25 @@
       height: $i*1% !important;
     }
 
-    @if ($i/5 == 0) {
-
-      .mnwp-lg-#{$i} {
-        min-width: $i*1% !important;
-      }
-
-      .mwp-lg-#{$i} {
-        max-width: $i*1% !important;
-      }
-
-      .mnhp-lg-#{$i} {
-        min-height: $i*1% !important;
-      }
-
-      .mhp-lg-#{$i} {
-        max-height: $i*1% !important;
-      }
-
-    }
+    //@if ($i/5 == 0) {
+    //
+    //  .mnwp-lg-#{$i} {
+    //    min-width: $i*1% !important;
+    //  }
+    //
+    //  .mwp-lg-#{$i} {
+    //    max-width: $i*1% !important;
+    //  }
+    //
+    //  .mnhp-lg-#{$i} {
+    //    min-height: $i*1% !important;
+    //  }
+    //
+    //  .mhp-lg-#{$i} {
+    //    max-height: $i*1% !important;
+    //  }
+    //
+    //}
     // /%age
 
   }
@@ -298,25 +299,25 @@
       height: $i*1% !important;
     }
 
-    @if ($i/5 == 0) {
-
-      .mnwp-xl-#{$i} {
-        min-width: $i*1% !important;
-      }
-
-      .mwp-xl-#{$i} {
-        max-width: $i*1% !important;
-      }
-
-      .mnhp-xl-#{$i} {
-        min-height: $i*1% !important;
-      }
-
-      .mhp-xl-#{$i} {
-        max-height: $i*1% !important;
-      }
-
-    }
+    //@if ($i/5 == 0) {
+    //
+    //  .mnwp-xl-#{$i} {
+    //    min-width: $i*1% !important;
+    //  }
+    //
+    //  .mwp-xl-#{$i} {
+    //    max-width: $i*1% !important;
+    //  }
+    //
+    //  .mnhp-xl-#{$i} {
+    //    min-height: $i*1% !important;
+    //  }
+    //
+    //  .mhp-xl-#{$i} {
+    //    max-height: $i*1% !important;
+    //  }
+    //
+    //}
 
     // /%age
 

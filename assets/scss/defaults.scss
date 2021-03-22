@@ -23,7 +23,7 @@
 /*      /IMPORT DIMENSIONS      */
 
 /*      IMPORT SPACING      */
-@import "styles/partials/spacing";
+//@import "styles/partials/spacing";
 /*      /IMPORT SPACING      */
 
 /*      IMPORT BORDERS      */
@@ -39,7 +39,7 @@
 /*      /IMPORT OVERFLOW      */
 
 /*      IMPORT POSITIONS      */
-@import "styles/partials/positions";
+//@import "styles/partials/positions";
 /*      /IMPORT POSITIONS      */
 
 /*      IMPORT ROTATION      */
@@ -300,7 +300,7 @@ select {
   .separator-text {
     background: #fff;
     padding: 0.25rem 0.75rem;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     line-height: 1.6;
   }
 

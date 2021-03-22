@@ -104,7 +104,7 @@
                             <button type="button"
                                     class="btn btn-secondary-revert social-btn d-inline-flex align-items-center">
                                     <span class="icon-wrap">
-                                        <img src="assets/images/icon-google.png" alt="">
+                                        <img src="assets/images/icon-google.png" alt="Google Icon">
                                     </span>
                                 <span class="text-wrap">Sign in with Google</span>
                             </button>
