@@ -30,6 +30,7 @@
 }
 
 @for $i from 0 through 100 {
+
   // %age start
 
   .wp-#{$i} {
@@ -40,7 +41,7 @@
     height: $i*1% !important;
   }
   //
-  //@if ($i/5 == 0) {
+  //@if ($i%5 == 0) {
   //
   //  .mnwp-#{$i} {
   //    min-width: $i*1% !important;
@@ -103,7 +104,7 @@
       height: $i*1% !important;
     }
 
-    //@if ($i/5 == 0) {
+    //@if ($i%5 == 0) {
     //
     //  .mnwp-sm-#{$i} {
     //    min-width: $i*1% !important;
@@ -143,7 +144,6 @@
     max-width: unset !important;
   }
 
-
   .mnh-sm-unset {
     min-height: unset !important;
   }
@@ -168,7 +168,7 @@
       height: $i*1% !important;
     }
 
-    //@if ($i/5 == 0) {
+    //@if ($i%5 == 0) {
     //
     //  .mnwp-md-#{$i} {
     //    min-width: $i*1% !important;
@@ -232,7 +232,7 @@
       height: $i*1% !important;
     }
 
-    //@if ($i/5 == 0) {
+    //@if ($i%5 == 0) {
     //
     //  .mnwp-lg-#{$i} {
     //    min-width: $i*1% !important;
@@ -299,7 +299,7 @@
       height: $i*1% !important;
     }
 
-    //@if ($i/5 == 0) {
+    //@if ($i%5 == 0) {
     //
     //  .mnwp-xl-#{$i} {
     //    min-width: $i*1% !important;
@@ -363,7 +363,7 @@
       height: $i*1% !important;
     }
 
-    @if ($i/5 == 0) {
+    @if ($i%5 == 0) {
 
       .mnwp-xxl-#{$i} {
         min-width: $i*1% !important;

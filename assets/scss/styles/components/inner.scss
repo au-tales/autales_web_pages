@@ -22,6 +22,11 @@
 
 /*      Banner section      */
 
+.banner-section {
+  height: 600px;
+  background-image: linear-gradient(135deg, color.$primary, color.$primary, color.$secondary ,color.$secondary);
+}
+
 /*      /Banner section      */
 
 /* HOME */

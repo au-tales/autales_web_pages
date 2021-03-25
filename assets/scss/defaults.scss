@@ -6,6 +6,10 @@
 @use "styles/partials/mixin" as mix;
 /*      /USE MIXINS      */
 
+/*      IMPORT DIMENSIONS      */
+@use "styles/partials/dimensions";
+/*      /IMPORT DIMENSIONS      */
+
 /*      FONTS      */
 //@use "styles/partials/fonts" as font;
 /*      /FONTS      */
@@ -18,9 +22,9 @@
 //@import "styles/partials/fonts";
 /*      /FONTS      */
 
-/*      IMPORT DIMENSIONS      */
-@use "styles/partials/dimensions";
-/*      /IMPORT DIMENSIONS      */
+/*      VARIABLES      */
+@import "styles/partials/color";
+/*      /VARIABLES      */
 
 /*      IMPORT SPACING      */
 //@import "styles/partials/spacing";
