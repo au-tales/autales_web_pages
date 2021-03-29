@@ -21,9 +21,7 @@
             <div class="row">
                 <div class="col-12 col-lg-1"></div>
                 <div class="col-12 col-lg-10">
-                    <div>
-
-                    </div>
+                        <?php require "components/partials/banner_inner.php" ?>
                 </div>
                 <div class="col-12 col-lg-1"></div>
             </div>

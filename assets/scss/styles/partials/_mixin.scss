@@ -32,6 +32,12 @@
   transform: rotateY(#{$angle}deg);
 }
 
+@mixin d-inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 @mixin d-flex {
   display: -webkit-box;
   display: -ms-flexbox;

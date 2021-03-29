@@ -27,7 +27,7 @@
 /*      /VARIABLES      */
 
 /*      IMPORT SPACING      */
-//@import "styles/partials/spacing";
+@import "styles/partials/spacing";
 /*      /IMPORT SPACING      */
 
 /*      IMPORT BORDERS      */
@@ -96,6 +96,14 @@ caption {
 
 //a, caption, .form-control, label {
 //}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
 
 .no-outline-shadow {
   @include mix.noshadow;
@@ -199,12 +207,13 @@ select {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   background-color: transparent;
   border: 1px solid transparent;
-  font-weight: 400;
-  font-size: 1rem;
-  display: inline-block;
   padding: 0.75rem 1.75rem;
   box-sizing: border-box;
   vertical-align: middle;
+  @include mix.d-inline-flex;
+  @include mix.align-items-center;
+  font-weight: 400;
+  font-size: 1rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -268,6 +277,62 @@ select {
 
     &:hover, &:focus, &:active {
       @include mix.button-hover(color.$secondary);
+    }
+
+  }
+
+  &.btn-light, &.btn-light-revert, &.btn-dark, &.btn-dark-revert {
+    border-width: 2px !important;
+  }
+
+  &.btn-light {
+    background-color: color.$white !important;
+    border-color: color.$tertiary !important;
+    color: color.$tertiary !important;
+
+    &:hover, &:focus, &:active {
+      background-color: transparent !important;
+      border-color: color.$white !important;
+      color: color.$white !important;
+    }
+
+  }
+
+  &.btn-light-revert {
+    background-color: transparent !important;
+    border-color: color.$white !important;
+    color: color.$white !important;
+
+    &:hover, &:focus, &:active {
+      background-color: color.$white !important;
+      border-color: color.$tertiary !important;
+      color: color.$tertiary !important;
+    }
+
+  }
+
+  &.btn-dark {
+    background-color: color.$tertiary !important;
+    border-color: color.$white !important;
+    color: color.$white !important;
+
+    &:hover, &:focus, &:active {
+      background-color: transparent !important;
+      border-color: color.$tertiary !important;
+      color: color.$tertiary !important;
+    }
+
+  }
+
+  &.btn-dark-revert {
+    background-color: transparent !important;
+    border-color: color.$tertiary !important;
+    color: color.$tertiary !important;
+
+    &:hover, &:focus, &:active {
+      background-color: color.$tertiary !important;
+      border-color: color.$white !important;
+      color: color.$white !important;
     }
 
   }
