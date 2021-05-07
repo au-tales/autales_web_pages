@@ -2,29 +2,29 @@
 <div class="slideshow-container">
 
     <!-- Full-width images with number and caption text -->
-    <div class="slide-item fade hp-100">
+    <div class="slide-item fade hp-lg-100">
         <div class="slide-item-inner align-items-lg-center justify-content-lg-between">
-            <div class="text">Caption Text</div>
-            <div>
-                <img src="assets/images/iphone-x.png" alt="" class="wp-100">
+            <div class="slide-text">Caption Text</div>
+            <div class="slide-image">
+                <img src="assets/images/iphone-x.png" alt="" class="img-fluid">
             </div>
         </div>
     </div>
 
-    <div class="slide-item fade hp-100">
+    <div class="slide-item fade hp-lg-100">
         <div class="slide-item-inner align-items-lg-center justify-content-lg-between">
-            <div class="text">Caption Two</div>
-            <div>
-                <img src="assets/images/iphone-x.png" alt="" class="wp-100">
+            <div class="slide-text">Caption Two</div>
+            <div class="slide-image">
+                <img src="assets/images/iphone-x.png" alt="" class="img-fluid">
             </div>
         </div>
     </div>
 
-    <div class="slide-item fade hp-100">
+    <div class="slide-item fade hp-lg-100">
         <div class="slide-item-inner align-items-lg-center justify-content-lg-between">
-            <div class="text">Caption Three</div>
-            <div>
-                <img src="assets/images/iphone-x.png" alt="" class="wp-100">
+            <div class="slide-text">Caption Three</div>
+            <div class="slide-image">
+                <img src="assets/images/iphone-x.png" alt="" class="img-fluid">
             </div>
         </div>
     </div>

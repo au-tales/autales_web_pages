@@ -1,6 +1,6 @@
 //  Width & Height Start
 
-@for $i from 0 through 50 {
+@for $i from 0 through 100 {
   // pixels
 
   .wx-#{$i} {
@@ -27,10 +27,6 @@
   //  max-height: $i*1px !important;
   //}
 
-}
-
-@for $i from 0 through 100 {
-
   // %age start
 
   .wp-#{$i} {
@@ -40,6 +36,7 @@
   .hp-#{$i} {
     height: $i*1% !important;
   }
+
   //
   //@if ($i%5 == 0) {
   //
@@ -363,25 +360,25 @@
       height: $i*1% !important;
     }
 
-    @if ($i%5 == 0) {
-
-      .mnwp-xxl-#{$i} {
-        min-width: $i*1% !important;
-      }
-
-      .mwp-xxl-#{$i} {
-        max-width: $i*1% !important;
-      }
-
-      .mnhp-xxl-#{$i} {
-        min-height: $i*1% !important;
-      }
-
-      .mhp-xxl-#{$i} {
-        max-height: $i*1% !important;
-      }
-
-    }
+    //@if ($i%5 == 0) {
+    //
+    //  .mnwp-xxl-#{$i} {
+    //    min-width: $i*1% !important;
+    //  }
+    //
+    //  .mwp-xxl-#{$i} {
+    //    max-width: $i*1% !important;
+    //  }
+    //
+    //  .mnhp-xxl-#{$i} {
+    //    min-height: $i*1% !important;
+    //  }
+    //
+    //  .mhp-xxl-#{$i} {
+    //    max-height: $i*1% !important;
+    //  }
+    //
+    //}
 
     // /%age
 

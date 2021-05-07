@@ -1,5 +1,6 @@
 <!--    Header Starts   -->
 <?php require "includes/header.php" ?>
+
 <?php require "components/partials/header_section.php" ?>
 <!--    Header Ends   -->
 
@@ -63,5 +64,6 @@
 
 <!--    Footer Starts   -->
 <?php require "components/partials/footer_section.php" ?>
+
 <?php require "includes/footer.php" ?>
 <!--    Footer Starts   -->

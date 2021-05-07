@@ -105,6 +105,11 @@ caption {
   display: none;
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 .no-outline-shadow {
   @include mix.noshadow;
 }
@@ -352,6 +357,12 @@ select {
 .section-padding3 {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.list-unstyled {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .spacer {

@@ -2,12 +2,12 @@
     <a class="navbar-brand" href="#">
         <img class="logo" src="assets/images/logo-white.png" alt="">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain"
+            aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation" id="toggleMenu">
+        <img class="navbar-toggler-icon" src="assets/images/toggle.png" alt="toggle-icon">
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarMain">
         <ul class="navbar-nav mgl-auto mgt-0 mgr-5">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
