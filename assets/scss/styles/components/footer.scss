@@ -11,20 +11,29 @@ footer {
 
     .footer-widget {
 
-      ul {
+      .widget-title {
 
-        li {
+        h4 {
+          color: color.$white;
+          font-size: 1rem;
+        }
 
-          a, .icon {
+      }
 
-            &, i {
-              //color: #fff;
-            }
+      .widget-content {
 
-            &:hover, &:focus, &:active {
+        ul {
 
-              &, i {
-                //color: color.$tertiary;
+          li {
+
+            a {
+              text-decoration: none;
+              color: color.$white;
+              font-size: 0.875rem;
+              line-height: 2.5;
+
+              &:hover, &:focus, &:active {
+                opacity: 0.75;
               }
 
             }
@@ -33,10 +42,62 @@ footer {
 
         }
 
-      }
+        .newsletter-form {
+          margin-top: 1.25rem;
 
-      .details, p {
-        color: #fff;
+          form {
+            overflow: hidden;
+
+            .form-group {
+              width: 85%;
+
+              input {
+                max-height: 50px;
+                letter-spacing: 0.05rem;
+                padding: 1rem 1.25rem;
+                text-align: center;
+                font-size: 1.1rem;
+                width: 100%;
+                outline: 0;
+
+                &[type=email] {
+                  border: 1px solid lighten(color.$light-gray, 50%);
+                  border-right-width: 0;
+                  margin-bottom: 0;
+
+                  &:focus {
+                    border-color: color.$light-gray;
+                  }
+
+                }
+
+              }
+
+            }
+
+            button {
+              padding: 15px 20px;
+              text-align: center;
+
+              &[type=submit] {
+                @include mix.flex-both-center;
+                background-color: color.$tertiary;
+                color: color.$white;
+                border: none;
+                width: 15%;
+
+                &:hover {
+                  cursor: pointer;
+                  background-color: darken(color.$primary, 10%);
+                  border-color: darken(color.$primary, 10%);
+                }
+              }
+            }
+
+          }
+
+        }
+
       }
 
     }
@@ -44,12 +105,13 @@ footer {
   }
 
   .copyright-area {
-    padding: 4rem 0;
     color: color.$white;
     font-size: 0.75rem;
     line-height: 1.25;
+    padding: 4rem 0;
 
     .social-wrap {
+      margin-bottom: 50px;
 
       .list-social {
 
