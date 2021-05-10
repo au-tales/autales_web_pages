@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <meta name="description" content="">
 
-    <!--    <link rel="icon" href="" type="image/x-icon">-->
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
 
     <title>Home</title>
 

@@ -57,11 +57,12 @@
 /*      DEFAULTS      */
 
 html {
-  overflow-x: hidden;
+
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 html::-webkit-scrollbar {
@@ -396,6 +397,19 @@ select {
   width: 1px;
   display: block;
   background: color.$cararra;
+}
+
+.section-title {
+
+  h2 {
+    font-size: 1.875rem;
+    line-height: 1.35;
+  }
+
+  .btn {
+
+  }
+
 }
 
 .custom-radio, .custom-checkbox {

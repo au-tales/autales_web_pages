@@ -42,6 +42,7 @@
 
   }
 
+
 }
 
 /* Small devices (landscape phones, less than 768px)*/
@@ -144,6 +145,29 @@
     @include mix.align-items-center;
     @include mix.justify-content-between;
   }
+
+  .reviews-section {
+
+    .review_wrap {
+      margin-bottom: 125px;
+
+      .review_wrap_row {
+        min-height: 450px;
+
+        :nth-child(even) {
+          top: 100px;
+        }
+
+        .review_card {
+          margin-bottom: 0;
+        }
+
+      }
+
+    }
+
+  }
+
 
 }
 

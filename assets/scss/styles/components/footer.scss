@@ -42,70 +42,6 @@ footer {
 
         }
 
-        .newsletter-form {
-          margin-top: 1.25rem;
-
-          form {
-            overflow: hidden;
-
-            input, button {
-              max-height: 50px;
-            }
-
-            .form-group {
-              width: 85%;
-              outline: 0;
-
-              input {
-
-                letter-spacing: 0.05rem;
-                padding: 1rem 1.25rem;
-                font-size: 0.875rem;
-                line-height: 1.125;
-                text-align: left;
-                font-weight: 300;
-                width: 100%;
-
-
-                &[type=email] {
-                  border: 1px solid lighten(color.$light-gray, 50%);
-                  border-right-width: 0;
-                  margin-bottom: 0;
-
-                  &:hover, &:focus, &:active, &:focus-within {
-                    border-color: color.$light-gray;
-                    outline: none;
-                  }
-
-                }
-
-              }
-
-            }
-
-            button {
-              padding: 15px 20px;
-              text-align: center;
-
-              &[type=submit] {
-                @include mix.flex-both-center;
-                background-color: color.$tertiary;
-                color: color.$white;
-                border: none;
-                width: 15%;
-
-                &:hover {
-                  cursor: pointer;
-                  background-color: darken(color.$primary, 10%);
-                  border-color: darken(color.$primary, 10%);
-                }
-              }
-            }
-
-          }
-
-        }
-
       }
 
     }
@@ -114,9 +50,8 @@ footer {
 
   .copyright-area {
     color: color.$white;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     line-height: 1.25;
-    padding: 4rem 0;
 
     .social-wrap {
       margin-bottom: 50px;
@@ -148,6 +83,7 @@ footer {
     .copyright-content {
 
       .copyright-content-inner {
+        margin-bottom: 1rem;
 
         span {
           margin: 0 0.25rem;

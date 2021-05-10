@@ -1,12 +1,13 @@
 <footer id="main-footer" class="background-tertiary">
 
-    <div class="footer-top section-padding2">
+    <div class="footer-top pdy-lg-16 pdy-8">
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-lg-1"></div>
+                <div class="col-12 col-lg-10">
                     <div class="row no-gutters">
-                        <div class="col-12 col-lg-6 col-xl-3">
+                        <div class="col-12 col-sm-6 col-xl-3">
                             <div class="footer-widget">
                                 <div class="widget-title mgb-3 mgb-lg-4">
                                     <h4 class="font-weight-bold">Community</h4>
@@ -67,7 +68,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6 col-xl-3">
+                        <div class="col-12 col-sm-6 col-xl-3">
                             <div class="footer-widget">
                                 <div class="widget-title mgb-3 mgb-lg-4">
                                     <h4 class="font-weight-bold">Categorie</h4>
@@ -126,7 +127,7 @@
                         </div>
                         <div class="col-12 col-lg-6 col-xl-6">
                             <div class="row no-gutters">
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-sm-6">
                                     <div class="footer-widget">
                                         <div class="widget-title mgb-3 mgb-lg-4">
                                             <h4 class="font-weight-bold">Main menu</h4>
@@ -167,7 +168,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-sm-6">
                                     <div class="footer-widget">
                                         <div class="widget-title mgb-3 mgb-lg-4">
                                             <h4 class="font-weight-bold">About</h4>
@@ -223,11 +224,12 @@
                                                     <div class="form-group mgb-0">
                                                         <label for="subscribe_email" class="sr-only"></label>
                                                         <input type="email" name="subscribe_email" id="subscribe_email"
-                                                               placeholder="Your email address">
+                                                               placeholder="Search Mobile Phones">
                                                     </div>
                                                     <button type="submit" name="subscribe_submit" id="subscribe_submit">
-                                                        <img class="img-fluid"
-                                                             src="assets/images/search.png" alt="search"></button>
+                                                        <img class="" src="assets/images/search.png"
+                                                             alt="search">
+                                                    </button>
                                                 </form>
                                             </div>
                                         </div>
@@ -237,15 +239,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-lg-1"></div>
             </div>
         </div>
 
     </div>
 
-    <div class="copyright-area">
-        <div class="container">
+    <div class="copyright-area section-padding3">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-lg-1"></div>
+                <div class="col-12 col-lg-10">
                     <div class="social-wrap">
                         <ul class="list-unstyled list-social d-flex align-items-center justify-content-center">
                             <li>
@@ -293,6 +297,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-lg-1"></div>
             </div>
         </div>
     </div>
