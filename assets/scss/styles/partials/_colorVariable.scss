@@ -1,0 +1,38 @@
+$primary-grad: linear-gradient(45deg, #265B62, #47A185);
+
+$primary: rgb(38, 91, 98);
+
+$secondary: rgb(71, 161, 133);
+
+$white: rgb(255, 255, 255);
+
+$tertiary: rgb(0, 0, 0);
+
+$cararra: rgb(241, 241, 236);
+
+$caption: rgb(115, 119, 120);
+
+$neptune: rgb(111, 172, 180);
+
+$dairy-cream: rgb(248, 205, 186);
+
+$alto: rgb(216, 216, 216);
+
+$silver-chalice: rgb(161, 161, 161);
+
+$turquoise-blue: rgb(106, 236, 189);
+
+$turquoise-blue2: rgb(90, 236, 233);
+
+$cherokee: rgb(251, 220, 142);
+
+$red: rgb(255, 000, 000);
+
+$light-gray: rgb(248, 248, 248);
+
+$color-range: (
+        'primary': $primary, 'secondary': $secondary, 'tertiary':$tertiary, 'cararra': $cararra,
+        'caption': $caption, 'neptune': $neptune, 'dairy-cream': $dairy-cream, 'alto': $alto,
+        'silver-chalice': $silver-chalice, 'turquoise-blue': $turquoise-blue, 'turquoise-blue2': $turquoise-blue2,
+        'cherokee': $cherokee, 'red': $red, 'light-gray': $light-gray, 'primary-grad': $primary-grad,
+);

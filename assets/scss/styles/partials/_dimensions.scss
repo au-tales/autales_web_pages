@@ -1,0 +1,420 @@
+//  Width & Height Start
+
+@for $i from 0 through 50 {
+  // pixels
+
+  .wx-#{$i} {
+    width: $i*1px !important;
+  }
+
+  .hx-#{$i} {
+    height: $i*1px !important;
+  }
+
+  //.mnwx-#{$i} {
+  //  min-width: $i*1px !important;
+  //}
+  //
+  //.mwx-#{$i} {
+  //  max-width: $i*1px !important;
+  //}
+  //
+  //.mnhx-#{$i} {
+  //  min-height: $i*1px !important;
+  //}
+  //
+  //.mhx-#{$i} {
+  //  max-height: $i*1px !important;
+  //}
+
+}
+
+@for $i from 0 through 100 {
+
+  // %age start
+
+  .wp-#{$i} {
+    width: $i*1% !important;
+  }
+
+  .hp-#{$i} {
+    height: $i*1% !important;
+  }
+  //
+  //@if ($i%5 == 0) {
+  //
+  //  .mnwp-#{$i} {
+  //    min-width: $i*1% !important;
+  //  }
+  //
+  //  .mwp-#{$i} {
+  //    max-width: $i*1% !important;
+  //  }
+  //
+  //  .mnhp-#{$i} {
+  //    min-height: $i*1% !important;
+  //  }
+  //
+  //  .mhp-#{$i} {
+  //    max-height: $i*1% !important;
+  //  }
+  //
+  //}
+
+  // /%age
+
+
+}
+
+.w-auto {
+  width: auto !important;
+}
+
+.h-auto {
+  height: auto !important;
+}
+
+.mnw-unset {
+  min-width: unset !important;
+}
+
+.mw-unset {
+  max-width: unset !important;
+}
+
+.mnh-unset {
+  min-height: unset !important;
+}
+
+.mh-unset {
+  max-height: unset !important;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+  @for $i from 0 through 100 {
+    // %age start
+
+    .wp-sm-#{$i} {
+      width: $i*1% !important;
+    }
+
+    .hp-sm-#{$i} {
+      height: $i*1% !important;
+    }
+
+    //@if ($i%5 == 0) {
+    //
+    //  .mnwp-sm-#{$i} {
+    //    min-width: $i*1% !important;
+    //  }
+    //
+    //  .mwp-sm-#{$i} {
+    //    max-width: $i*1% !important;
+    //  }
+    //
+    //  .mnhp-sm-#{$i} {
+    //    min-height: $i*1% !important;
+    //  }
+    //
+    //  .mhp-sm-#{$i} {
+    //    max-height: $i*1% !important;
+    //  }
+    //
+    //}
+
+    // /%age
+
+  }
+
+  .w-sm-auto {
+    width: auto !important;
+  }
+
+  .h-sm-auto {
+    height: auto !important;
+  }
+
+  .mnw-sm-unset {
+    min-width: unset !important;
+  }
+
+  .mw-sm-unset {
+    max-width: unset !important;
+  }
+
+  .mnh-sm-unset {
+    min-height: unset !important;
+  }
+
+  .mh-sm-unset {
+    max-height: unset !important;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+  @for $i from 0 through 100 {
+    // %age start
+
+    .wp-md-#{$i} {
+      width: $i*1% !important;
+    }
+
+    .hp-md-#{$i} {
+      height: $i*1% !important;
+    }
+
+    //@if ($i%5 == 0) {
+    //
+    //  .mnwp-md-#{$i} {
+    //    min-width: $i*1% !important;
+    //  }
+    //
+    //  .mwp-md-#{$i} {
+    //    max-width: $i*1% !important;
+    //  }
+    //
+    //  .mnhp-md-#{$i} {
+    //    min-height: $i*1% !important;
+    //  }
+    //
+    //  .mhp-md-#{$i} {
+    //    max-height: $i*1% !important;
+    //  }
+    //
+    //}
+
+    // /%age
+
+  }
+
+  .w-md-auto {
+    width: auto !important;
+  }
+
+  .mnw-md-unset {
+    min-width: unset !important;
+  }
+
+  .mw-md-unset {
+    max-width: unset !important;
+  }
+
+  .h-md-auto {
+    height: auto !important;
+  }
+
+  .mnh-md-unset {
+    min-height: unset !important;
+  }
+
+  .mh-md-unset {
+    max-height: unset !important;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+  @for $i from 0 through 100 {
+    // %age start
+
+    .wp-lg-#{$i} {
+      width: $i*1% !important;
+    }
+
+    .hp-lg-#{$i} {
+      height: $i*1% !important;
+    }
+
+    //@if ($i%5 == 0) {
+    //
+    //  .mnwp-lg-#{$i} {
+    //    min-width: $i*1% !important;
+    //  }
+    //
+    //  .mwp-lg-#{$i} {
+    //    max-width: $i*1% !important;
+    //  }
+    //
+    //  .mnhp-lg-#{$i} {
+    //    min-height: $i*1% !important;
+    //  }
+    //
+    //  .mhp-lg-#{$i} {
+    //    max-height: $i*1% !important;
+    //  }
+    //
+    //}
+    // /%age
+
+  }
+
+  .w-lg-auto {
+    width: auto !important;
+  }
+
+  .mnw-lg-unset {
+    min-width: unset !important;
+  }
+
+  .mw-lg-unset {
+    max-width: unset !important;
+  }
+
+  .h-lg-auto {
+    height: auto !important;
+  }
+
+  .mnh-lg-unset {
+    min-height: unset !important;
+  }
+
+  .mh-lg-unset {
+    max-height: unset !important;
+  }
+
+}
+
+/* Customized Media Queries (min Width, 1024px and up) */
+@media (min-width: 1024px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+  @for $i from 0 through 100 {
+    // %age start
+
+    .wp-xl-#{$i} {
+      width: $i*1% !important;
+    }
+
+    .hp-xl-#{$i} {
+      height: $i*1% !important;
+    }
+
+    //@if ($i%5 == 0) {
+    //
+    //  .mnwp-xl-#{$i} {
+    //    min-width: $i*1% !important;
+    //  }
+    //
+    //  .mwp-xl-#{$i} {
+    //    max-width: $i*1% !important;
+    //  }
+    //
+    //  .mnhp-xl-#{$i} {
+    //    min-height: $i*1% !important;
+    //  }
+    //
+    //  .mhp-xl-#{$i} {
+    //    max-height: $i*1% !important;
+    //  }
+    //
+    //}
+
+    // /%age
+
+  }
+
+  .w-xl-auto {
+    width: auto !important;
+  }
+
+  .mnw-xl-unset {
+    min-width: unset !important;
+  }
+
+  .mw-xl-unset {
+    max-width: unset !important;
+  }
+
+  .h-xl-auto {
+    height: auto !important;
+  }
+
+  .mnh-xl-unset {
+    min-height: unset !important;
+  }
+
+  .mh-xl-unset {
+    max-height: unset !important;
+  }
+
+}
+
+/* Extra extra large devices (1400px and up)*/
+@media (min-width: 1400px) {
+
+  @for $i from 0 through 100 {
+    // %age start
+
+    .wp-xxl-#{$i} {
+      width: $i*1% !important;
+    }
+
+    .hp-xxl-#{$i} {
+      height: $i*1% !important;
+    }
+
+    @if ($i%5 == 0) {
+
+      .mnwp-xxl-#{$i} {
+        min-width: $i*1% !important;
+      }
+
+      .mwp-xxl-#{$i} {
+        max-width: $i*1% !important;
+      }
+
+      .mnhp-xxl-#{$i} {
+        min-height: $i*1% !important;
+      }
+
+      .mhp-xxl-#{$i} {
+        max-height: $i*1% !important;
+      }
+
+    }
+
+    // /%age
+
+  }
+
+  .w-xxl-auto {
+    width: auto !important;
+  }
+
+  .mnw-xxl-unset {
+    min-width: unset !important;
+  }
+
+  .mw-xxl-unset {
+    max-width: unset !important;
+  }
+
+  .h-xxl-auto {
+    height: auto !important;
+  }
+
+  .mnh-xxl-unset {
+    min-height: unset !important;
+  }
+
+  .mh-xxl-unset {
+    max-height: unset !important;
+  }
+
+}
+
+/* Extra extra extra large devices (4K and up)*/
+@media (min-width: 2160px) {
+}
+
+//  /Width & Height End
