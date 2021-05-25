@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg background-transparent">
+<nav class="navbar navbar-expand-lg background-transparent pdx-0 pdx-lg-3">
     <a class="navbar-brand" href="#">
         <img class="logo" src="assets/images/logo-white.png" alt="">
     </a>
@@ -8,7 +8,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarMain">
-        <ul class="navbar-nav mgl-auto mgt-0 mgr-5">
+        <ul class="navbar-nav mgl-lg-auto mgt-0 mgr-lg-5">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>

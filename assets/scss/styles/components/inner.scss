@@ -196,7 +196,7 @@
         border: none;
         width: 15%;
 
-        &:hover {
+        &:hover, &:focus, &:active, &:focus-within {
           cursor: pointer;
           background-color: darken(color.$primary, 10%);
           border-color: darken(color.$primary, 10%);
@@ -215,6 +215,14 @@
     img {
       margin: 0.5rem 0;
     }
+
+  }
+
+}
+
+.video-section {
+
+  .video_wrap {
 
   }
 
@@ -264,7 +272,7 @@
 
           .review_desc {
             @include mix.flex-vertically-center;
-            max-height: 80px;
+            max-height: 100px;
             overflow-y: hidden;
             line-height: 1.75;
             font-size: 0.875rem;

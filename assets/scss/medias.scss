@@ -31,17 +31,57 @@
     padding-bottom: 50px;
   }
 
-  .banner-section {
-    min-height: unset;
+  header {
 
-    .slideshow-container {
-      margin-top: 70px;
-      height: auto;
-      top: unset;
+    &.site-header {
+
+      .navbar {
+
+        .navbar-collapse {
+
+          &.show {
+            position: relative;
+            background: color.$white;
+          }
+
+        }
+
+        .registration-buttons {
+
+          .btn {
+
+          }
+
+        }
+
+      }
+
     }
 
   }
 
+  .banner-section {
+    min-height: unset;
+
+    .slideshow-container {
+      margin-bottom: 50px;
+      margin-top: 70px;
+      height: auto;
+      top: unset;
+
+      .slide-content {
+        max-width: 100%;
+        margin: auto;
+
+        .slide-text {
+          max-width: 100%;
+        }
+
+      }
+
+    }
+
+  }
 
 }
 
@@ -156,10 +196,19 @@
 
         :nth-child(even) {
           top: 100px;
+          margin-bottom: 0;
         }
 
         .review_card {
           margin-bottom: 0;
+
+          .card-body {
+
+            .review_desc {
+              max-height: 115px;
+            }
+
+          }
         }
 
       }

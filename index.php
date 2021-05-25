@@ -51,6 +51,21 @@
     <!--  /Mobile Categories Section  -->
 
     <!--  Reviews Video Section  -->
+    <section class="video-section background-cararra pdy-lg-16 pdy-md-12 pdy-sm-10 pdy-8">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-1"></div>
+                <div class="col-12 col-lg-10">
+                    <div class="section-title mgt-0 mgb-8 d-flex flex-column flex-lg-row align-items-center justify-content-lg-between justify-content-center">
+                        <h2 class="mgb-0">Customer Reviews</h2>
+                        <a class="btn btn-link">View More</a>
+                    </div>
+                    <?php require "components/partials/video_wrap.php" ?>
+                </div>
+                <div class="col-12 col-lg-1"></div>
+            </div>
+        </div>
+    </section>
     <!--  /Reviews Video Section  -->
 
     <!--  Customer Reviews Section  -->

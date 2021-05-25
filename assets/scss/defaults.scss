@@ -57,7 +57,7 @@
 /*      DEFAULTS      */
 
 html {
-
+  overflow-x: hidden;
 }
 
 body {
@@ -407,6 +407,18 @@ select {
   }
 
   .btn {
+    border: 2px solid transparent;
+    border-bottom: 2px solid color.$tertiary;
+    padding-left: 0;
+    padding-right: 0;
+    transition: all 1s ease-in-out;
+
+    &:hover, &:focus, &:active, &:focus-within {
+      border: 2px solid color.$tertiary;
+      padding-left: 1.75rem;
+      padding-right: 1.75rem;
+      transition: all 1s ease-in-out;
+    }
 
   }
 
