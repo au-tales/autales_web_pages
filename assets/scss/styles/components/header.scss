@@ -18,7 +18,7 @@ header {
     z-index: 1;
 
     &.fixed-header {
-      z-index: 10;
+      z-index: 99;
       position: fixed;
       background: rgba(0, 0, 0, 0.75);
     }
@@ -47,10 +47,6 @@ header {
       }
 
       .registration-buttons {
-
-        .btn {
-          margin: 0 0.5rem;
-        }
 
       }
 

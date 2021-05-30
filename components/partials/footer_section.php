@@ -15,52 +15,52 @@
                                 <div class="widget-content">
                                     <ul class="list-unstyled footer-menu">
                                         <li>
-                                            <a href="#">
+                                            <a href="javascript:void(0);">
                                                 Events
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="javascript:void(0);">
                                                 Blog
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="javascript:void(0);">
                                                 Forum
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="javascript:void(0);">
                                                 Community Standards
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="javascript:void(0);">
                                                 Podcast
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="javascript:void(0);">
                                                 Affiliates
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="javascript:void(0);">
                                                 Invite a Friend
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="javascript:void(0);">
                                                 Become a Seller
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="javascript:void(0);">
                                                 Fiverr Elevate
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="javascript:void(0);">
                                                 Exclusive Benefits
                                             </a>
                                         </li>
@@ -71,55 +71,36 @@
                         <div class="col-12 col-sm-6 col-xl-3">
                             <div class="footer-widget">
                                 <div class="widget-title mgb-3 mgb-lg-4">
-                                    <h4 class="font-weight-bold">Categorie</h4>
+                                    <h4 class="font-weight-bold">Categories</h4>
                                 </div>
                                 <div class="widget-content">
                                     <ul class="list-unstyled footer-menu">
                                         <li>
-                                            <a href="#">
-                                                Graphics & Design
-                                            </a>
+                                            <a href="javascript:void(0);">Graphics & Design</a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                Digital Marketing
-                                            </a>
+                                            <a href="javascript:void(0);">Digital Marketing</a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                Writing & Translation
-                                            </a>
+                                            <a href="javascript:void(0);">Writing & Translation</a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                Video & Animation
-                                            </a>
+                                            <a href="javascript:void(0);">Video & Animation</a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                Music & Audio
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                Programming & Tech
-                                            </a>
+                                            <a href="javascript:void(0);">Music & Audio</a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                Business
-                                            </a>
+                                            <a href="javascript:void(0);">Programming & Tech</a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                Lifestyle
-                                            </a>
+                                            <a href="javascript:void(0);">Business</a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                Sitemap
-                                            </a>
+                                            <a href="javascript:void(0);">Lifestyle</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Sitemap</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -130,39 +111,27 @@
                                 <div class="col-12 col-sm-6">
                                     <div class="footer-widget">
                                         <div class="widget-title mgb-3 mgb-lg-4">
-                                            <h4 class="font-weight-bold">Main menu</h4>
+                                            <h4 class="font-weight-bold">Main Menu</h4>
                                         </div>
                                         <div class="widget-content">
                                             <ul class="list-unstyled footer-menu">
                                                 <li>
-                                                    <a href="#">
-                                                        Home
-                                                    </a>
+                                                    <a href="javascript:void(0);">Home</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
-                                                        About Us
-                                                    </a>
+                                                    <a href="javascript:void(0);">About Us</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
-                                                        Portfolio
-                                                    </a>
+                                                    <a href="javascript:void(0);">Portfolio</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
-                                                        Terms &amp; Conditions
-                                                    </a>
+                                                    <a href="javascript:void(0);">Terms &amp; Conditions</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
-                                                        Privacy Policy
-                                                    </a>
+                                                    <a href="javascript:void(0);">Privacy Policy</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
-                                                        Sitemap
-                                                    </a>
+                                                    <a href="javascript:void(0);">Sitemap</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -176,39 +145,25 @@
                                         <div class="widget-content">
                                             <ul class="list-unstyled footer-menu">
                                                 <li>
-                                                    <a href="#">
-                                                        Careers
-                                                    </a>
+                                                    <a href="javascript:void(0);">Careers</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
-                                                        Press & News
-                                                    </a>
+                                                    <a href="javascript:void(0);">Press &amp; News</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
-                                                        Partnerships
-                                                    </a>
+                                                    <a href="javascript:void(0);">Partnerships</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
-                                                        Privacy Policy
-                                                    </a>
+                                                    <a href="javascript:void(0);">Privacy Policy</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
-                                                        Terms of Service
-                                                    </a>
+                                                    <a href="javascript:void(0);">Terms of Service</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
-                                                        Intellectual Property Claims
-                                                    </a>
+                                                    <a href="javascript:void(0);">Intellectual Property Claims</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
-                                                        Investor Relations
-                                                    </a>
+                                                    <a href="javascript:void(0);">Investor Relations</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -253,27 +208,27 @@
                     <div class="social-wrap">
                         <ul class="list-unstyled list-social d-flex align-items-center justify-content-center">
                             <li>
-                                <a href="#">
+                                <a href="javascript:void(0);">
                                     <img src="assets/images/whatsapp.png" alt="whatsapp-icon">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="javascript:void(0);">
                                     <img src="assets/images/facebook.png" alt="facebook-icon">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="javascript:void(0);">
                                     <img src="assets/images/linkedin.png" alt="linkedin-icon">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="javascript:void(0);">
                                     <img src="assets/images/twitter.png" alt="twitter-icon">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="javascript:void(0);">
                                     <img src="assets/images/googleplus.png" alt="googleplus-icon">
                                 </a>
                             </li>
@@ -288,10 +243,10 @@
                         <div class="footer-nav">
                             <ul class="list-unstyled d-flex align-items-center justify-content-center flex-column flex-md-row">
                                 <li>
-                                    <a href="">Terms of Service</a>
+                                    <a href="javascript:void(0);">Terms of Service</a>
                                 </li>
                                 <li>
-                                    <a href="">Privacy Policy</a>
+                                    <a href="javascript:void(0);">Privacy Policy</a>
                                 </li>
                             </ul>
                         </div>

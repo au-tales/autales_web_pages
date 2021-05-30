@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg background-transparent pdx-0 pdx-lg-3">
-    <a class="navbar-brand" href="#">
+<nav class="navbar navbar-expand-lg background-transparent pdx-0 pdx-xl-3">
+    <a class="navbar-brand mgr-2 mgr-xl-4" href="#">
         <img class="logo" src="assets/images/logo-white.png" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain"
@@ -8,7 +8,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarMain">
-        <ul class="navbar-nav mgl-lg-auto mgt-0 mgr-lg-5">
+        <ul class="navbar-nav mgl-lg-auto mgt-0 mgr-lg-4 mgr-xl-5">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -36,8 +36,8 @@
             <!--            </li>-->
         </ul>
         <div class="registration-buttons">
-            <a class="btn btn-light-revert">Log In</a>
-            <a class="btn btn-light-revert">Sign Up</a>
+            <a class="btn btn-light-revert mgx-1 mgx-xl-2">Log In</a>
+            <a class="btn btn-light-revert mgx-1 mgx-xl-2">Sign Up</a>
         </div>
     </div>
 </nav>

@@ -215,24 +215,49 @@
 
 }
 
+.section-title {
+
+  h2 {
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  a {
+
+    &.btn {
+      margin: 0 auto;
+
+      &:hover, &:focus, &:active {
+        background-color: color.$tertiary !important;
+        border-color: color.$tertiary !important;
+        color: color.$white !important;
+      }
+
+    }
+
+  }
+
+}
+
+.common_wrap {
+
+  .common_text_wrapper {
+
+  }
+
+}
+
 .get-started-section {
 
   .get_started_wrap {
 
     .get_started_text_wrapper {
 
-      .section-title {
-
-        p {
-          line-height: 1.5;
-        }
-
-      }
-
     }
 
     .get_started_img_wrapper {
-
     }
 
   }
@@ -332,6 +357,25 @@
 
       }
 
+    }
+
+  }
+
+}
+
+.join-hands-section {
+
+  .join_hands_wrap {
+    position: relative;
+
+    .bgImg {
+      display: none;
+    }
+
+    .join_hands_text_wrapper {
+    }
+
+    .join_hands_img_wrapper {
     }
 
   }

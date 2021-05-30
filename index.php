@@ -45,7 +45,7 @@
     <!--  /Logo Slider Section  -->
 
     <!--  Getting Started Section  -->
-    <section class="get-started-section background-white pdy-lg-16 pdy-md-12 pdy-sm-10 pdy-8">
+    <section class="get-started-section background-white pdy-lg-16 pdy-md-12 pdy-10">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-lg-1"></div>
@@ -59,7 +59,7 @@
     <!--  /Getting Started Section  -->
 
     <!--  Mobile Categories Section  -->
-    <section class="mobile-cat-section background-cararra pdy-lg-16 pdy-md-12 pdy-sm-10 pdy-8">
+    <section class="mobile-cat-section background-cararra pdy-lg-16 pdy-md-12 pdy-10">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-lg-1"></div>
@@ -77,7 +77,7 @@
     <!--  /Mobile Categories Section  -->
 
     <!--  Reviews Video Section  -->
-    <section class="video-section background-white pdy-lg-16 pdy-md-12 pdy-sm-10 pdy-8">
+    <section class="video-section background-white pdy-lg-16 pdy-md-12 pdy-10">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-lg-1"></div>
@@ -95,7 +95,7 @@
     <!--  /Reviews Video Section  -->
 
     <!--  Customer Reviews Section  -->
-    <section class="reviews-section background-cararra pdy-lg-16 pdy-md-12 pdy-sm-10 pdy-8">
+    <section class="reviews-section background-cararra pdy-lg-16 pdy-md-12 pdy-10">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-lg-1"></div>
@@ -112,12 +112,12 @@
     <!--  /Customer Reviews Section  -->
 
     <!--  Join Hands Section  -->
-    <section class="join-hands-section background-white pdy-lg-16 pdy-md-12 pdy-sm-10 pdy-8">
+    <section class="join-hands-section background-white pdy-lg-16 pdy-md-12 pdy-10">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-lg-1"></div>
                 <div class="col-12 col-lg-10">
-
+                    <?php require "components/partials/join_hands_wrap.php" ?>
                 </div>
                 <div class="col-12 col-lg-1"></div>
             </div>

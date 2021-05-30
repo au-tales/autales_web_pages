@@ -1,5 +1,5 @@
 <div class="review_wrap">
-    <div class="row no-gutters review_wrap_row pdt-10">
+    <div class="row no-gutters review_wrap_row pdt-5 pdt-lg-10">
         <div class="col-12 col-lg-4 align-self-lg-start">
             <div class="card review_card">
                 <div class="card-img d-flex justify-content-center">

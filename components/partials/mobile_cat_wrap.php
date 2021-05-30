@@ -1,5 +1,5 @@
 <div class="mobile_cat_wrap">
-    <div class="row no-gutters mobile_cat_wrap_row pdt-10">
+    <div class="row no-gutters mobile_cat_wrap_row pdt-5 pdt-lg-10">
         <div class="col-12 col-lg-1"></div>
         <div class="col-12 col-lg-10">
             <div class="mobile_cat_wrapper d-flex align-items-center justify-content-center flex-wrap">
