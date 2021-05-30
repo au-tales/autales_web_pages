@@ -5,9 +5,9 @@
     <div class="slide-item fade hp-lg-100">
         <div class="slide-item-inner align-items-lg-center justify-content-lg-between">
             <div class="slide-content wp-100">
-                <div class="slide-text pdy-2">
+                <div class="section-title slide-text pdy-2">
                     <h2 class="">Pakistan's Best Mobile Selling Purchasing Website </h2>
-                    <a class="btn btn-light-revert mgy-4">Learn More</a>
+                    <a class="btn btn-light-revert mgy-4 pdx-3 pdx-sm-5 pdx-lg-7">Learn More</a>
                 </div>
                 <div class="newsletter-form">
                     <form action="" class="form-inline">
@@ -16,7 +16,7 @@
                             <input type="email" name="subscribe_email" id="subscribe_email"
                                    placeholder="Search Mobile Phones">
                         </div>
-                        <button type="submit" name="subscribe_submit" id="subscribe_submit">
+                        <button type="submit" name="subscribe_submit" id="subscribe_submit" class="subscribe_submit">
                             <img class="" src="assets/images/search.png" alt="search">
                         </button>
                     </form>
@@ -31,9 +31,9 @@
     <div class="slide-item fade hp-lg-100">
         <div class="slide-item-inner align-items-lg-center justify-content-lg-between">
             <div class="slide-content wp-100">
-                <div class="slide-text pdy-2">
+                <div class="section-title slide-text pdy-2">
                     <h2 class="">Pakistan's Best Mobile Selling Purchasing Website </h2>
-                    <a class="btn btn-light-revert mgy-4">Learn More</a>
+                    <a class="btn btn-light-revert mgy-4 pdx-3 pdx-sm-5 pdx-lg-7">Learn More</a>
                 </div>
                 <div class="newsletter-form">
                     <form action="" class="form-inline">
@@ -42,7 +42,7 @@
                             <input type="email" name="subscribe_email" id="subscribe_email"
                                    placeholder="Search Mobile Phones">
                         </div>
-                        <button type="submit" name="subscribe_submit" id="subscribe_submit">
+                        <button type="submit" name="subscribe_submit" id="subscribe_submit" class="subscribe_submit">
                             <img class="" src="assets/images/search.png" alt="search">
                         </button>
                     </form>
@@ -57,9 +57,9 @@
     <div class="slide-item fade hp-lg-100">
         <div class="slide-item-inner align-items-lg-center justify-content-lg-between">
             <div class="slide-content wp-100">
-                <div class="slide-text pdy-2">
+                <div class="section-title slide-text pdy-2">
                     <h2 class="">Pakistan's Best Mobile Selling Purchasing Website </h2>
-                    <a class="btn btn-light-revert mgy-4">Learn More</a>
+                    <a class="btn btn-light-revert mgy-4 pdx-3 pdx-sm-5 pdx-lg-7">Learn More</a>
                 </div>
                 <div class="newsletter-form">
                     <form action="" class="form-inline">
@@ -68,7 +68,7 @@
                             <input type="email" name="subscribe_email" id="subscribe_email"
                                    placeholder="Search Mobile Phones">
                         </div>
-                        <button type="submit" name="subscribe_submit" id="subscribe_submit">
+                        <button type="submit" name="subscribe_submit" id="subscribe_submit" class="subscribe_submit">
                             <img class="" src="assets/images/search.png" alt="search">
                         </button>
                     </form>

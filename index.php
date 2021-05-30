@@ -45,19 +45,45 @@
     <!--  /Logo Slider Section  -->
 
     <!--  Getting Started Section  -->
+    <section class="get-started-section background-white pdy-lg-16 pdy-md-12 pdy-sm-10 pdy-8">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-1"></div>
+                <div class="col-12 col-lg-10">
+                    <?php require "components/partials/get_started_wrap.php" ?>
+                </div>
+                <div class="col-12 col-lg-1"></div>
+            </div>
+        </div>
+    </section>
     <!--  /Getting Started Section  -->
 
     <!--  Mobile Categories Section  -->
-    <!--  /Mobile Categories Section  -->
-
-    <!--  Reviews Video Section  -->
-    <section class="video-section background-cararra pdy-lg-16 pdy-md-12 pdy-sm-10 pdy-8">
+    <section class="mobile-cat-section background-cararra pdy-lg-16 pdy-md-12 pdy-sm-10 pdy-8">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-lg-1"></div>
                 <div class="col-12 col-lg-10">
                     <div class="section-title mgt-0 mgb-8 d-flex flex-column flex-lg-row align-items-center justify-content-lg-between justify-content-center">
-                        <h2 class="mgb-0">Customer Reviews</h2>
+                        <h2 class="mgy-0 text-center text-lg-left">Mobile Phone Categories</h2>
+                        <a class="btn btn-link">View More</a>
+                    </div>
+                    <?php require "components/partials/mobile_cat_wrap.php" ?>
+                </div>
+                <div class="col-12 col-lg-1"></div>
+            </div>
+        </div>
+    </section>
+    <!--  /Mobile Categories Section  -->
+
+    <!--  Reviews Video Section  -->
+    <section class="video-section background-white pdy-lg-16 pdy-md-12 pdy-sm-10 pdy-8">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-1"></div>
+                <div class="col-12 col-lg-10">
+                    <div class="section-title mgt-0 mgb-8 d-flex flex-column flex-lg-row align-items-center justify-content-lg-between justify-content-center">
+                        <h2 class="mgy-0 text-center text-lg-left">Our Mobile Reviews Videos</h2>
                         <a class="btn btn-link">View More</a>
                     </div>
                     <?php require "components/partials/video_wrap.php" ?>
@@ -75,7 +101,7 @@
                 <div class="col-12 col-lg-1"></div>
                 <div class="col-12 col-lg-10">
                     <div class="section-title d-flex flex-column flex-lg-row align-items-center justify-content-lg-between justify-content-center">
-                        <h2 class="mgt-0 mgb-8">Customer Reviews</h2>
+                        <h2 class="mgt-0 mgb-8 text-center text-lg-left">Customer Reviews</h2>
                     </div>
                     <?php require "components/partials/review_wrap.php" ?>
                 </div>
@@ -86,6 +112,17 @@
     <!--  /Customer Reviews Section  -->
 
     <!--  Join Hands Section  -->
+    <section class="join-hands-section background-white pdy-lg-16 pdy-md-12 pdy-sm-10 pdy-8">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-1"></div>
+                <div class="col-12 col-lg-10">
+
+                </div>
+                <div class="col-12 col-lg-1"></div>
+            </div>
+        </div>
+    </section>
     <!--  /Join Hands Video Section  -->
 
 </main>

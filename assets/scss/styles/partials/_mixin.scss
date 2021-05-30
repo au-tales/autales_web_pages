@@ -204,21 +204,6 @@
   align-content: stretch;
 }
 
-@mixin transition-normal {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  @include plain-all;
-}
-
-@mixin transition-hover {
-  z-index: 1;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  @include plain-all;
-}
-
 @mixin flex-horizontally-center {
   @include d-flex;
   @include justify-content-center;
@@ -233,6 +218,45 @@
   @include d-flex;
   @include align-items-center;
   @include justify-content-center;
+}
+
+@mixin width($width) {
+  width: $width !important;
+}
+
+@mixin min-width($min-width) {
+  min-width: $min-width !important;
+}
+
+@mixin max-width($max-width) {
+  max-width: $max-width !important;
+}
+
+@mixin height($height) {
+  height: $height !important;
+}
+
+@mixin min-height($min-height) {
+  min-height: $min-height !important;
+}
+
+@mixin max-height($max-height) {
+  max-height: $max-height !important;
+}
+
+@mixin transition-normal {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  @include plain-all;
+}
+
+@mixin transition-hover {
+  z-index: 1;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  @include plain-all;
 }
 
 @mixin noshadow {

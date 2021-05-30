@@ -1,34 +1,36 @@
+@use "sass:math";
+
 @for $i from 0 through 16 {
   // Padding Starts
 
   .pd-#{$i} {
-    padding: #{$i/4}rem !important;
+    padding: #{ math.div($i, 4)}rem !important;
   }
 
   .pdx-#{$i} {
-    padding-left: #{$i/4}rem !important;
-    padding-right: #{$i/4}rem !important;
+    padding-left: #{ math.div($i, 4)}rem !important;
+    padding-right: #{ math.div($i, 4)}rem !important;
   }
 
   .pdy-#{$i} {
-    padding-top: #{$i/4}rem !important;
-    padding-bottom: #{$i/4}rem !important;
+    padding-top: #{ math.div($i, 4)}rem !important;
+    padding-bottom: #{ math.div($i, 4)}rem !important;
   }
 
   .pdt-#{$i} {
-    padding-top: #{$i/4}rem !important;
+    padding-top: #{ math.div($i, 4)}rem !important;
   }
 
   .pdr-#{$i} {
-    padding-right: #{$i/4}rem !important;
+    padding-right: #{ math.div($i, 4)}rem !important;
   }
 
   .pdb-#{$i} {
-    padding-bottom: #{$i/4}rem !important;
+    padding-bottom: #{ math.div($i, 4)}rem !important;
   }
 
   .pdl-#{$i} {
-    padding-left: #{$i/4}rem !important;
+    padding-left: #{ math.div($i, 4)}rem !important;
   }
 
   // /Padding Ends
@@ -36,33 +38,33 @@
   //Positive Margin Starts
 
   .mg-#{$i} {
-    margin: #{$i/4}rem !important;
+    margin: #{ math.div($i, 4)}rem !important;
   }
 
   .mgx-#{$i} {
-    margin-left: #{$i/4}rem !important;
-    margin-right: #{$i/4}rem !important;
+    margin-left: #{ math.div($i, 4)}rem !important;
+    margin-right: #{ math.div($i, 4)}rem !important;
   }
 
   .mgy-#{$i} {
-    margin-top: #{$i/4}rem !important;
-    margin-bottom: #{$i/4}rem !important;
+    margin-top: #{ math.div($i, 4)}rem !important;
+    margin-bottom: #{ math.div($i, 4)}rem !important;
   }
 
   .mgt-#{$i} {
-    margin-top: #{$i/4}rem !important;
+    margin-top: #{ math.div($i, 4)}rem !important;
   }
 
   .mgr-#{$i} {
-    margin-right: #{$i/4}rem !important;
+    margin-right: #{ math.div($i, 4)}rem !important;
   }
 
   .mgb-#{$i} {
-    margin-bottom: #{$i/4}rem !important;
+    margin-bottom: #{ math.div($i, 4)}rem !important;
   }
 
   .mgl-#{$i} {
-    margin-left: #{$i/4}rem !important;
+    margin-left: #{ math.div($i, 4)}rem !important;
   }
 
   //Positive Margin Ends
@@ -70,33 +72,33 @@
   //Negative Margin Starts
 
   .mg-n#{$i} {
-    margin: -#{$i/4}rem !important;
+    margin: -#{ math.div($i, 4)}rem !important;
   }
 
   .mgx-n#{$i} {
-    margin-left: -#{$i/4}rem !important;
-    margin-right: -#{$i/4}rem !important;
+    margin-left: -#{ math.div($i, 4)}rem !important;
+    margin-right: -#{ math.div($i, 4)}rem !important;
   }
 
   .mgy-n#{$i} {
-    margin-top: -#{$i/4}rem !important;
-    margin-bottom: -#{$i/4}rem !important;
+    margin-top: -#{ math.div($i, 4)}rem !important;
+    margin-bottom: -#{ math.div($i, 4)}rem !important;
   }
 
   .mgt-n#{$i} {
-    margin-top: -#{$i/4}rem !important;
+    margin-top: -#{ math.div($i, 4)}rem !important;
   }
 
   .mgr-n#{$i} {
-    margin-right: -#{$i/4}rem !important;
+    margin-right: -#{ math.div($i, 4)}rem !important;
   }
 
   .mgb-n#{$i} {
-    margin-bottom: -#{$i/4}rem !important;
+    margin-bottom: -#{ math.div($i, 4)}rem !important;
   }
 
   .mgl-n#{$i} {
-    margin-left: -#{$i/4}rem !important;
+    margin-left: -#{ math.div($i, 4)}rem !important;
   }
 
   // /Negative Margin Ends
@@ -141,33 +143,33 @@
     // Padding Starts
 
     .pd-sm-#{$i} {
-      padding: #{$i/4}rem !important;
+      padding: #{ math.div($i, 4)}rem !important;
     }
 
     .pdx-sm-#{$i} {
-      padding-left: #{$i/4}rem !important;
-      padding-right: #{$i/4}rem !important;
+      padding-left: #{ math.div($i, 4)}rem !important;
+      padding-right: #{ math.div($i, 4)}rem !important;
     }
 
     .pdy-sm-#{$i} {
-      padding-top: #{$i/4}rem !important;
-      padding-bottom: #{$i/4}rem !important;
+      padding-top: #{ math.div($i, 4)}rem !important;
+      padding-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .pdt-sm-#{$i} {
-      padding-top: #{$i/4}rem !important;
+      padding-top: #{ math.div($i, 4)}rem !important;
     }
 
     .pdr-sm-#{$i} {
-      padding-right: #{$i/4}rem !important;
+      padding-right: #{ math.div($i, 4)}rem !important;
     }
 
     .pdb-sm-#{$i} {
-      padding-bottom: #{$i/4}rem !important;
+      padding-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .pdl-sm-#{$i} {
-      padding-left: #{$i/4}rem !important;
+      padding-left: #{ math.div($i, 4)}rem !important;
     }
 
     // /Padding Ends
@@ -175,33 +177,33 @@
     //Positive Margin Starts
 
     .mg-sm-#{$i} {
-      margin: #{$i/4}rem !important;
+      margin: #{ math.div($i, 4)}rem !important;
     }
 
     .mgx-sm-#{$i} {
-      margin-left: #{$i/4}rem !important;
-      margin-right: #{$i/4}rem !important;
+      margin-left: #{ math.div($i, 4)}rem !important;
+      margin-right: #{ math.div($i, 4)}rem !important;
     }
 
     .mgy-sm-#{$i} {
-      margin-top: #{$i/4}rem !important;
-      margin-bottom: #{$i/4}rem !important;
+      margin-top: #{ math.div($i, 4)}rem !important;
+      margin-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .mgt-sm-#{$i} {
-      margin-top: #{$i/4}rem !important;
+      margin-top: #{ math.div($i, 4)}rem !important;
     }
 
     .mgr-sm-#{$i} {
-      margin-right: #{$i/4}rem !important;
+      margin-right: #{ math.div($i, 4)}rem !important;
     }
 
     .mgb-sm-#{$i} {
-      margin-bottom: #{$i/4}rem !important;
+      margin-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .mgl-sm-#{$i} {
-      margin-left: #{$i/4}rem !important;
+      margin-left: #{ math.div($i, 4)}rem !important;
     }
 
     // /Positive Margin Ends
@@ -209,33 +211,33 @@
     //Negative Margin Starts
 
     .mg-sm-n#{$i} {
-      margin: -#{$i/4}rem !important;
+      margin: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgx-sm-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
-      margin-right: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgy-sm-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
-      margin-bottom: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgt-sm-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgr-sm-n#{$i} {
-      margin-right: -#{$i/4}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgb-sm-n#{$i} {
-      margin-bottom: -#{$i/4}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgl-sm-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
     }
 
   }
@@ -279,33 +281,33 @@
     // Padding Starts
 
     .pd-md-#{$i} {
-      padding: #{$i/4}rem !important;
+      padding: #{ math.div($i, 4)}rem !important;
     }
 
     .pdx-md-#{$i} {
-      padding-left: #{$i/4}rem !important;
-      padding-right: #{$i/4}rem !important;
+      padding-left: #{ math.div($i, 4)}rem !important;
+      padding-right: #{ math.div($i, 4)}rem !important;
     }
 
     .pdy-md-#{$i} {
-      padding-top: #{$i/4}rem !important;
-      padding-bottom: #{$i/4}rem !important;
+      padding-top: #{ math.div($i, 4)}rem !important;
+      padding-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .pdt-md-#{$i} {
-      padding-top: #{$i/4}rem !important;
+      padding-top: #{ math.div($i, 4)}rem !important;
     }
 
     .pdr-md-#{$i} {
-      padding-right: #{$i/4}rem !important;
+      padding-right: #{ math.div($i, 4)}rem !important;
     }
 
     .pdb-md-#{$i} {
-      padding-bottom: #{$i/4}rem !important;
+      padding-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .pdl-md-#{$i} {
-      padding-left: #{$i/4}rem !important;
+      padding-left: #{ math.div($i, 4)}rem !important;
     }
 
     // /Padding Ends
@@ -313,33 +315,33 @@
     //Positive Margin Starts
 
     .mg-md-#{$i} {
-      margin: #{$i/4}rem !important;
+      margin: #{ math.div($i, 4)}rem !important;
     }
 
     .mgx-md-#{$i} {
-      margin-left: #{$i/4}rem !important;
-      margin-right: #{$i/4}rem !important;
+      margin-left: #{ math.div($i, 4)}rem !important;
+      margin-right: #{ math.div($i, 4)}rem !important;
     }
 
     .mgy-md-#{$i} {
-      margin-top: #{$i/4}rem !important;
-      margin-bottom: #{$i/4}rem !important;
+      margin-top: #{ math.div($i, 4)}rem !important;
+      margin-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .mgt-md-#{$i} {
-      margin-top: #{$i/4}rem !important;
+      margin-top: #{ math.div($i, 4)}rem !important;
     }
 
     .mgr-md-#{$i} {
-      margin-right: #{$i/4}rem !important;
+      margin-right: #{ math.div($i, 4)}rem !important;
     }
 
     .mgb-md-#{$i} {
-      margin-bottom: #{$i/4}rem !important;
+      margin-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .mgl-md-#{$i} {
-      margin-left: #{$i/4}rem !important;
+      margin-left: #{ math.div($i, 4)}rem !important;
     }
 
     // /Positive Margin Ends
@@ -347,33 +349,33 @@
     //Negative Margin Starts
 
     .mg-md-n#{$i} {
-      margin: -#{$i/4}rem !important;
+      margin: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgx-md-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
-      margin-right: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgy-md-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
-      margin-bottom: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgt-md-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgr-md-n#{$i} {
-      margin-right: -#{$i/4}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgb-md-n#{$i} {
-      margin-bottom: -#{$i/4}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgl-md-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
     }
 
     // /Negative Margin Ends
@@ -420,33 +422,33 @@
     // Padding Starts
 
     .pd-lg-#{$i} {
-      padding: #{$i/4}rem !important;
+      padding: #{ math.div($i, 4)}rem !important;
     }
 
     .pdx-lg-#{$i} {
-      padding-left: #{$i/4}rem !important;
-      padding-right: #{$i/4}rem !important;
+      padding-left: #{ math.div($i, 4)}rem !important;
+      padding-right: #{ math.div($i, 4)}rem !important;
     }
 
     .pdy-lg-#{$i} {
-      padding-top: #{$i/4}rem !important;
-      padding-bottom: #{$i/4}rem !important;
+      padding-top: #{ math.div($i, 4)}rem !important;
+      padding-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .pdt-lg-#{$i} {
-      padding-top: #{$i/4}rem !important;
+      padding-top: #{ math.div($i, 4)}rem !important;
     }
 
     .pdr-lg-#{$i} {
-      padding-right: #{$i/4}rem !important;
+      padding-right: #{ math.div($i, 4)}rem !important;
     }
 
     .pdb-lg-#{$i} {
-      padding-bottom: #{$i/4}rem !important;
+      padding-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .pdl-lg-#{$i} {
-      padding-left: #{$i/4}rem !important;
+      padding-left: #{ math.div($i, 4)}rem !important;
     }
 
     // /Padding Ends
@@ -454,33 +456,33 @@
     //Positive Margin Starts
 
     .mg-lg-#{$i} {
-      margin: #{$i/4}rem !important;
+      margin: #{ math.div($i, 4)}rem !important;
     }
 
     .mgx-lg-#{$i} {
-      margin-left: #{$i/4}rem !important;
-      margin-right: #{$i/4}rem !important;
+      margin-left: #{ math.div($i, 4)}rem !important;
+      margin-right: #{ math.div($i, 4)}rem !important;
     }
 
     .mgy-lg-#{$i} {
-      margin-top: #{$i/4}rem !important;
-      margin-bottom: #{$i/4}rem !important;
+      margin-top: #{ math.div($i, 4)}rem !important;
+      margin-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .mgt-lg-#{$i} {
-      margin-top: #{$i/4}rem !important;
+      margin-top: #{ math.div($i, 4)}rem !important;
     }
 
     .mgr-lg-#{$i} {
-      margin-right: #{$i/4}rem !important;
+      margin-right: #{ math.div($i, 4)}rem !important;
     }
 
     .mgb-lg-#{$i} {
-      margin-bottom: #{$i/4}rem !important;
+      margin-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .mgl-lg-#{$i} {
-      margin-left: #{$i/4}rem !important;
+      margin-left: #{ math.div($i, 4)}rem !important;
     }
 
     // /Positive Margin Ends
@@ -488,33 +490,33 @@
     //Negative Margin Starts
 
     .mg-lg-n#{$i} {
-      margin: -#{$i/4}rem !important;
+      margin: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgx-lg-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
-      margin-right: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgy-lg-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
-      margin-bottom: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgt-lg-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgr-lg-n#{$i} {
-      margin-right: -#{$i/4}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgb-lg-n#{$i} {
-      margin-bottom: -#{$i/4}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgl-lg-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
     }
 
     // /Negative Margin Ends
@@ -564,33 +566,33 @@
     // Padding Starts
 
     .pd-xl-#{$i} {
-      padding: #{$i/4}rem !important;
+      padding: #{ math.div($i, 4)}rem !important;
     }
 
     .pdx-xl-#{$i} {
-      padding-left: #{$i/4}rem !important;
-      padding-right: #{$i/4}rem !important;
+      padding-left: #{ math.div($i, 4)}rem !important;
+      padding-right: #{ math.div($i, 4)}rem !important;
     }
 
     .pdy-xl-#{$i} {
-      padding-top: #{$i/4}rem !important;
-      padding-bottom: #{$i/4}rem !important;
+      padding-top: #{ math.div($i, 4)}rem !important;
+      padding-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .pdt-xl-#{$i} {
-      padding-top: #{$i/4}rem !important;
+      padding-top: #{ math.div($i, 4)}rem !important;
     }
 
     .pdr-xl-#{$i} {
-      padding-right: #{$i/4}rem !important;
+      padding-right: #{ math.div($i, 4)}rem !important;
     }
 
     .pdb-xl-#{$i} {
-      padding-bottom: #{$i/4}rem !important;
+      padding-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .pdl-xl-#{$i} {
-      padding-left: #{$i/4}rem !important;
+      padding-left: #{ math.div($i, 4)}rem !important;
     }
 
     // /Padding Ends
@@ -598,33 +600,33 @@
     //Positive Margin Starts
 
     .mg-xl-#{$i} {
-      margin: #{$i/4}rem !important;
+      margin: #{ math.div($i, 4)}rem !important;
     }
 
     .mgx-xl-#{$i} {
-      margin-left: #{$i/4}rem !important;
-      margin-right: #{$i/4}rem !important;
+      margin-left: #{ math.div($i, 4)}rem !important;
+      margin-right: #{ math.div($i, 4)}rem !important;
     }
 
     .mgy-xl-#{$i} {
-      margin-top: #{$i/4}rem !important;
-      margin-bottom: #{$i/4}rem !important;
+      margin-top: #{ math.div($i, 4)}rem !important;
+      margin-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .mgt-xl-#{$i} {
-      margin-top: #{$i/4}rem !important;
+      margin-top: #{ math.div($i, 4)}rem !important;
     }
 
     .mgr-xl-#{$i} {
-      margin-right: #{$i/4}rem !important;
+      margin-right: #{ math.div($i, 4)}rem !important;
     }
 
     .mgb-xl-#{$i} {
-      margin-bottom: #{$i/4}rem !important;
+      margin-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .mgl-xl-#{$i} {
-      margin-left: #{$i/4}rem !important;
+      margin-left: #{ math.div($i, 4)}rem !important;
     }
 
     // /Positive Margin Ends
@@ -632,33 +634,33 @@
     //Negative Margin Starts
 
     .mg-xl-n#{$i} {
-      margin: -#{$i/4}rem !important;
+      margin: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgx-xl-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
-      margin-right: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgy-xl-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
-      margin-bottom: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgt-xl-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgr-xl-n#{$i} {
-      margin-right: -#{$i/4}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgb-xl-n#{$i} {
-      margin-bottom: -#{$i/4}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgl-xl-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
     }
 
     // /Negative Margin Ends
@@ -704,33 +706,33 @@
     // Padding Starts
 
     .pd-xxl-#{$i} {
-      padding: #{$i/4}rem !important;
+      padding: #{ math.div($i, 4)}rem !important;
     }
 
     .pdx-xxl-#{$i} {
-      padding-left: #{$i/4}rem !important;
-      padding-right: #{$i/4}rem !important;
+      padding-left: #{ math.div($i, 4)}rem !important;
+      padding-right: #{ math.div($i, 4)}rem !important;
     }
 
     .pdy-xxl-#{$i} {
-      padding-top: #{$i/4}rem !important;
-      padding-bottom: #{$i/4}rem !important;
+      padding-top: #{ math.div($i, 4)}rem !important;
+      padding-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .pdt-xxl-#{$i} {
-      padding-top: #{$i/4}rem !important;
+      padding-top: #{ math.div($i, 4)}rem !important;
     }
 
     .pdr-xxl-#{$i} {
-      padding-right: #{$i/4}rem !important;
+      padding-right: #{ math.div($i, 4)}rem !important;
     }
 
     .pdb-xxl-#{$i} {
-      padding-bottom: #{$i/4}rem !important;
+      padding-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .pdl-xxl-#{$i} {
-      padding-left: #{$i/4}rem !important;
+      padding-left: #{ math.div($i, 4)}rem !important;
     }
 
     // /Padding Ends
@@ -738,33 +740,33 @@
     //Positive Margin Starts
 
     .mg-xxl-#{$i} {
-      margin: #{$i/4}rem !important;
+      margin: #{ math.div($i, 4)}rem !important;
     }
 
     .mgx-xxl-#{$i} {
-      margin-left: #{$i/4}rem !important;
-      margin-right: #{$i/4}rem !important;
+      margin-left: #{ math.div($i, 4)}rem !important;
+      margin-right: #{ math.div($i, 4)}rem !important;
     }
 
     .mgy-xxl-#{$i} {
-      margin-top: #{$i/4}rem !important;
-      margin-bottom: #{$i/4}rem !important;
+      margin-top: #{ math.div($i, 4)}rem !important;
+      margin-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .mgt-xxl-#{$i} {
-      margin-top: #{$i/4}rem !important;
+      margin-top: #{ math.div($i, 4)}rem !important;
     }
 
     .mgr-xxl-#{$i} {
-      margin-right: #{$i/4}rem !important;
+      margin-right: #{ math.div($i, 4)}rem !important;
     }
 
     .mgb-xxl-#{$i} {
-      margin-bottom: #{$i/4}rem !important;
+      margin-bottom: #{ math.div($i, 4)}rem !important;
     }
 
     .mgl-xxl-#{$i} {
-      margin-left: #{$i/4}rem !important;
+      margin-left: #{ math.div($i, 4)}rem !important;
     }
 
     // /Positive Margin Ends
@@ -772,33 +774,33 @@
     //Negative Margin Starts
 
     .mg-xxl-n#{$i} {
-      margin: -#{$i/4}rem !important;
+      margin: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgx-xxl-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
-      margin-right: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgy-xxl-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
-      margin-bottom: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgt-xxl-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgr-xxl-n#{$i} {
-      margin-right: -#{$i/4}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgb-xxl-n#{$i} {
-      margin-bottom: -#{$i/4}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgl-xxl-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
     }
 
     //Negative Margin Starts

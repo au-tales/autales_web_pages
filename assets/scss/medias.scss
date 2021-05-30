@@ -40,15 +40,49 @@
         .navbar-collapse {
 
           &.show {
-            position: relative;
-            background: color.$white;
-          }
+            left: 0;
+            top: 71px;
+            width: 100%;
+            position: fixed;
+            background: rgba(0, 0, 0, 0.75);
 
-        }
+            .navbar-nav {
+              margin: 1.25rem 0;
 
-        .registration-buttons {
+              li {
 
-          .btn {
+                a {
+                  margin: 0.25rem 1.25rem ;
+
+                  &.nav-link {
+                    text-decoration: none;
+                    color: color.$white;
+                  }
+
+                }
+
+                &.active, &:hover, &:focus, &:active {
+                  background: rgba(255, 255, 255, 0.75);
+
+                  a {
+                    color: color.$tertiary;
+                  }
+
+                }
+
+              }
+
+            }
+
+            .registration-buttons {
+              margin: 0 auto 1.25rem;
+              text-align: center;
+
+              .btn {
+
+              }
+
+            }
 
           }
 
@@ -164,6 +198,35 @@
 
 @media (min-width: 576px) {
 
+  .section-title {
+
+    h2 {
+      font-size: 1.75rem;
+      line-height: 1.25;
+    }
+
+  }
+
+  .mobile-cat-section {
+
+    .mobile_cat_wrap {
+
+      .mobile_cat_item {
+        flex: 0 1 33.3%;
+
+        .mc_img {
+        }
+
+        .mc_name {
+          font-size: 0.9rem;
+        }
+
+      }
+
+    }
+
+  }
+
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -186,13 +249,42 @@
     @include mix.justify-content-between;
   }
 
+  .section-title {
+
+    h2 {
+      font-size: 2rem;
+      line-height: 1.35;
+    }
+
+  }
+
+  .mobile-cat-section {
+
+    .mobile_cat_wrap {
+
+      .mobile_cat_item {
+        flex: 0 1 16.6%;
+
+        .mc_img {
+        }
+
+        .mc_name {
+          font-size: 1rem;
+        }
+
+      }
+
+    }
+
+  }
+
   .reviews-section {
 
     .review_wrap {
       margin-bottom: 125px;
 
       .review_wrap_row {
-        min-height: 450px;
+        min-height: 500px;
 
         :nth-child(even) {
           top: 100px;

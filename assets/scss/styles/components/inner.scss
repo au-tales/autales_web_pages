@@ -86,11 +86,6 @@
   .slide-text {
     color: #f2f2f2;
     max-width: 70%;
-
-    h2 {
-      font-size: 2rem;
-    }
-
   }
 
   .slide-image {
@@ -220,9 +215,63 @@
 
 }
 
+.get-started-section {
+
+  .get_started_wrap {
+
+    .get_started_text_wrapper {
+
+      .section-title {
+
+        p {
+          line-height: 1.5;
+        }
+
+      }
+
+    }
+
+    .get_started_img_wrapper {
+
+    }
+
+  }
+
+}
+
+.mobile-cat-section {
+
+  .mobile_cat_wrap {
+
+    .mobile_cat_item {
+      //margin: auto;
+      padding: 1rem 0.5rem;
+      flex: 0 1 48.5%;
+
+      .mc_img {
+        //width: 65px;
+      }
+
+      .mc_name {
+        margin-top: 1.5rem;
+        //font-size: 1rem;
+        font-size: 0.85rem;
+      }
+
+    }
+
+  }
+
+}
+
 .video-section {
 
   .video_wrap {
+
+    video {
+      max-width: 100%;
+      height: auto;
+    }
 
   }
 
@@ -271,7 +320,7 @@
           }
 
           .review_desc {
-            @include mix.flex-vertically-center;
+            @include mix.d-flex;
             max-height: 100px;
             overflow-y: hidden;
             line-height: 1.75;
