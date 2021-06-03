@@ -27,7 +27,7 @@
 /*      /VARIABLES      */
 
 /*      IMPORT SPACING      */
-//@import "styles/partials/spacing";
+@import "styles/partials/spacing";
 /*      /IMPORT SPACING      */
 
 /*      IMPORT BORDERS      */
@@ -56,7 +56,7 @@
 
 /*      DEFAULTS      */
 
-html {
+html, body {
   overflow-x: hidden;
 }
 
@@ -64,14 +64,15 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-html::-webkit-scrollbar {
-  display: none;
-}
-
 /* Hide scrollbar for IE, Edge and Firefox */
 html {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
 }
 
 h1, h2, h3, h4, h5, h6, .btn, a, caption, .form-control, label {
@@ -96,6 +97,19 @@ caption {
 
 //a, caption, .form-control, label {
 //}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 
 .no-outline-shadow {
   @include mix.noshadow;
@@ -199,12 +213,13 @@ select {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   background-color: transparent;
   border: 1px solid transparent;
-  font-weight: 400;
-  font-size: 1rem;
-  display: inline-block;
   padding: 0.75rem 1.75rem;
   box-sizing: border-box;
   vertical-align: middle;
+  @include mix.d-inline-flex;
+  @include mix.align-items-center;
+  font-weight: 500;
+  font-size: 1rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -272,6 +287,62 @@ select {
 
   }
 
+  &.btn-light, &.btn-light-revert, &.btn-dark, &.btn-dark-revert {
+    border-width: 2px !important;
+  }
+
+  &.btn-light {
+    background-color: color.$white !important;
+    border-color: color.$tertiary !important;
+    color: color.$tertiary !important;
+
+    &:hover, &:focus, &:active {
+      background-color: transparent !important;
+      border-color: color.$white !important;
+      color: color.$white !important;
+    }
+
+  }
+
+  &.btn-light-revert {
+    background-color: transparent !important;
+    border-color: color.$white !important;
+    color: color.$white !important;
+
+    &:hover, &:focus, &:active {
+      background-color: color.$white !important;
+      border-color: color.$tertiary !important;
+      color: color.$tertiary !important;
+    }
+
+  }
+
+  &.btn-dark {
+    background-color: color.$tertiary !important;
+    border-color: color.$white !important;
+    color: color.$white !important;
+
+    &:hover, &:focus, &:active {
+      background-color: transparent !important;
+      border-color: color.$tertiary !important;
+      color: color.$tertiary !important;
+    }
+
+  }
+
+  &.btn-dark-revert {
+    background-color: transparent !important;
+    border-color: color.$tertiary !important;
+    color: color.$tertiary !important;
+
+    &:hover, &:focus, &:active {
+      background-color: color.$tertiary !important;
+      border-color: color.$white !important;
+      color: color.$white !important;
+    }
+
+  }
+
 }
 
 .section-padding {
@@ -287,6 +358,12 @@ select {
 .section-padding3 {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.list-unstyled {
+  list-style: none;
+  margin: 0 0 1rem 0;
+  padding: 0;
 }
 
 .spacer {
@@ -320,6 +397,31 @@ select {
   width: 1px;
   display: block;
   background: color.$cararra;
+}
+
+.section-title {
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.15;
+  }
+
+  .btn {
+    border: 2px solid transparent;
+    border-bottom: 2px solid color.$tertiary;
+    padding-left: 0;
+    padding-right: 0;
+    transition: all 1s ease-in-out;
+
+    &:hover, &:focus, &:active, &:focus-within {
+      border: 2px solid color.$tertiary;
+      padding-left: 1.75rem;
+      padding-right: 1.75rem;
+      transition: all 1s ease-in-out;
+    }
+
+  }
+
 }
 
 .custom-radio, .custom-checkbox {

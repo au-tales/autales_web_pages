@@ -1,62 +1,62 @@
+@use "sass:math";
+@use "mixin" as mix;
 //  Width & Height Start
 
-@for $i from 0 through 50 {
+@for $i from 0 through 100 {
+
   // pixels
 
   .wx-#{$i} {
-    width: $i*1px !important;
+    @include mix.width($i*1px);
   }
 
   .hx-#{$i} {
-    height: $i*1px !important;
+    @include mix.height($i*1px);
   }
 
   //.mnwx-#{$i} {
-  //  min-width: $i*1px !important;
+  //    @include mix.min-width($i*1px);
   //}
   //
   //.mwx-#{$i} {
-  //  max-width: $i*1px !important;
+  //    @include mix.max-width($i*1px);
   //}
   //
   //.mnhx-#{$i} {
-  //  min-height: $i*1px !important;
+  //    @include mix.min-height($i*1px);
   //}
   //
   //.mhx-#{$i} {
-  //  max-height: $i*1px !important;
+  //    @include mix.max-height($i*1px);
   //}
-
-}
-
-@for $i from 0 through 100 {
 
   // %age start
 
   .wp-#{$i} {
-    width: $i*1% !important;
+    @include mix.width($i*1%);
   }
 
   .hp-#{$i} {
-    height: $i*1% !important;
+    @include mix.height($i*1%);
   }
+
   //
   //@if ($i%5 == 0) {
   //
   //  .mnwp-#{$i} {
-  //    min-width: $i*1% !important;
+  //    @include mix.min-width($i*1%);
   //  }
   //
   //  .mwp-#{$i} {
-  //    max-width: $i*1% !important;
+  //    @include mix.max-width($i*1%);
   //  }
   //
   //  .mnhp-#{$i} {
-  //    min-height: $i*1% !important;
+  //    @include mix.min-height($i*1%);
   //  }
   //
   //  .mhp-#{$i} {
-  //    max-height: $i*1% !important;
+  //    @include mix.max-height($i*1%);
   //  }
   //
   //}
@@ -94,32 +94,33 @@
 @media (min-width: 576px) {
 
   @for $i from 0 through 100 {
+
     // %age start
 
     .wp-sm-#{$i} {
-      width: $i*1% !important;
+      @include mix.width($i*1%);
     }
 
     .hp-sm-#{$i} {
-      height: $i*1% !important;
+      @include mix.height($i*1%);
     }
 
     //@if ($i%5 == 0) {
     //
     //  .mnwp-sm-#{$i} {
-    //    min-width: $i*1% !important;
+    //    @include mix.min-width($i*1%);
     //  }
     //
     //  .mwp-sm-#{$i} {
-    //    max-width: $i*1% !important;
+    //    @include mix.max-width($i*1%);
     //  }
     //
     //  .mnhp-sm-#{$i} {
-    //    min-height: $i*1% !important;
+    //    @include mix.min-height($i*1%);
     //  }
     //
     //  .mhp-sm-#{$i} {
-    //    max-height: $i*1% !important;
+    //    @include mix.max-height($i*1%);
     //  }
     //
     //}
@@ -158,32 +159,33 @@
 @media (min-width: 768px) {
 
   @for $i from 0 through 100 {
+
     // %age start
 
     .wp-md-#{$i} {
-      width: $i*1% !important;
+      @include mix.width($i*1%);
     }
 
     .hp-md-#{$i} {
-      height: $i*1% !important;
+      @include mix.height($i*1%);
     }
 
     //@if ($i%5 == 0) {
     //
     //  .mnwp-md-#{$i} {
-    //    min-width: $i*1% !important;
+    //    @include mix.min-width($i*1%);
     //  }
     //
     //  .mwp-md-#{$i} {
-    //    max-width: $i*1% !important;
+    //    @include mix.max-width($i*1%);
     //  }
     //
     //  .mnhp-md-#{$i} {
-    //    min-height: $i*1% !important;
+    //    @include mix.min-height($i*1%);
     //  }
     //
     //  .mhp-md-#{$i} {
-    //    max-height: $i*1% !important;
+    //    @include mix.max-height($i*1%);
     //  }
     //
     //}
@@ -222,32 +224,33 @@
 @media (min-width: 992px) {
 
   @for $i from 0 through 100 {
+
     // %age start
 
     .wp-lg-#{$i} {
-      width: $i*1% !important;
+      @include mix.width($i*1%);
     }
 
     .hp-lg-#{$i} {
-      height: $i*1% !important;
+      @include mix.height($i*1%);
     }
 
     //@if ($i%5 == 0) {
     //
     //  .mnwp-lg-#{$i} {
-    //    min-width: $i*1% !important;
+    //    @include mix.min-width($i*1%);
     //  }
     //
     //  .mwp-lg-#{$i} {
-    //    max-width: $i*1% !important;
+    //    @include mix.max-width($i*1%);
     //  }
     //
     //  .mnhp-lg-#{$i} {
-    //    min-height: $i*1% !important;
+    //    @include mix.min-height($i*1%);
     //  }
     //
     //  .mhp-lg-#{$i} {
-    //    max-height: $i*1% !important;
+    //    @include mix.max-height($i*1%);
     //  }
     //
     //}
@@ -289,32 +292,33 @@
 @media (min-width: 1200px) {
 
   @for $i from 0 through 100 {
+
     // %age start
 
     .wp-xl-#{$i} {
-      width: $i*1% !important;
+      @include mix.width($i*1%);
     }
 
     .hp-xl-#{$i} {
-      height: $i*1% !important;
+      @include mix.height($i*1%);
     }
 
     //@if ($i%5 == 0) {
     //
     //  .mnwp-xl-#{$i} {
-    //    min-width: $i*1% !important;
+    //    @include mix.min-width($i*1%);
     //  }
     //
     //  .mwp-xl-#{$i} {
-    //    max-width: $i*1% !important;
+    //    @include mix.max-width($i*1%);
     //  }
     //
     //  .mnhp-xl-#{$i} {
-    //    min-height: $i*1% !important;
+    //    @include mix.min-height($i*1%);
     //  }
     //
     //  .mhp-xl-#{$i} {
-    //    max-height: $i*1% !important;
+    //    @include mix.max-height($i*1%);
     //  }
     //
     //}
@@ -353,35 +357,36 @@
 @media (min-width: 1400px) {
 
   @for $i from 0 through 100 {
+
     // %age start
 
     .wp-xxl-#{$i} {
-      width: $i*1% !important;
+      @include mix.width($i*1%);
     }
 
     .hp-xxl-#{$i} {
-      height: $i*1% !important;
+      @include mix.height($i*1%);
     }
 
-    @if ($i%5 == 0) {
-
-      .mnwp-xxl-#{$i} {
-        min-width: $i*1% !important;
-      }
-
-      .mwp-xxl-#{$i} {
-        max-width: $i*1% !important;
-      }
-
-      .mnhp-xxl-#{$i} {
-        min-height: $i*1% !important;
-      }
-
-      .mhp-xxl-#{$i} {
-        max-height: $i*1% !important;
-      }
-
-    }
+    //@if ($i%5 == 0) {
+    //
+    //  .mnwp-xxl-#{$i} {
+    //    @include mix.min-width($i*1%);
+    //  }
+    //
+    //  .mwp-xxl-#{$i} {
+    //    @include mix.max-width($i*1%);
+    //  }
+    //
+    //  .mnhp-xxl-#{$i} {
+    //    @include mix.min-height($i*1%);
+    //  }
+    //
+    //  .mhp-xxl-#{$i} {
+    //    @include mix.max-height($i*1%);
+    //  }
+    //
+    //}
 
     // /%age
 

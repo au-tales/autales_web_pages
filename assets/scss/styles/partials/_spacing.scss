@@ -1,74 +1,275 @@
-//Negative Margin Start
+@use "sass:math";
 
-@for $i from 0 through 10 {
+@for $i from 0 through 16 {
+  // Padding Starts
+
+  .pd-#{$i} {
+    padding: #{ math.div($i, 4)}rem !important;
+  }
+
+  .pdx-#{$i} {
+    padding-left: #{ math.div($i, 4)}rem !important;
+    padding-right: #{ math.div($i, 4)}rem !important;
+  }
+
+  .pdy-#{$i} {
+    padding-top: #{ math.div($i, 4)}rem !important;
+    padding-bottom: #{ math.div($i, 4)}rem !important;
+  }
+
+  .pdt-#{$i} {
+    padding-top: #{ math.div($i, 4)}rem !important;
+  }
+
+  .pdr-#{$i} {
+    padding-right: #{ math.div($i, 4)}rem !important;
+  }
+
+  .pdb-#{$i} {
+    padding-bottom: #{ math.div($i, 4)}rem !important;
+  }
+
+  .pdl-#{$i} {
+    padding-left: #{ math.div($i, 4)}rem !important;
+  }
+
+  // /Padding Ends
+
+  //Positive Margin Starts
+
+  .mg-#{$i} {
+    margin: #{ math.div($i, 4)}rem !important;
+  }
+
+  .mgx-#{$i} {
+    margin-left: #{ math.div($i, 4)}rem !important;
+    margin-right: #{ math.div($i, 4)}rem !important;
+  }
+
+  .mgy-#{$i} {
+    margin-top: #{ math.div($i, 4)}rem !important;
+    margin-bottom: #{ math.div($i, 4)}rem !important;
+  }
+
+  .mgt-#{$i} {
+    margin-top: #{ math.div($i, 4)}rem !important;
+  }
+
+  .mgr-#{$i} {
+    margin-right: #{ math.div($i, 4)}rem !important;
+  }
+
+  .mgb-#{$i} {
+    margin-bottom: #{ math.div($i, 4)}rem !important;
+  }
+
+  .mgl-#{$i} {
+    margin-left: #{ math.div($i, 4)}rem !important;
+  }
+
+  //Positive Margin Ends
+
+  //Negative Margin Starts
 
   .mg-n#{$i} {
-    margin: -#{$i/4}rem !important;
+    margin: -#{ math.div($i, 4)}rem !important;
   }
 
   .mgx-n#{$i} {
-    margin-left: -#{$i/4}rem !important;
-    margin-right: -#{$i/4}rem !important;
+    margin-left: -#{ math.div($i, 4)}rem !important;
+    margin-right: -#{ math.div($i, 4)}rem !important;
   }
 
   .mgy-n#{$i} {
-    margin-top: -#{$i/4}rem !important;
-    margin-bottom: -#{$i/4}rem !important;
+    margin-top: -#{ math.div($i, 4)}rem !important;
+    margin-bottom: -#{ math.div($i, 4)}rem !important;
   }
 
   .mgt-n#{$i} {
-    margin-top: -#{$i/4}rem !important;
+    margin-top: -#{ math.div($i, 4)}rem !important;
   }
 
   .mgr-n#{$i} {
-    margin-right: -#{$i/4}rem !important;
+    margin-right: -#{ math.div($i, 4)}rem !important;
   }
 
   .mgb-n#{$i} {
-    margin-bottom: -#{$i/4}rem !important;
+    margin-bottom: -#{ math.div($i, 4)}rem !important;
   }
 
   .mgl-n#{$i} {
-    margin-left: -#{$i/4}rem !important;
+    margin-left: -#{ math.div($i, 4)}rem !important;
   }
 
+  // /Negative Margin Ends
+
+}
+
+.mg-auto {
+  margin: auto !important;
+}
+
+.mgx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.mgy-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.mgt-auto {
+  margin-top: auto !important;
+}
+
+.mgr-auto {
+  margin-right: auto !important;
+}
+
+.mgb-auto {
+  margin-bottom: auto !important;
+}
+
+.mgl-auto {
+  margin-left: auto !important;
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 
-  @for $i from 0 through 10 {
+  @for $i from 0 through 16 {
+
+    // Padding Starts
+
+    .pd-sm-#{$i} {
+      padding: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdx-sm-#{$i} {
+      padding-left: #{ math.div($i, 4)}rem !important;
+      padding-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdy-sm-#{$i} {
+      padding-top: #{ math.div($i, 4)}rem !important;
+      padding-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdt-sm-#{$i} {
+      padding-top: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdr-sm-#{$i} {
+      padding-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdb-sm-#{$i} {
+      padding-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdl-sm-#{$i} {
+      padding-left: #{ math.div($i, 4)}rem !important;
+    }
+
+    // /Padding Ends
+
+    //Positive Margin Starts
+
+    .mg-sm-#{$i} {
+      margin: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgx-sm-#{$i} {
+      margin-left: #{ math.div($i, 4)}rem !important;
+      margin-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgy-sm-#{$i} {
+      margin-top: #{ math.div($i, 4)}rem !important;
+      margin-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgt-sm-#{$i} {
+      margin-top: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgr-sm-#{$i} {
+      margin-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgb-sm-#{$i} {
+      margin-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgl-sm-#{$i} {
+      margin-left: #{ math.div($i, 4)}rem !important;
+    }
+
+    // /Positive Margin Ends
+
+    //Negative Margin Starts
 
     .mg-sm-n#{$i} {
-      margin: -#{$i/4}rem !important;
+      margin: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgx-sm-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
-      margin-right: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgy-sm-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
-      margin-bottom: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgt-sm-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgr-sm-n#{$i} {
-      margin-right: -#{$i/4}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgb-sm-n#{$i} {
-      margin-bottom: -#{$i/4}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgl-sm-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
     }
 
+  }
+
+  .mg-sm-auto {
+    margin: auto !important;
+  }
+
+  .mgx-sm-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .mgy-sm-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+
+  .mgt-sm-auto {
+    margin-top: auto !important;
+  }
+
+  .mgr-sm-auto {
+    margin-right: auto !important;
+  }
+
+  .mgb-sm-auto {
+    margin-bottom: auto !important;
+  }
+
+  .mgl-sm-auto {
+    margin-left: auto !important;
   }
 
 }
@@ -76,38 +277,139 @@
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
-  @for $i from 0 through 10 {
+  @for $i from 0 through 16 {
+    // Padding Starts
+
+    .pd-md-#{$i} {
+      padding: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdx-md-#{$i} {
+      padding-left: #{ math.div($i, 4)}rem !important;
+      padding-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdy-md-#{$i} {
+      padding-top: #{ math.div($i, 4)}rem !important;
+      padding-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdt-md-#{$i} {
+      padding-top: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdr-md-#{$i} {
+      padding-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdb-md-#{$i} {
+      padding-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdl-md-#{$i} {
+      padding-left: #{ math.div($i, 4)}rem !important;
+    }
+
+    // /Padding Ends
+
+    //Positive Margin Starts
+
+    .mg-md-#{$i} {
+      margin: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgx-md-#{$i} {
+      margin-left: #{ math.div($i, 4)}rem !important;
+      margin-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgy-md-#{$i} {
+      margin-top: #{ math.div($i, 4)}rem !important;
+      margin-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgt-md-#{$i} {
+      margin-top: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgr-md-#{$i} {
+      margin-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgb-md-#{$i} {
+      margin-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgl-md-#{$i} {
+      margin-left: #{ math.div($i, 4)}rem !important;
+    }
+
+    // /Positive Margin Ends
+
+    //Negative Margin Starts
 
     .mg-md-n#{$i} {
-      margin: -#{$i/4}rem !important;
+      margin: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgx-md-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
-      margin-right: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgy-md-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
-      margin-bottom: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgt-md-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgr-md-n#{$i} {
-      margin-right: -#{$i/4}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgb-md-n#{$i} {
-      margin-bottom: -#{$i/4}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgl-md-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
     }
 
+    // /Negative Margin Ends
+
+  }
+
+  .mg-md-auto {
+    margin: auto !important;
+  }
+
+  .mgx-md-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .mgy-md-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+
+  .mgt-md-auto {
+    margin-top: auto !important;
+  }
+
+  .mgr-md-auto {
+    margin-right: auto !important;
+  }
+
+  .mgb-md-auto {
+    margin-bottom: auto !important;
+  }
+
+  .mgl-md-auto {
+    margin-left: auto !important;
   }
 
 }
@@ -115,38 +417,140 @@
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
-  @for $i from 0 through 10 {
+  @for $i from 0 through 16 {
+
+    // Padding Starts
+
+    .pd-lg-#{$i} {
+      padding: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdx-lg-#{$i} {
+      padding-left: #{ math.div($i, 4)}rem !important;
+      padding-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdy-lg-#{$i} {
+      padding-top: #{ math.div($i, 4)}rem !important;
+      padding-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdt-lg-#{$i} {
+      padding-top: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdr-lg-#{$i} {
+      padding-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdb-lg-#{$i} {
+      padding-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdl-lg-#{$i} {
+      padding-left: #{ math.div($i, 4)}rem !important;
+    }
+
+    // /Padding Ends
+
+    //Positive Margin Starts
+
+    .mg-lg-#{$i} {
+      margin: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgx-lg-#{$i} {
+      margin-left: #{ math.div($i, 4)}rem !important;
+      margin-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgy-lg-#{$i} {
+      margin-top: #{ math.div($i, 4)}rem !important;
+      margin-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgt-lg-#{$i} {
+      margin-top: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgr-lg-#{$i} {
+      margin-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgb-lg-#{$i} {
+      margin-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgl-lg-#{$i} {
+      margin-left: #{ math.div($i, 4)}rem !important;
+    }
+
+    // /Positive Margin Ends
+
+    //Negative Margin Starts
 
     .mg-lg-n#{$i} {
-      margin: -#{$i/4}rem !important;
+      margin: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgx-lg-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
-      margin-right: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgy-lg-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
-      margin-bottom: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgt-lg-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgr-lg-n#{$i} {
-      margin-right: -#{$i/4}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgb-lg-n#{$i} {
-      margin-bottom: -#{$i/4}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgl-lg-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
     }
 
+    // /Negative Margin Ends
+
+  }
+
+  .mg-lg-auto {
+    margin: auto !important;
+  }
+
+  .mgx-lg-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .mgy-lg-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+
+  .mgt-lg-auto {
+    margin-top: auto !important;
+  }
+
+  .mgr-lg-auto {
+    margin-right: auto !important;
+  }
+
+  .mgb-lg-auto {
+    margin-bottom: auto !important;
+  }
+
+  .mgl-lg-auto {
+    margin-left: auto !important;
   }
 
 }
@@ -158,38 +562,139 @@
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 
-  @for $i from 0 through 10 {
+  @for $i from 0 through 16 {
+    // Padding Starts
+
+    .pd-xl-#{$i} {
+      padding: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdx-xl-#{$i} {
+      padding-left: #{ math.div($i, 4)}rem !important;
+      padding-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdy-xl-#{$i} {
+      padding-top: #{ math.div($i, 4)}rem !important;
+      padding-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdt-xl-#{$i} {
+      padding-top: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdr-xl-#{$i} {
+      padding-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdb-xl-#{$i} {
+      padding-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdl-xl-#{$i} {
+      padding-left: #{ math.div($i, 4)}rem !important;
+    }
+
+    // /Padding Ends
+
+    //Positive Margin Starts
+
+    .mg-xl-#{$i} {
+      margin: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgx-xl-#{$i} {
+      margin-left: #{ math.div($i, 4)}rem !important;
+      margin-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgy-xl-#{$i} {
+      margin-top: #{ math.div($i, 4)}rem !important;
+      margin-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgt-xl-#{$i} {
+      margin-top: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgr-xl-#{$i} {
+      margin-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgb-xl-#{$i} {
+      margin-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgl-xl-#{$i} {
+      margin-left: #{ math.div($i, 4)}rem !important;
+    }
+
+    // /Positive Margin Ends
+
+    //Negative Margin Starts
 
     .mg-xl-n#{$i} {
-      margin: -#{$i/4}rem !important;
+      margin: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgx-xl-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
-      margin-right: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgy-xl-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
-      margin-bottom: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgt-xl-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgr-xl-n#{$i} {
-      margin-right: -#{$i/4}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgb-xl-n#{$i} {
-      margin-bottom: -#{$i/4}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgl-xl-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
     }
 
+    // /Negative Margin Ends
+
+  }
+
+  .mg-xl-auto {
+    margin: auto !important;
+  }
+
+  .mgx-xl-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .mgy-xl-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+
+  .mgt-xl-auto {
+    margin-top: auto !important;
+  }
+
+  .mgr-xl-auto {
+    margin-right: auto !important;
+  }
+
+  .mgb-xl-auto {
+    margin-bottom: auto !important;
+  }
+
+  .mgl-xl-auto {
+    margin-left: auto !important;
   }
 
 }
@@ -197,38 +702,139 @@
 /* Extra extra large devices (1400px and up)*/
 @media (min-width: 1400px) {
 
-  @for $i from 0 through 10 {
+  @for $i from 0 through 16 {
+    // Padding Starts
+
+    .pd-xxl-#{$i} {
+      padding: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdx-xxl-#{$i} {
+      padding-left: #{ math.div($i, 4)}rem !important;
+      padding-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdy-xxl-#{$i} {
+      padding-top: #{ math.div($i, 4)}rem !important;
+      padding-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdt-xxl-#{$i} {
+      padding-top: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdr-xxl-#{$i} {
+      padding-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdb-xxl-#{$i} {
+      padding-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .pdl-xxl-#{$i} {
+      padding-left: #{ math.div($i, 4)}rem !important;
+    }
+
+    // /Padding Ends
+
+    //Positive Margin Starts
+
+    .mg-xxl-#{$i} {
+      margin: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgx-xxl-#{$i} {
+      margin-left: #{ math.div($i, 4)}rem !important;
+      margin-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgy-xxl-#{$i} {
+      margin-top: #{ math.div($i, 4)}rem !important;
+      margin-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgt-xxl-#{$i} {
+      margin-top: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgr-xxl-#{$i} {
+      margin-right: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgb-xxl-#{$i} {
+      margin-bottom: #{ math.div($i, 4)}rem !important;
+    }
+
+    .mgl-xxl-#{$i} {
+      margin-left: #{ math.div($i, 4)}rem !important;
+    }
+
+    // /Positive Margin Ends
+
+    //Negative Margin Starts
 
     .mg-xxl-n#{$i} {
-      margin: -#{$i/4}rem !important;
+      margin: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgx-xxl-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
-      margin-right: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgy-xxl-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
-      margin-bottom: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgt-xxl-n#{$i} {
-      margin-top: -#{$i/4}rem !important;
+      margin-top: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgr-xxl-n#{$i} {
-      margin-right: -#{$i/4}rem !important;
+      margin-right: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgb-xxl-n#{$i} {
-      margin-bottom: -#{$i/4}rem !important;
+      margin-bottom: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgl-xxl-n#{$i} {
-      margin-left: -#{$i/4}rem !important;
+      margin-left: -#{ math.div($i, 4)}rem !important;
     }
 
+    //Negative Margin Starts
+
+  }
+
+  .mg-xxl-auto {
+    margin: auto !important;
+  }
+
+  .mgx-xxl-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .mgy-xxl-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+
+  .mgt-xxl-auto {
+    margin-top: auto !important;
+  }
+
+  .mgr-xxl-auto {
+    margin-right: auto !important;
+  }
+
+  .mgb-xxl-auto {
+    margin-bottom: auto !important;
+  }
+
+  .mgl-xxl-auto {
+    margin-left: auto !important;
   }
 
 }

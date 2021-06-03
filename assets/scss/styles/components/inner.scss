@@ -23,10 +23,361 @@
 /*      Banner section      */
 
 .banner-section {
-  height: 600px;
-  background-image: linear-gradient(135deg, color.$primary, color.$primary, color.$secondary ,color.$secondary);
+  min-height: 570px;
+  background-image: linear-gradient(135deg, color.$primary, color.$primary, color.$secondary, color.$secondary);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  height: 500px;
+  margin: auto;
+  top: 70px;
+}
+
+/* Hide the images by default */
+.slide-item {
+  display: none;
+}
+
+.slide-item-inner {
+  width: 100%;
+  height: 100%;
+  @include mix.d-flex;
+  @include mix.flex-column-reverse;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  position: absolute;
+  top: 45%;
+  width: auto;
+  z-index: 1;
+  color: white;
+  padding: 1rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+  transition: 0.6s ease;
+  border-radius: 0.2rem;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+  left: -3rem;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: -3rem;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .prev:focus, .prev:active, .next:hover, .next:focus, .next:active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.slide-content {
+  max-width: 570px;
+
+  .slide-text {
+    color: #f2f2f2;
+    max-width: 70%;
+  }
+
+  .slide-image {
+  }
+
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
 }
 
 /*      /Banner section      */
 
 /* HOME */
+
+.newsletter-form {
+  margin-top: 1.25rem;
+
+  form {
+    overflow: hidden;
+
+    input, button {
+      max-height: 50px;
+    }
+
+    .form-group {
+      width: 85%;
+      outline: 0;
+
+      input {
+
+        letter-spacing: 0.05rem;
+        padding: 1rem 1.25rem;
+        font-size: 0.875rem;
+        line-height: 1.125;
+        text-align: left;
+        font-weight: 300;
+        width: 100%;
+
+
+        &[type=email] {
+          border: 1px solid lighten(color.$light-gray, 50%);
+          border-right-width: 0;
+          margin-bottom: 0;
+
+          &:hover, &:focus, &:active, &:focus-within {
+            border-color: color.$light-gray;
+            outline: none;
+          }
+
+        }
+
+      }
+
+    }
+
+    button {
+      padding: 15px 20px;
+      text-align: center;
+
+      &[type=submit] {
+        @include mix.flex-both-center;
+        background-color: color.$tertiary;
+        color: color.$white;
+        border: none;
+        width: 15%;
+
+        &:hover, &:focus, &:active, &:focus-within {
+          cursor: pointer;
+          background-color: darken(color.$primary, 10%);
+          border-color: darken(color.$primary, 10%);
+        }
+      }
+    }
+
+  }
+
+}
+
+.logo-section {
+
+  .logos-wrap {
+
+    img {
+      margin: 0.5rem 0;
+    }
+
+  }
+
+}
+
+.section-title {
+
+  h2 {
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  a {
+
+    &.btn {
+      margin: 0 auto;
+
+      &:hover, &:focus, &:active {
+        background-color: color.$tertiary !important;
+        border-color: color.$tertiary !important;
+        color: color.$white !important;
+      }
+
+    }
+
+  }
+
+}
+
+.common_wrap {
+
+  .common_text_wrapper {
+
+  }
+
+}
+
+.get-started-section {
+
+  .get_started_wrap {
+
+    .get_started_text_wrapper {
+
+    }
+
+    .get_started_img_wrapper {
+    }
+
+  }
+
+}
+
+.mobile-cat-section {
+
+  .mobile_cat_wrap {
+
+    .mobile_cat_item {
+      //margin: auto;
+      padding: 1rem 0.5rem;
+      flex: 0 1 48.5%;
+
+      .mc_img {
+        //width: 65px;
+      }
+
+      .mc_name {
+        margin-top: 1.5rem;
+        //font-size: 1rem;
+        font-size: 0.85rem;
+      }
+
+    }
+
+  }
+
+}
+
+.video-section {
+
+  .video_wrap {
+
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+
+  }
+
+}
+
+.reviews-section {
+
+  .review_wrap {
+
+    .review_wrap_row {
+
+      & > [class*="col-"] {
+        margin-bottom: 75px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+      }
+
+      .review_card {
+        border-radius: 1rem;
+        position: relative;
+        border: none;
+
+        .card-img {
+          position: absolute;
+          top: -31px;
+
+          .card-img-wrap {
+            @include mix.flex-both-center;
+            width: 60px;
+            height: 60px;
+            padding: 1px;
+            border-radius: 50%;
+            border: 1px solid gray;
+          }
+
+        }
+
+        .card-body {
+
+          p {
+            margin: 0;
+            font-size: 0.75rem;
+          }
+
+          .review_desc {
+            @include mix.d-flex;
+            max-height: 100px;
+            overflow-y: hidden;
+            line-height: 1.75;
+            font-size: 0.875rem;
+          }
+
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.join-hands-section {
+
+  .join_hands_wrap {
+    position: relative;
+
+    .bgImg {
+      display: none;
+    }
+
+    .join_hands_text_wrapper {
+    }
+
+    .join_hands_img_wrapper {
+    }
+
+  }
+
+}

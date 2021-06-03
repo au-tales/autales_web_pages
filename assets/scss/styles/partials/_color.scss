@@ -2,17 +2,26 @@
 @use 'mixin' as mix;
 
 @each $name, $color in color.$color-range {
+  /*      Backgrounds      */
+  .background-#{$name} {
+    @include mix.background-color($color);
+  }
+  /*      /Backgrounds      */
 
-    .background-#{$name} {
-        @include mix.background-color($color);
-    }
+  /*      Colors      */
+  .color-#{$name} {
+    @include mix.color($color);
+  }
+  /*      /Colors      */
 
-    .color-#{$name} {
-        @include mix.color($color);
-    }
+  /*      Border-Color      */
+  .border-#{$name} {
+    @include mix.border-color($color);
+  }
+  /*      /Border-Color      */
 
-    .border-#{$name} {
-        @include mix.border-color($color);
-    }
+}
 
+.background-transparent {
+  background-color: transparent;
 }

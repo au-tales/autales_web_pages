@@ -1,10 +1,10 @@
 $primary-grad: linear-gradient(45deg, #265B62, #47A185);
 
+$white: rgb(255, 255, 255);
+
 $primary: rgb(38, 91, 98);
 
 $secondary: rgb(71, 161, 133);
-
-$white: rgb(255, 255, 255);
 
 $tertiary: rgb(0, 0, 0);
 
@@ -34,5 +34,5 @@ $color-range: (
         'primary': $primary, 'secondary': $secondary, 'tertiary':$tertiary, 'cararra': $cararra,
         'caption': $caption, 'neptune': $neptune, 'dairy-cream': $dairy-cream, 'alto': $alto,
         'silver-chalice': $silver-chalice, 'turquoise-blue': $turquoise-blue, 'turquoise-blue2': $turquoise-blue2,
-        'cherokee': $cherokee, 'red': $red, 'light-gray': $light-gray, 'primary-grad': $primary-grad,
+        'cherokee': $cherokee, 'red': $red, 'light-gray': $light-gray, 'primary-grad': $primary-grad, 'white': $white,
 );

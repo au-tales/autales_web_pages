@@ -10,13 +10,49 @@
 header {
   position: absolute;
   width: 100%;
-  height: 120px;
-  top: 0;
+  height: 70px;
   left: 0;
+  top: 0;
 
-  .site-header {
+  &.site-header {
+    z-index: 1;
 
     &.fixed-header {
+      z-index: 99;
+      position: fixed;
+      background: rgba(0, 0, 0, 0.75);
+    }
+
+    .navbar {
+
+      .navbar-nav {
+
+        li {
+
+          a {
+
+          }
+
+          &.active {
+            background-color: transparent;
+
+            a {
+
+            }
+
+          }
+
+        }
+
+      }
+
+      .registration-buttons {
+
+      }
+
+      .navbar-toggler {
+        cursor: pointer;
+      }
 
     }
 
