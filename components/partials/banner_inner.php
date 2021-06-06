@@ -10,7 +10,7 @@
                     <a class="btn btn-light-revert mgy-4 pdx-3 pdx-sm-5 pdx-lg-7">Learn More</a>
                 </div>
                 <div class="newsletter-form">
-                    <form action="" class="form-inline">
+                    <form action="" class="form-inline" method="post">
                         <div class="form-group mgb-0">
                             <label for="subscribe_email" class="sr-only"></label>
                             <input type="email" name="subscribe_email" id="subscribe_email"

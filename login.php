@@ -17,7 +17,7 @@
 
                         <h4 class="form-title">Login</h4>
 
-                        <form class="form" id="signin-form">
+                        <form class="form signin-form" method="post" id="signin-form" action="index.php">
                             <div class="form-group">
                                 <label for="userEmailSI">Email</label>
                                 <input type="email" class="form-control" id="userEmailSI" name="userEmailSI"
@@ -102,7 +102,7 @@
 
                         <div class="signup-wrap font-weight-light d-flex flex-column align-items-center">
                             <span>Don't have an account?</span>
-                            <a href="register.php" class="">Create</a>
+                            <a href="signup.php" class="">Create</a>
                         </div>
 
 
@@ -219,6 +219,7 @@
 
         // submit to the server if the form is valid
         if (isFormValid) {
+            elemSignInForm.submit();
         }
 
     });

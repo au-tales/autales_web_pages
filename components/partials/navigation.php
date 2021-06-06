@@ -36,8 +36,8 @@
             <!--            </li>-->
         </ul>
         <div class="registration-buttons">
-            <a class="btn btn-light-revert mgx-1 mgx-xl-2">Log In</a>
-            <a class="btn btn-light-revert mgx-1 mgx-xl-2">Sign Up</a>
+            <a class="btn btn-light-revert mgx-1 mgx-xl-2" href="login.php">Log In</a>
+            <a class="btn btn-light-revert mgx-1 mgx-xl-2" href="signup.php">Sign Up</a>
         </div>
     </div>
 </nav>
