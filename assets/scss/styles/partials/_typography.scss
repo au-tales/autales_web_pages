@@ -399,9 +399,9 @@ body {
       footer {
 
         .copyright {
-          font-family: 'Montserrat', sans-serif;
-          font-size: 0.75rem;
           line-height: 1.6;
+          font-family: 'Montserrat', sans-serif;
+          font-size: calc(10px + (12 - 10) * (100vw - 320px) / (1920 - 320));
         }
 
       }

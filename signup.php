@@ -11,7 +11,7 @@
 
                 <!--    Main Starts   -->
 
-                <main class="login-wrap">
+                <main class="login-wrap position-relative">
 
                     <div class="form-registration signup-form">
 

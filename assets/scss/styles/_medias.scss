@@ -213,8 +213,7 @@
       overflow: hidden;
 
       .page-registration {
-        width: 100%;
-        height: 100vh;
+        @include mix.fill-100;
         @include mix.d-flex;
         @include mix.flex-column;
         @include mix.justify-content-between;
@@ -241,8 +240,7 @@
           &::before {
             background-image: url("../images/bg-login.png");
             background-position: 35% 50%;
-            width: 100%;
-            height: 100%;
+            @include mix.fill-100;
             left: 0;
           }
 
@@ -263,24 +261,12 @@
         }
 
         .login-wrap {
-          padding: 2.5rem 0 3rem;
-          position: relative;
           min-height: 600px;
           z-index: 10;
 
           .form-registration {
-            margin: auto;
             max-width: 350px;
-            padding: 1.875rem;
             box-sizing: border-box;
-          }
-
-        }
-
-        footer {
-
-          .copyright {
-            padding: 0.75rem 0;
           }
 
         }

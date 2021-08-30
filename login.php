@@ -12,9 +12,9 @@
 
                 <!--    Main Starts   -->
 
-                <main class="login-wrap">
+                <main class="login-wrap position-relative">
 
-                    <div class="form-registration login-form">
+                    <div class="form-registration login-form mg-auto">
 
                         <h4 class="form-title">Login</h4>
 

@@ -13,8 +13,12 @@ body {
       }
 
       .login-wrap {
+        padding-inline: 0;
+        padding-top: calc(20px + (40 - 20) * (100vw - 320px) / (1920 - 320));
+        padding-bottom: calc(25px + (50 - 25) * (100vw - 320px) / (1920 - 320));
 
         .form-registration {
+          padding: calc(16px + (30 - 16) * (100vw - 320px) / (1920 - 320));
 
           .form-title, .social-btn-wrap {
             text-align: center;
@@ -29,7 +33,9 @@ body {
           }
 
           .auth-link-wrap {
-            margin: 0.5rem auto 1.75rem;
+            margin-inline: auto;
+            margin-top: calc(4px + (8 - 4) * (100vw - 320px) / (1920 - 320));
+            margin-bottom: calc(20px + (28 - 20) * (100vw - 320px) / (1920 - 320));
           }
 
           .social-btn-wrap {
@@ -59,7 +65,7 @@ body {
           }
 
           .signup-wrap, .signin-wrap {
-            margin-bottom: 1rem;
+            margin-bottom: calc(10px + (16 - 10) * (100vw - 320px) / (1920 - 320));
           }
 
         }
