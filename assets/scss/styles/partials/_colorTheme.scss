@@ -412,6 +412,9 @@ body {
       .login-wrap {
 
         .form-registration {
+          -webkit-filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.11));
+          filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.11));
+          background: color.$white;
 
           .form-title {
             color: color.$tertiary;
@@ -474,6 +477,63 @@ body {
   header {
 
     &.site-header {
+
+      &.fixed-header {
+        background: rgba(color.$tertiary, 0.75);
+      }
+
+      .navbar {
+
+        .navbar-nav {
+
+          li {
+
+            &.active {
+              background-color: transparent;
+            }
+
+            a {
+
+              &.nav-link {
+                color: color.$white;
+              }
+
+            }
+
+            &.active, &:hover, &:focus, &:active {
+
+              a {
+                color: color.$tertiary;
+              }
+
+            }
+
+          }
+
+        }
+
+        .navbar-collapse {
+
+          &.show {
+            background: rgba(color.$tertiary, 0.75);
+
+            .navbar-nav {
+
+              li {
+
+                &.active, &:hover, &:focus, &:active {
+                  background: rgba(color.$white, 0.75);
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
 
     }
 

@@ -222,7 +222,7 @@ body {
   font-weight: 400;
   line-height: 1.25rem;
   font-family: 'Montserrat', sans-serif;
-  font-size: calc(12px + (14 - 12) * (100vw - 360px) / (1920 - 360));
+  font-size: calc(12px + (14 - 12) * (100vw - 320px) / (1920 - 320));
 
   h1, h2, h3, h4, h5, h6, .btn, a, caption, .form-control, label {
     font-family: "Segoe UI", serif;
@@ -246,41 +246,41 @@ body {
   }
 
   h1 {
-    font-size: calc(30px + (34 - 30) * (100vw - 360px) / (1920 - 360));
+    font-size: calc(30px + (34 - 30) * (100vw - 320px) / (1920 - 320));
     line-height: 1.75;
   }
 
   h2 {
-    font-size: calc(26px + (30 - 20) * (100vw - 360px) / (1920 - 360));
+    font-size: calc(26px + (30 - 20) * (100vw - 320px) / (1920 - 320));
     line-height: 1.35;
   }
 
   h3 {
-    font-size: calc(22px + (26 - 22) * (100vw - 360px) / (1920 - 360));
+    font-size: calc(22px + (26 - 22) * (100vw - 320px) / (1920 - 320));
     line-height: 1.25;
   }
 
   h4 {
-    font-size: calc(18px + (22 - 18) * (100vw - 360px) / (1920 - 360));
+    font-size: calc(18px + (22 - 18) * (100vw - 320px) / (1920 - 320));
     line-height: 1.475;
   }
 
   h5 {
-    font-size: calc(16px + (18 - 16) * (100vw - 360px) / (1920 - 360));
+    font-size: calc(16px + (18 - 16) * (100vw - 320px) / (1920 - 320));
     line-height: 1.575;
   }
 
   h6, a {
-    font-size: calc(12px + (14 - 12) * (100vw - 360px) / (1920 - 360));
+    font-size: calc(12px + (14 - 12) * (100vw - 320px) / (1920 - 320));
     line-height: 1.575;
   }
 
   .form-control {
-    font-size: calc(12px + (15 - 12) * (100vw - 360px) / (1920 - 360));
+    font-size: calc(12px + (15 - 12) * (100vw - 320px) / (1920 - 320));
   }
 
   small, label {
-    font-size: calc(10px + (12 - 10) * (100vw - 360px) / (1920 - 360));
+    font-size: calc(10px + (12 - 10) * (100vw - 320px) / (1920 - 320));
   }
 
   .heading-separator {
@@ -295,17 +295,17 @@ body {
   .btn {
     text-align: center;
     font-size: 1rem;
-    font-size: calc(14px + (16 - 14) * (100vw - 360px) / (1920 - 360));
+    font-size: calc(14px + (16 - 14) * (100vw - 320px) / (1920 - 320));
     line-height: 1.25;
 
     .btn-lg {
       font-size: 1.125rem;
-      font-size: calc(16px + (18 - 16) * (100vw - 360px) / (1920 - 360));
+      font-size: calc(16px + (18 - 16) * (100vw - 320px) / (1920 - 320));
     }
 
     .btn-sm {
       font-size: 0.825rem;
-      font-size: calc(12px + (14 - 12) * (100vw - 360px) / (1920 - 360));
+      font-size: calc(12px + (14 - 12) * (100vw - 320px) / (1920 - 320));
     }
 
     &.btn-custom {
@@ -317,22 +317,22 @@ body {
   }
 
   .main-heading {
-    font-size: calc(28px + (36 - 28) * (100vw - 360px) / (1920 - 360));
+    font-size: calc(28px + (36 - 28) * (100vw - 320px) / (1920 - 320));
   }
 
   .section-heading {
-    font-size: calc(22px + (28 - 22) * (100vw - 360px) / (1920 - 360));
+    font-size: calc(22px + (28 - 22) * (100vw - 320px) / (1920 - 320));
   }
 
   .article-heading {
-    font-size: calc(18px + (22 - 18) * (100vw - 360px) / (1920 - 360));
+    font-size: calc(18px + (22 - 18) * (100vw - 320px) / (1920 - 320));
   }
 
   .section-title {
 
     h2 {
-      font-size: calc(20px + (24 - 20) * (100vw - 360px) / (1920 - 360));
-      line-height: 1.15;
+      font-size: calc(24px + (32 - 24) * (100vw - 320px) / (1920 - 320));
+      line-height: 1.75;
     }
 
     .btn {
@@ -396,6 +396,16 @@ body {
 
       }
 
+      footer {
+
+        .copyright {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.75rem;
+          line-height: 1.6;
+        }
+
+      }
+
     }
 
   }
@@ -404,6 +414,22 @@ body {
 
     &.site-header {
 
+      .navbar {
+
+        .navbar-nav {
+
+          li {
+
+            .nav-link {
+              text-decoration: none;
+            }
+
+          }
+
+        }
+
+      }
+
     }
 
   }
@@ -411,6 +437,22 @@ body {
   main {
 
     &.page-content {
+
+      .mobile-cat-section {
+
+        .mobile_cat_wrap {
+
+          .mobile_cat_item {
+
+            .mc_name {
+              font-size: calc(12px + (16 - 12) * (100vw - 320px) / (1920 - 320));
+            }
+
+          }
+
+        }
+
+      }
 
     }
 
@@ -426,7 +468,7 @@ body {
         .footer-widget {
 
           .widget-title {
-            font-size: 1rem;
+            font-size: calc(14px + (16 - 14) * (100vw - 320px) / (1920 - 320));
           }
 
           .widget-content {
@@ -437,7 +479,7 @@ body {
 
                 a {
                   text-decoration: none;
-                  font-size: 0.875rem;
+                  font-size: calc(12px + (14 - 12) * (100vw - 320px) / (1920 - 320));
                   line-height: 2.5;
                 }
 
@@ -452,7 +494,7 @@ body {
       }
 
       .copyright-area {
-        font-size: 0.875rem;
+        font-size: calc(12px + (14 - 12) * (100vw - 320px) / (1920 - 320));
         line-height: 1.25;
 
         .copyright-content {
