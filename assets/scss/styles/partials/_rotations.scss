@@ -1,34 +1,15 @@
 @use "sass:math";
 /*      Rotations      */
+$min: 0;
+$step: 3;
+$max: 360;
 
-@for $i from 0 through 360 {
+@for $i from $min through $max {
 
-  //Forward Rotate
-  .rotate-#{$i} {
-    -webkit-transform: rotate(#{$i}deg);
-    -ms-transform: rotate(#{$i}deg);
-    transform: rotate(#{$i}deg);
-  }
-  //Forward Rotate End
-
-  //Backward Rotate Start
-  .rotate-n#{$i} {
-    -webkit-transform: rotate(-#{$i}deg);
-    -ms-transform: rotate(-#{$i}deg);
-    transform: rotate(-#{$i}deg);
-  }
-  //Backward Rotate End
-
-}
-
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-
-  @for $i from 0 through 360 {
+  @if ($i+$step) % $step == 0 {
 
     //Forward Rotate
-    .rotate-sm-#{$i} {
+    .rotate-#{$i} {
       -webkit-transform: rotate(#{$i}deg);
       -ms-transform: rotate(#{$i}deg);
       transform: rotate(#{$i}deg);
@@ -36,12 +17,42 @@
     //Forward Rotate End
 
     //Backward Rotate Start
-    .rotate-sm-n#{$i} {
+    .rotate-n#{$i} {
       -webkit-transform: rotate(-#{$i}deg);
       -ms-transform: rotate(-#{$i}deg);
       transform: rotate(-#{$i}deg);
     }
     //Backward Rotate End
+
+  }
+
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+  @for $i from $min through $max {
+
+    @if ($i+$step) % $step == 0 {
+
+      //Forward Rotate
+      .rotate-sm-#{$i} {
+        -webkit-transform: rotate(#{$i}deg);
+        -ms-transform: rotate(#{$i}deg);
+        transform: rotate(#{$i}deg);
+      }
+      //Forward Rotate End
+
+      //Backward Rotate Start
+      .rotate-sm-n#{$i} {
+        -webkit-transform: rotate(-#{$i}deg);
+        -ms-transform: rotate(-#{$i}deg);
+        transform: rotate(-#{$i}deg);
+      }
+      //Backward Rotate End
+
+    }
 
   }
 
@@ -50,23 +61,27 @@
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
-  @for $i from 0 through 360 {
+  @for $i from $min through $max {
 
-    //Forward Rotate
-    .rotate-md-#{$i} {
-      -webkit-transform: rotate(#{$i}deg);
-      -ms-transform: rotate(#{$i}deg);
-      transform: rotate(#{$i}deg);
-    }
-    //Forward Rotate End
+    @if ($i+$step) % $step == 0 {
 
-    //Backward Rotate Start
-    .rotate-md-n#{$i} {
-      -webkit-transform: rotate(-#{$i}deg);
-      -ms-transform: rotate(-#{$i}deg);
-      transform: rotate(-#{$i}deg);
+      //Forward Rotate
+      .rotate-md-#{$i} {
+        -webkit-transform: rotate(#{$i}deg);
+        -ms-transform: rotate(#{$i}deg);
+        transform: rotate(#{$i}deg);
+      }
+      //Forward Rotate End
+
+      //Backward Rotate Start
+      .rotate-md-n#{$i} {
+        -webkit-transform: rotate(-#{$i}deg);
+        -ms-transform: rotate(-#{$i}deg);
+        transform: rotate(-#{$i}deg);
+      }
+      //Backward Rotate End
+
     }
-    //Backward Rotate End
 
   }
 
@@ -75,23 +90,27 @@
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
-  @for $i from 0 through 360 {
+  @for $i from $min through $max {
 
-    //Forward Rotate
-    .rotate-lg-#{$i} {
-      -webkit-transform: rotate(#{$i}deg);
-      -ms-transform: rotate(#{$i}deg);
-      transform: rotate(#{$i}deg);
-    }
-    //Forward Rotate End
+    @if ($i+$step) % $step == 0 {
 
-    //Backward Rotate Start
-    .rotate-lg-n#{$i} {
-      -webkit-transform: rotate(-#{$i}deg);
-      -ms-transform: rotate(-#{$i}deg);
-      transform: rotate(-#{$i}deg);
+      //Forward Rotate
+      .rotate-lg-#{$i} {
+        -webkit-transform: rotate(#{$i}deg);
+        -ms-transform: rotate(#{$i}deg);
+        transform: rotate(#{$i}deg);
+      }
+      //Forward Rotate End
+
+      //Backward Rotate Start
+      .rotate-lg-n#{$i} {
+        -webkit-transform: rotate(-#{$i}deg);
+        -ms-transform: rotate(-#{$i}deg);
+        transform: rotate(-#{$i}deg);
+      }
+      //Backward Rotate End
+
     }
-    //Backward Rotate End
 
   }
 
@@ -104,23 +123,27 @@
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 
-  @for $i from 0 through 360 {
+  @for $i from $min through $max {
 
-    //Forward Rotate
-    .rotate-xl-#{$i} {
-      -webkit-transform: rotate(#{$i}deg);
-      -ms-transform: rotate(#{$i}deg);
-      transform: rotate(#{$i}deg);
-    }
-    //Forward Rotate End
+    @if ($i+$step) % $step == 0 {
 
-    //Backward Rotate Start
-    .rotate-xl-n#{$i} {
-      -webkit-transform: rotate(-#{$i}deg);
-      -ms-transform: rotate(-#{$i}deg);
-      transform: rotate(-#{$i}deg);
+      //Forward Rotate
+      .rotate-xl-#{$i} {
+        -webkit-transform: rotate(#{$i}deg);
+        -ms-transform: rotate(#{$i}deg);
+        transform: rotate(#{$i}deg);
+      }
+      //Forward Rotate End
+
+      //Backward Rotate Start
+      .rotate-xl-n#{$i} {
+        -webkit-transform: rotate(-#{$i}deg);
+        -ms-transform: rotate(-#{$i}deg);
+        transform: rotate(-#{$i}deg);
+      }
+      //Backward Rotate End
+
     }
-    //Backward Rotate End
 
   }
 
@@ -129,23 +152,27 @@
 /* Extra extra large devices (1400px and up)*/
 @media (min-width: 1400px) {
 
-  @for $i from 0 through 360 {
+  @for $i from $min through $max {
 
-    //Forward Rotate
-    .rotate-xxl-#{$i} {
-      -webkit-transform: rotate(#{$i}deg);
-      -ms-transform: rotate(#{$i}deg);
-      transform: rotate(#{$i}deg);
-    }
-    //Forward Rotate End
+    @if ($i+$step) % $step == 0 {
 
-    //Backward Rotate Start
-    .rotate-xxl-n#{$i} {
-      -webkit-transform: rotate(-#{$i}deg);
-      -ms-transform: rotate(-#{$i}deg);
-      transform: rotate(-#{$i}deg);
+      //Forward Rotate
+      .rotate-xxl-#{$i} {
+        -webkit-transform: rotate(#{$i}deg);
+        -ms-transform: rotate(#{$i}deg);
+        transform: rotate(#{$i}deg);
+      }
+      //Forward Rotate End
+
+      //Backward Rotate Start
+      .rotate-xxl-n#{$i} {
+        -webkit-transform: rotate(-#{$i}deg);
+        -ms-transform: rotate(-#{$i}deg);
+        transform: rotate(-#{$i}deg);
+      }
+      //Backward Rotate End
+
     }
-    //Backward Rotate End
 
   }
 

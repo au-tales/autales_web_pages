@@ -1,0 +1,224 @@
+// Font Family Variable Start
+
+/* Poppin */
+
+$font-poppins-black: Poppins-Black, Arial, Helvetica, sans-serif;
+
+$font-poppins-extrabold: Poppins-ExtraBold, Arial, Helvetica, sans-serif;
+
+$font-poppins-bold: Poppins-Bold, Arial, Helvetica, sans-serif;
+
+$font-poppins-semibold: Poppins-SemiBold, Arial, Helvetica, sans-serif;
+
+$font-poppins: Poppins, Arial, Helvetica, sans-serif;
+
+$font-poppins-italic: Poppins-Italic, Arial, Helvetica, sans-serif;
+
+$font-poppins-medium: Poppins-Medium, Arial, Helvetica, sans-serif;
+
+$font-poppins-light: Poppins-Light, Arial, Helvetica, sans-serif;
+
+$font-poppins-extralight: Poppins-ExtraLight, Arial, Helvetica, sans-serif;
+
+$font-poppins-thin: Poppins-Thin, Arial, Helvetica, sans-serif;
+
+/*  SourceSansPro */
+
+$font-sourcesanspro-black: SourceSansPro-Black, Arial, Helvetica, sans-serif;
+
+$font-sourcesanspro-semibold: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+
+$font-sourcesanspro-bold: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+
+$font-sourcesanspro: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+
+$font-sourcesanspro-italic: SourceSansPro-Italic, Arial, Helvetica, sans-serif;
+
+$font-sourcesanspro-light: SourceSansPro-Light, Arial, Helvetica, sans-serif;
+
+$font-sourcesanspro-extralight: SourceSansPro-ExtraLight, Arial, Helvetica, sans-serif;
+
+/*  Roboto */
+
+$font-roboto-italic: Roboto-Italic, Arial, Helvetica, sans-serif;
+
+$font-roboto-black: Roboto-Black, Arial, Helvetica, sans-serif;
+
+$font-roboto-bold: Roboto-Bold, Arial, Helvetica, sans-serif;
+
+$font-roboto-medium: Roboto-medium, Arial, Helvetica, sans-serif;
+
+$font-roboto: Roboto-Regular, Arial, Helvetica, sans-serif;
+
+$font-roboto-light: Roboto-Light, Arial, Helvetica, sans-serif;
+
+$font-roboto-thin: Roboto-Thin, Arial, Helvetica, sans-serif;
+
+// Font Family Variable End
+
+$fontFamily-range: (
+        'poppins-black': $font-poppins-black,
+        'poppins-extrabold': $font-poppins-extrabold,
+        'poppins-bold': $font-poppins-bold,
+        'poppins-semibold': $font-poppins-semibold,
+        'poppins': $font-poppins,
+        'poppins-italic': $font-poppins-italic,
+        'poppins-medium': $font-poppins-medium,
+        'poppins-light': $font-poppins-light,
+        'poppins-extralight': $font-poppins-extralight,
+        'poppins-thin': $font-poppins-thin,
+        'sourcesanspro-black': $font-sourcesanspro-black,
+        'sourcesanspro-semibold': $font-sourcesanspro-semibold,
+        'sourcesanspro-bold': $font-sourcesanspro-bold,
+        'sourcesanspro': $font-sourcesanspro,
+        'sourcesanspro-italic': $font-sourcesanspro-italic,
+        'sourcesanspro-light': $font-sourcesanspro-light,
+        'sourcesanspro-extralight': $font-sourcesanspro-extralight,
+        'roboto-italic': $font-roboto-italic,
+        'roboto-black': $font-roboto-black,
+        'roboto-bold': $font-roboto-bold,
+        'roboto-medium': $font-roboto-medium,
+        'roboto': $font-roboto,
+        'roboto-light': $font-roboto-light,
+        'roboto-thin': $font-roboto-thin,
+);
+// Font Family Variable End
+
+//  Font Weight Variable Start
+$font-weight-initial: initial;
+$font-weight-thin: 100;
+$font-weight-extralight: 200;
+$font-weight-light: 300;
+$font-weight-medium: 400;
+$font-weight-regular: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-black: 900;
+$font-weight-inherit: inherit;
+$font-weight-revert: revert;
+$font-weight-unset: unset;
+
+$fontWeight-range: (
+        'inherit': $font-weight-inherit,
+        'thin': $font-weight-thin,
+        'extralight': $font-weight-extralight,
+        'light': $font-weight-light,
+        'medium': $font-weight-medium,
+        'regular': $font-weight-regular,
+        'semibold': $font-weight-semibold,
+        'bold': $font-weight-bold,
+        'extrabold': $font-weight-extrabold,
+        'black': $font-weight-black,
+        'initial': $font-weight-initial,
+        'revert': $font-weight-revert,
+        'unset': $font-weight-unset,
+);
+//  Font Weight Variable End
+
+//  Font Style Variable Start
+$font-style-inherit: inherit;
+$font-style-initial: initial;
+$font-style-normal: normal;
+$font-style-italic: italic;
+$font-style-oblique: oblique;
+$font-style-revert: revert;
+$font-style-unset: unset;
+
+$fontStyle-range: (
+        'inherit' :$font-style-inherit,
+        'initial' :$font-style-initial,
+        'normal' :$font-style-normal,
+        'italic': $font-style-italic,
+        'oblique': $font-style-oblique,
+        'revert': $font-style-revert,
+        'unset': $font-style-unset,
+);
+
+$text-transform-inherit: inherit;
+$text-transform-initial: initial;
+$text-transform-capitalize: capitalize;
+$text-transform-uppercase: uppercase;
+$text-transform-lowercase: lowercase;
+$text-transform-revert: revert;
+$text-transform-none: none;
+$text-transform-unset: unset;
+
+$textTransform-range: (
+        'inherit': $text-transform-inherit,
+        'initial': $text-transform-initial,
+        'capitalize': $text-transform-capitalize,
+        'uppercase': $text-transform-uppercase,
+        'lowercase': $text-transform-lowercase,
+        'revert': $text-transform-revert,
+        'none': $text-transform-none,
+        'unset': $text-transform-unset,
+);
+//  /Font Style Variable End
+
+//  Text Align Addition Variable Start
+$text-align-inherit: inherit;
+$text-align-initial: initial;
+$text-align-left: left;
+$text-align-center: center;
+$text-align-right: right;
+$text-align-justify: justify;
+$text-align-revert: revert;
+$text-align-unset: unset;
+
+$textAlign-range: (
+        'inherit': $text-align-inherit,
+        'initial': $text-align-initial,
+        'left': $text-align-left,
+        'center': $text-align-center,
+        'right': $text-align-right,
+        'justify': $text-align-justify,
+        'revert': $text-align-revert,
+        'unset': $text-align-unset,
+);
+
+$vertical-align-inherit: inherit;
+$vertical-align-initial: initial;
+$vertical-align-top: top;
+$vertical-align-middle: middle;
+$vertical-align-bottom: bottom;
+$vertical-align-baseline: baseline;
+$vertical-align-revert: revert;
+$vertical-align-unset: unset;
+
+$vertAlign-range: (
+        'inherit': $vertical-align-inherit,
+        'initial': $vertical-align-initial,
+        'top': $vertical-align-top,
+        'middle': $vertical-align-middle,
+        'bottom': $vertical-align-bottom,
+        'baseline': $vertical-align-baseline,
+        'revert': $vertical-align-revert,
+);
+
+$text-decoration-inherit: inherit;
+$text-decoration-initial: initial;
+$text-decoration-auto: auto;
+$text-decoration-underline: underline;
+$text-decoration-overline: overline;
+$text-decoration-linethrough: line-through;
+$text-decoration-solid: solid;
+$text-decoration-wavy: wavy;
+$text-decoration-revert: revert;
+$text-decoration-none: none;
+$text-decoration-unset: unset;
+
+$textDecoration-range: (
+        'inherit': $text-decoration-inherit,
+        'initial': $text-decoration-initial,
+        'auto': $text-decoration-auto,
+        'underline': $text-decoration-underline,
+        'overline': $text-decoration-overline,
+        'line-through': $text-decoration-linethrough,
+        'solid': $text-decoration-solid,
+        'wavy': $text-decoration-wavy,
+        'revert': $text-decoration-revert,
+        'none': $text-decoration-none,
+        'unset': $text-decoration-unset,
+);
+

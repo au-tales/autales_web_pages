@@ -1,4 +1,4 @@
-<footer id="main-footer" class="background-tertiary">
+<footer id="site-footer" class="site-footer background-tertiary">
 
     <div class="footer-top pdy-lg-16 pdy-8">
 
@@ -15,54 +15,34 @@
                                 <div class="widget-content">
                                     <ul class="list-unstyled footer-menu">
                                         <li>
-                                            <a href="javascript:void(0);">
-                                                Events
-                                            </a>
+                                            <a href="javascript:void(0);">Events</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">
-                                                Blog
-                                            </a>
+                                            <a href="javascript:void(0);">Blog</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">
-                                                Forum
-                                            </a>
+                                            <a href="javascript:void(0);">Forum</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">
-                                                Community Standards
-                                            </a>
+                                            <a href="javascript:void(0);">Community Standards</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">
-                                                Podcast
-                                            </a>
+                                            <a href="javascript:void(0);">Podcast</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">
-                                                Affiliates
-                                            </a>
+                                            <a href="javascript:void(0);">Affiliates</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">
-                                                Invite a Friend
-                                            </a>
+                                            <a href="javascript:void(0);">Invite a Friend</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">
-                                                Become a Seller
-                                            </a>
+                                            <a href="javascript:void(0);">Become a Seller</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">
-                                                Fiverr Elevate
-                                            </a>
+                                            <a href="javascript:void(0);">Fiverr Elevate</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">
-                                                Exclusive Benefits
-                                            </a>
+                                            <a href="javascript:void(0);">Exclusive Benefits</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -256,4 +236,5 @@
             </div>
         </div>
     </div>
+
 </footer>

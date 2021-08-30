@@ -1,9 +1,9 @@
-<!--    Header Starts   -->
 <?php require "includes/header.php" ?>
 
-<div class="container">
+<div class="container page-registration-container">
     <div class="row">
         <div class="col-12">
+
             <div class="page-registration page-signup">
 
                 <?php require "components/partials/register_header_section.php" ?>
@@ -124,6 +124,7 @@
                 <!--    Footer Starts   -->
                 <?php require "components/partials/register_footer_section.php" ?>
             </div>
+
         </div>
     </div>
 </div>
@@ -310,5 +311,6 @@
         }
     }));
 </script>
+
 <?php require "includes/footer.php" ?>
-<!--    Footer Starts   -->
+

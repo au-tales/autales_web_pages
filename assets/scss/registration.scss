@@ -1,106 +1,74 @@
 /*     USE COLORS      */
-@use "styles/partials/colorVariable" as color;
-/*      /USE COLORS      */
-
-/*      USE MIXINS      */
-@use "styles/partials/mixin" as mix;
+@use "styles/variables/mixin" as mix;
 /*      /USE MIXINS      */
 
-.page-registration {
+body {
 
-  .login-wrap {
+  .page-registration-container {
 
-    .form-registration {
+    .page-registration {
 
-      .form-title {
-        margin: 2rem auto 2.5rem;
-        color: color.$tertiary;
-        font-size: 1.875rem;
+      .navbar-brand {
+        margin: auto;
         text-align: center;
-        font-weight: 600;
+        display: block;
       }
 
-      .dob-wrap {
+      .login-wrap {
 
-      }
+        .form-registration {
 
-      .auth-link-wrap {
-        margin: 0.5rem auto 1.75rem;
-
-        .auth-link {
-          line-height: 1.6;
-          font-size: 0.75rem;
-          font-weight: normal;
-          color: color.$secondary;
-          text-decoration: none;
-
-          &:hover, &:focus, &:active {
-            color: color.$primary;
+          .form-title, .social-btn-wrap {
+            text-align: center;
           }
 
-        }
+          .form-title {
+            margin: 2rem auto 2.5rem;
+          }
 
-      }
+          .dob-wrap {
 
-      .social-btn-wrap {
-        margin: 2rem auto 1.75rem;
-        text-align: center;
+          }
 
-        .social-btn {
-          border-color: color.$cararra !important;
-          border-radius: 1.565rem;
+          .auth-link-wrap {
+            margin: 0.5rem auto 1.75rem;
+          }
 
-          span {
-            line-height: unset;
+          .social-btn-wrap {
+            margin: 2rem auto 1.75rem;
 
-            &.icon-wrap {
-              display: inline-flex;
-              margin-right: 0.5rem;
-              border-radius: 50%;
-              border: 1px solid #E2E2E2;
-              padding: 0.35rem;
-            }
+            .social-btn {
+              border-radius: 1.565rem;
 
-            &.text-wrap {
+              span {
+
+                &.icon-wrap {
+                  display: inline-flex;
+                  margin-right: 0.5rem;
+                  border-radius: 50%;
+                  border: 1px solid #E2E2E2;
+                  padding: 0.35rem;
+                }
+
+                &.text-wrap {
+
+                }
+
+              }
 
             }
 
           }
+
+          .signup-wrap, .signin-wrap {
+            margin-bottom: 1rem;
+          }
+
         }
 
-      }
-
-      .signup-wrap, .signin-wrap {
-        margin-bottom: 1rem;
-
-        span {
-          color: #8B8A8A;
-          line-height: 1.6;
-          font-size: 0.75rem;
-          font-weight: normal;
-        }
-
-        a {
-          text-decoration: none;
-          line-height: 1.375;
-          font-size: 0.875rem;
-          font-weight: 600;
-          color: color.$tertiary;
-        }
-
-      }
-
-      .signin-wrap {
       }
 
     }
-
-  }
-
-  header {
-  }
-
-  footer {
 
   }
 
@@ -110,12 +78,10 @@
 
 /* Extra Large devices (desktops, less than 1400px)*/
 @media (max-width: 1399.98px) {
-
 }
 
 /* Large devices (desktops, less than 1200px)*/
 @media (max-width: 1199.98px) {
-
 }
 
 /* Custom Media Query (desktops, less than 1024px)*/
@@ -124,35 +90,20 @@
 
 /* Medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) {
-
 }
 
 /* Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) {
-
-  .page-registration {
-    position: relative;
-
-    .navbar-brand {
-      margin: auto;
-      text-align: center;
-      display: block;
-    }
-
-  }
-
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-
 }
 
 /* Customized Media Queries (phones, less than 400px) */
 
 /* Extra small devices (portrait phones, less than 400px)*/
 @media (max-width: 320px) {
-
 }
 
 /* Customized Media Queries (phones, less than 400px) */
@@ -169,98 +120,13 @@
 }
 
 @media (min-width: 576px) {
-
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
-  .page-registration {
-    position: relative;
+  body {
 
-    .navbar-brand {
-      margin: 0;
-      text-align: left;
-      display: inline-block;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    &.page-login {
-
-      &::before {
-        background-position: 35% 50%;
-        background-image: url("../images/bg-login.png");
-        width: 100%;
-        height: 100%;
-        left: 0;
-      }
-
-    }
-
-    &.page-signup {
-
-      &::before {
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-image: url(../images/bg-signup.png);
-
-      }
-
-      .login-wrap {
-        padding: 1rem 0;
-      }
-
-    }
-
-    header, footer {
-      z-index: 1;
-      position: relative;
-    }
-
-    header {
-    }
-
-    .login-wrap {
-      position: relative;
-      min-height: 600px;
-      padding: 2.5rem 0 3rem;
-      z-index: 10;
-
-      .form-registration {
-        margin: auto;
-        max-width: 350px;
-        padding: 1.875rem;
-        background: color.$white;
-        box-sizing: border-box;
-        -webkit-filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.11));
-        filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.11));
-
-        .dob-wrap {
-
-        }
-
-      }
-
-    }
-
-    footer {
-
-      .copyright {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 0.75rem;
-        line-height: 1.6;
-        padding: 0.75rem 0;
-      }
-
-    }
 
   }
 
@@ -269,27 +135,6 @@
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-
-  .page-registration {
-
-    &.page-login {
-
-      &::before {
-        background-position: 50%;
-      }
-
-    }
-
-    &.page-signup {
-
-      &::before {
-        left: 0;
-        top: 0;
-      }
-
-    }
-  }
-
 }
 
 
@@ -302,31 +147,6 @@
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
-  .page-registration {
-
-    &.page-login {
-
-      &::before {
-        background-position: 0% 45%;
-        width: 90%;
-      }
-
-    }
-
-    &.page-signup {
-
-      &::before {
-        left: -5rem;
-        top: -1%;
-        width: 115%;
-        height: 102%;
-      }
-
-    }
-
-  }
-
 }
 
 

@@ -14,7 +14,7 @@
 
 <!--    Main Starts   -->
 
-<main class="page-home">
+<main class="page-content page-home">
 
     <!--  Banner Section  -->
     <section class="banner-section">
@@ -131,6 +131,6 @@
 
 <!--    Footer Starts   -->
 <?php require "components/partials/footer_section.php" ?>
+<!--    Footer Starts   -->
 
 <?php require "includes/footer.php" ?>
-<!--    Footer Starts   -->

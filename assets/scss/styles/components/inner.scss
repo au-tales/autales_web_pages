@@ -1,22 +1,5 @@
-@use "../partials/colorVariable" as color;
-@use "../partials/mixin" as mix;
-
-.select2-container {
-
-  &.select2-container--open {
-
-    .select2-dropdown {
-
-      &.select2-dropdown--below {
-        border-top: 1px solid #ddd;
-        top: 0.25rem;
-      }
-
-    }
-
-  }
-
-}
+@use "../variables/colorVariable" as color;
+@use "../variables/mixin" as mix;
 
 /* HOME */
 
@@ -24,7 +7,6 @@
 
 .banner-section {
   min-height: 570px;
-  background-image: linear-gradient(135deg, color.$primary, color.$primary, color.$secondary, color.$secondary);
 }
 
 /* Slideshow container */

@@ -1,0 +1,598 @@
+@use '../variables/colorVariable' as color;
+@use '../variables/mixin' as mix;
+
+body {
+
+  @each $name, $color in color.$color-range {
+
+    .background-#{$name} {
+      @include mix.background-color($color);
+    }
+
+    .color-#{$name} {
+      @include mix.color($color);
+    }
+
+    .border-#{$name} {
+      @include mix.border-color($color);
+    }
+
+  }
+
+  .background-transparent {
+    background-color: transparent;
+  }
+
+  small, label {
+    color: #8B8A8A;
+  }
+
+  a {
+    color: color.$primary;
+
+    &:hover, &:focus, &:active, &:focus-within, &:focus-visible {
+      color: color.$light-gray;
+    }
+
+  }
+
+  .box-shadow-light {
+    -webkit-box-shadow: 0 0 8px 0 rgba(color.$tertiary, 0.5);
+    -moz-box-shadow: 0 0 8px 0 rgba(color.$tertiary, 0.5);
+    box-shadow: 0 0 8px 0 rgba(color.$tertiary, 0.5);
+  }
+
+  .no-outline-shadow {
+    @include mix.noshadow;
+  }
+
+  .shadow {
+    @include mix.shadow(rgba(color.$tertiary, 0.5));
+  }
+
+  .heading-separator {
+    background: #E2E2E2;
+
+    .separator-text {
+      background: color.$white;
+    }
+
+  }
+
+  .vertical-separator {
+    background: color.$cararra;
+  }
+
+  .avail-status {
+    box-shadow: 0 0 1px 1px #0000001a;
+
+    &.pulse {
+      animation: pulse-animation 2s infinite;
+    }
+
+    @keyframes pulse-animation {
+      0% {
+        box-shadow: 0 0 0 0 rgba(40, 199, 111, 0.25);
+      }
+      50% {
+        box-shadow: 0 0 0 0.3rem rgba(40, 199, 111, 0.125);
+      }
+      100% {
+        box-shadow: 0 0 0 0.6rem rgba(40, 199, 111, 0);
+      }
+    }
+
+    &.regular {
+      background: color.$tertiary;
+    }
+
+    &.active {
+      background: color.$primary;
+    }
+
+  }
+
+  .custom-control {
+    color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+
+    .custom-control-label {
+
+      &::before {
+        background-color: color.$white;
+        border: 1px solid color.$secondary;
+      }
+
+    }
+
+    .custom-control-input {
+
+      &:hover, &:focus, &:active {
+        @include mix.noshadow;
+
+        & ~ .custom-control-label {
+
+          &::before {
+            @include mix.noshadow;
+            border-color: color.$secondary;
+          }
+
+        }
+
+      }
+
+    }
+
+    &.custom-radio, &.custom-checkbox {
+
+      .custom-control-input {
+
+        &:checked {
+
+          & ~ .custom-control-label {
+
+            &::before {
+              color: color.$secondary;
+              background: color.$white;
+              border-color: color.$light-gray;
+
+            }
+
+          }
+
+        }
+
+        &:hover, &:focus, &:active {
+          @include mix.noshadow;
+
+          & ~ .custom-control-label {
+
+            &::before {
+              @include mix.noshadow;
+              border-color: color.$primary;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    &.custom-select {
+      background-image: none;
+
+      &:hover, &:focus, &:active {
+        @include mix.noshadow;
+        border-color: color.$secondary;
+      }
+
+    }
+
+  }
+
+  .form-group {
+
+    &.error {
+
+      label, .form-control, small {
+        color: color.$red;
+      }
+
+      .form-control::-webkit-input-placeholder {
+        color: color.$red;
+      }
+
+      .form-control::-moz-placeholder {
+        color: color.$red;
+      }
+
+      .form-control:-ms-input-placeholder {
+        color: color.$red;
+      }
+
+      .form-control::-ms-input-placeholder {
+        color: color.$red;
+      }
+
+      .form-control::placeholder {
+        color: color.$red;
+      }
+
+    }
+
+  }
+
+  .form-control {
+    background-clip: unset;
+    box-shadow: 0.125rem 0.125rem 0.25rem rgba(color.$light-gray, 0.25);
+
+    &:hover, &:focus, &:active, &:focus-within, &:focus-visible {
+      color: color.$light-gray;
+      border-color: color.$secondary;
+      box-shadow: 0 0 0 0.2rem rgba(color.$secondary, 0.25);
+    }
+
+    &::-webkit-input-placeholder {
+      color: color.$light-gray;
+    }
+
+    &::-moz-placeholder {
+      color: color.$light-gray;
+    }
+
+    &:-ms-input-placeholder {
+      color: color.$light-gray;
+    }
+
+    &::-ms-input-placeholder {
+      color: color.$light-gray;
+    }
+
+    &::placeholder {
+      color: color.$light-gray;
+    }
+
+  }
+
+  .btn {
+    background-color: transparent;
+    border-color: transparent;
+
+    &:hover, &:focus, &:active, &:focus-within, &:focus-visible {
+      @include mix.noshadow;
+    }
+
+    &.btn-default {
+      @include mix.button-hover(color.$light-gray);
+
+      &:hover, &:focus, &:active, &.active, &:focus-within, &:focus-visible {
+        @include mix.button-revert-hover(rgba(color.$light-gray, 0.75));
+        @include mix.shadowButton(rgba(color.$light-gray, 0.5));
+      }
+
+    }
+
+    &.btn-default-revert {
+      @include mix.button-revert-hover(color.$light-gray);
+
+      &:hover, &:focus, &:active, &.active, &:focus-within, &:focus-visible {
+        @include mix.button-hover(rgba(color.$light-gray, 0.75));
+        @include mix.shadowButton(rgba(color.$light-gray, 0.5));
+      }
+
+    }
+
+    &.btn-primary {
+      @include mix.button-hover(color.$primary);
+
+      &:hover, &:focus, &:active {
+        @include mix.button-revert-hover(color.$primary);
+      }
+
+    }
+
+    &.btn-primary-revert {
+      @include mix.button-revert-hover(color.$primary);
+
+      &:hover, &:focus, &:active {
+        @include mix.button-hover(color.$primary);
+      }
+
+    }
+
+    &.btn-secondary {
+      @include mix.button-hover(color.$secondary);
+
+      &:hover, &:focus, &:active {
+        @include mix.button-revert-hover(color.$secondary);
+      }
+
+    }
+
+    &.btn-secondary-revert {
+      @include mix.button-revert-hover(color.$secondary);
+
+      &:hover, &:focus, &:active {
+        @include mix.button-hover(color.$secondary);
+      }
+
+    }
+
+    &.btn-light {
+      background-color: color.$white !important;
+      border-color: color.$tertiary !important;
+      color: color.$tertiary !important;
+
+      &:hover, &:focus, &:active {
+        background-color: transparent !important;
+        border-color: color.$white !important;
+        color: color.$white !important;
+      }
+
+    }
+
+    &.btn-light-revert {
+      background-color: transparent !important;
+      border-color: color.$white !important;
+      color: color.$white !important;
+
+      &:hover, &:focus, &:active {
+        background-color: color.$white !important;
+        border-color: color.$tertiary !important;
+        color: color.$tertiary !important;
+      }
+
+    }
+
+    &.btn-dark {
+      background-color: color.$tertiary !important;
+      border-color: color.$white !important;
+      color: color.$white !important;
+
+      &:hover, &:focus, &:active {
+        background-color: transparent !important;
+        border-color: color.$tertiary !important;
+        color: color.$tertiary !important;
+      }
+
+    }
+
+    &.btn-dark-revert {
+      background-color: transparent !important;
+      border-color: color.$tertiary !important;
+      color: color.$tertiary !important;
+
+      &:hover, &:focus, &:active {
+        background-color: color.$tertiary !important;
+        border-color: color.$white !important;
+        color: color.$white !important;
+      }
+
+    }
+
+    &.btn-primary-shadowed {
+      @include mix.bg-gradient(135deg, color.$secondary, color.$primary);
+
+      &:hover, &:focus, &:active, &:focus-within, &:focus-visible {
+        @include mix.bg-gradient(135deg, color.$primary, color.$secondary);
+        @include mix.transition-plain;
+        color: color.$white;
+      }
+
+    }
+
+    &.btn-custom {
+      color: color.$white;
+      background: color.$secondary;
+      border-color: color.$secondary;
+
+      &:hover, &:focus, &:active {
+        background: color.$white;
+        color: color.$secondary;
+      }
+
+    }
+
+  }
+
+  .main-heading {
+  }
+
+  .section-heading {
+  }
+
+  .article-heading {
+  }
+
+  .section-title {
+
+    h2 {
+      font-size: 1.5rem;
+      line-height: 1.15;
+    }
+
+    .btn {
+      border-color: transparent;
+      border-bottom-color: color.$tertiary;
+
+      &:hover, &:focus, &:active, &:focus-within {
+        border-color: color.$tertiary;
+      }
+
+    }
+
+  }
+
+  .page-registration-container {
+
+    .page-registration {
+
+      .login-wrap {
+
+        .form-registration {
+
+          .form-title {
+            color: color.$tertiary;
+          }
+
+          .auth-link-wrap {
+
+            .auth-link {
+              color: color.$secondary;
+
+              &:hover, &:focus, &:active {
+                color: color.$primary;
+              }
+
+            }
+
+          }
+
+          .social-btn-wrap {
+
+            .social-btn {
+              border-color: color.$cararra !important;
+              border-radius: 1.565rem;
+
+              span {
+
+                &.icon-wrap {
+                  border: 1px solid #E2E2E2;
+                }
+
+                &.text-wrap {
+
+                }
+
+              }
+            }
+
+          }
+
+          .signup-wrap, .signin-wrap {
+
+            span {
+              color: #8B8A8A;
+            }
+
+            a {
+              color: color.$tertiary;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  header {
+
+    &.site-header {
+
+    }
+
+  }
+
+  main {
+
+    &.page-content {
+
+      .banner-section {
+        @include mix.bg-gradient(135deg, color.$primary, color.$secondary);
+      }
+
+    }
+
+  }
+
+  footer {
+
+    &.site-footer {
+
+      .footer-top {
+        @include mix.bg-gradient(135deg, color.$secondary, color.$primary);
+
+
+        .footer-widget {
+
+          .widget-title {
+            color: color.$white;
+          }
+
+          .widget-content {
+
+            ul {
+
+              li {
+
+                a {
+                  color: color.$white;
+
+                  &:hover, &:focus, &:active {
+                    opacity: 0.75;
+                  }
+
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      .copyright-area {
+        color: color.$white;
+
+        .social-wrap {
+
+          .list-social {
+
+            li {
+
+              a {
+                border-color: color.$white;
+
+                &:hover, &:focus, &:active {
+                  border-color: transparent;
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+        .copyright-content {
+
+          .copyright-content-inner {
+            margin-bottom: 1rem;
+
+            span {
+              margin: 0 0.25rem;
+            }
+
+          }
+
+          .footer-nav {
+
+            ul {
+
+              li {
+                border-right-color: color.$white;
+
+                a {
+                  color: color.$white;
+
+                  &:hover, &:focus, &:active {
+                  }
+
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+

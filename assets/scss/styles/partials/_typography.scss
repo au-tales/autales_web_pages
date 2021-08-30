@@ -1,0 +1,485 @@
+@use "sass:math";
+@use '../variables/fontVariable' as font;
+@use '../variables/mixin' as mix;
+
+//  Font Family Declare Start
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../../assets/fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../../assets/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url("../../assets/fonts/Poppins-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Black";
+  src: url("../../assets/fonts/Poppins-Black.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Italic";
+  src: url("../../assets/fonts/Poppins-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../../assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url("../../assets/fonts/Poppins-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../../assets/fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src: url("../../assets/fonts/Poppins-ExtraLight.ttf");
+}
+
+/*  SourceSansPro   */
+
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("../../assets/fonts/SourceSansPro-Regular.ttf");
+}
+
+@font-face {
+  font-family: "SourceSansPro-Bold";
+  src: url("../../assets/fonts/SourceSansPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: "SourceSansPro-SemiBold";
+  src: url("../../assets/fonts/SourceSansPro-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url("../../assets/fonts/SourceSansPro-Black.ttf");
+}
+
+@font-face {
+  font-family: "SourceSansPro-Italic";
+  src: url("../../assets/fonts/SourceSansPro-Italic.ttf");
+}
+
+@font-face {
+  font-family: "SourceSansPro-Light";
+  src: url("../../assets/fonts/SourceSansPro-Light.ttf");
+}
+
+@font-face {
+  font-family: "SourceSansPro-ExtraLight";
+  src: url("../../assets/fonts/SourceSansPro-ExtraLight.ttf");
+}
+
+/*  Roboto   */
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../../assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../../assets/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../../assets/fonts/Roboto-Black.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url("../../assets/fonts/Roboto-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../../assets/fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../../assets/fonts/Roboto-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../assets/fonts/Roboto-Light.ttf");
+}
+
+//  Font Family Declare Start
+
+//  Font Size Start
+@for $i from 0 through 50 {
+
+  .font-size-#{$i} {
+    font-size: #{math.div($i, 16)}rem !important;
+  }
+
+}
+
+//  /Font Size End
+
+// Font Family Classes Start
+@each $nameFFamily, $FFamily in font.$fontFamily-range {
+
+  .ff-#{$nameFFamily} {
+    @include mix.fontFamily($FFamily);
+  }
+
+}
+
+// Font Family Classes End
+
+// Font Weight Classes Start
+@each $nameWeight, $varWeight in font.$fontWeight-range {
+
+  .fw-#{$nameWeight} {
+    @include mix.fontWeight($varWeight);
+  }
+
+}
+
+//Font Weight Classes End
+
+//Font Style Classes Start
+@each $nameStyle, $varStyle in font.$fontStyle-range {
+
+  .fs-#{$nameStyle} {
+    @include mix.fontStyle($varStyle);
+  }
+
+}
+
+//Text Transform Classes Start
+@each $nameTransform, $varTransform in font.$textTransform-range {
+
+  .tt-#{$nameTransform} {
+    @include mix.textTransform($varTransform);
+  }
+
+}
+
+//Text Transform Classes End
+
+//Text Decoration Classes Start
+
+@each $nameDecoration, $varDecoration in font.$textDecoration-range {
+
+  .td-#{$nameDecoration} {
+    @include mix.textDecoration($varDecoration);
+  }
+
+}
+
+//Text Decoration Classes End
+
+//Font Style Classes End
+
+//Text Align Classes Start
+
+@each $nameAlign, $varAlign in font.$textAlign-range {
+
+  .ta-#{$nameAlign} {
+    text-align: #{$varAlign};
+  }
+
+}
+
+@each $nameVAlign, $varVAlign in font.$vertAlign-range {
+
+  .va-#{$nameVAlign} {
+    vertical-align: #{$varVAlign};
+  }
+
+}
+
+//Text Align Classes End
+
+body {
+  font-weight: 400;
+  line-height: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(12px + (14 - 12) * (100vw - 360px) / (1920 - 360));
+
+  h1, h2, h3, h4, h5, h6, .btn, a, caption, .form-control, label {
+    font-family: "Segoe UI", serif;
+  }
+
+  h1, h2 {
+    font-weight: 600;
+  }
+
+  body, h3, h4 {
+    font-weight: 400;
+  }
+
+  h5, h6 {
+    font-weight: 700;
+  }
+
+  caption {
+    font-size: 0.675rem;
+    font-weight: 300;
+  }
+
+  h1 {
+    font-size: calc(30px + (34 - 30) * (100vw - 360px) / (1920 - 360));
+    line-height: 1.75;
+  }
+
+  h2 {
+    font-size: calc(26px + (30 - 20) * (100vw - 360px) / (1920 - 360));
+    line-height: 1.35;
+  }
+
+  h3 {
+    font-size: calc(22px + (26 - 22) * (100vw - 360px) / (1920 - 360));
+    line-height: 1.25;
+  }
+
+  h4 {
+    font-size: calc(18px + (22 - 18) * (100vw - 360px) / (1920 - 360));
+    line-height: 1.475;
+  }
+
+  h5 {
+    font-size: calc(16px + (18 - 16) * (100vw - 360px) / (1920 - 360));
+    line-height: 1.575;
+  }
+
+  h6, a {
+    font-size: calc(12px + (14 - 12) * (100vw - 360px) / (1920 - 360));
+    line-height: 1.575;
+  }
+
+  .form-control {
+    font-size: calc(12px + (15 - 12) * (100vw - 360px) / (1920 - 360));
+  }
+
+  small, label {
+    font-size: calc(10px + (12 - 10) * (100vw - 360px) / (1920 - 360));
+  }
+
+  .heading-separator {
+
+    .separator-text {
+      font-size: 0.75rem;
+      line-height: 1.6;
+    }
+
+  }
+
+  .btn {
+    text-align: center;
+    font-size: 1rem;
+    font-size: calc(14px + (16 - 14) * (100vw - 360px) / (1920 - 360));
+    line-height: 1.25;
+
+    .btn-lg {
+      font-size: 1.125rem;
+      font-size: calc(16px + (18 - 16) * (100vw - 360px) / (1920 - 360));
+    }
+
+    .btn-sm {
+      font-size: 0.825rem;
+      font-size: calc(12px + (14 - 12) * (100vw - 360px) / (1920 - 360));
+    }
+
+    &.btn-custom {
+      line-height: 1.5;
+      font-size: 1.25rem;
+      font-weight: normal;
+    }
+
+  }
+
+  .main-heading {
+    font-size: calc(28px + (36 - 28) * (100vw - 360px) / (1920 - 360));
+  }
+
+  .section-heading {
+    font-size: calc(22px + (28 - 22) * (100vw - 360px) / (1920 - 360));
+  }
+
+  .article-heading {
+    font-size: calc(18px + (22 - 18) * (100vw - 360px) / (1920 - 360));
+  }
+
+  .section-title {
+
+    h2 {
+      font-size: calc(20px + (24 - 20) * (100vw - 360px) / (1920 - 360));
+      line-height: 1.15;
+    }
+
+    .btn {
+    }
+
+  }
+
+  .page-registration-container {
+
+    .page-registration {
+
+      .login-wrap {
+
+        .form-registration {
+
+          .form-title {
+            font-size: 1.875rem;
+            font-weight: 600;
+          }
+
+          .auth-link-wrap {
+
+            .auth-link {
+              line-height: 1.6;
+              font-size: 0.75rem;
+              font-weight: normal;
+            }
+
+          }
+
+          .social-btn-wrap {
+
+            .social-btn {
+
+              span {
+                line-height: unset;
+              }
+
+            }
+
+          }
+
+          .signup-wrap, .signin-wrap {
+
+            span {
+              line-height: 1.6;
+              font-size: 0.75rem;
+              font-weight: normal;
+            }
+
+            a {
+              text-decoration: none;
+              line-height: 1.375;
+              font-size: 0.875rem;
+              font-weight: 600;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  header {
+
+    &.site-header {
+
+    }
+
+  }
+
+  main {
+
+    &.page-content {
+
+    }
+
+  }
+
+  footer {
+
+    &.site-footer {
+      font-family: "Segoe UI", serif;
+
+      .footer-top {
+
+        .footer-widget {
+
+          .widget-title {
+            font-size: 1rem;
+          }
+
+          .widget-content {
+
+            ul {
+
+              li {
+
+                a {
+                  text-decoration: none;
+                  font-size: 0.875rem;
+                  line-height: 2.5;
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      .copyright-area {
+        font-size: 0.875rem;
+        line-height: 1.25;
+
+        .copyright-content {
+
+          .footer-nav {
+
+            ul {
+
+              li {
+
+                a {
+                  text-decoration: none;
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
