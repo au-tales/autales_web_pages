@@ -8,8 +8,8 @@ body {
 
       .navbar-brand {
         margin: auto;
-        text-align: center;
         display: block;
+        text-align: center;
       }
 
       .login-wrap {
@@ -21,8 +21,8 @@ body {
 
         .form-registration {
           padding: calc(16px + (30 - 16) * (100vw - 320px) / (1920 - 320));
-          @include mix.flex-column;
           @include mix.flex-both-center;
+          @include mix.flex-column;
           width: 100%;
 
           .form-title, .social-btn-wrap {

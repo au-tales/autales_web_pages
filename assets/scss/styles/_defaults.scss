@@ -82,13 +82,15 @@ body {
   }
 
   .list-unstyled {
+    padding: 0;
     list-style: none;
     margin: 0 0 1rem 0;
-    padding: 0;
   }
 
   .spacer {
-    margin: .5rem auto 1.75rem;
+    margin-inline: auto;
+    margin-top: calc(4px + (8 - 4) * (100vw - 320px) / (1920 - 320));
+    margin-bottom: calc(20px + (28 - 20) * (100vw - 320px) / (1920 - 320));
   }
 
   .heading-separator {
@@ -110,8 +112,8 @@ body {
   }
 
   .vertical-separator {
-    height: 45px;
     width: 1px;
+    height: 45px;
     display: block;
   }
 
@@ -123,21 +125,18 @@ body {
   }
 
   .form-group {
-    margin-bottom: 1.825rem;
+    margin-bottom: calc(20px + (30 - 20) * (100vw - 320px) / (1920 - 320));
   }
 
   .section-padding {
-    padding-block: 100px;
     padding-block: calc(45px + (100 - 45) * (100vw - 320px) / (1920 - 320));
   }
 
   .section-padding2 {
-    padding-block: 75px;
     padding-block: calc(30px + (75 - 30) * (100vw - 320px) / (1920 - 320));
   }
 
   .section-padding3 {
-    padding-block: 50px;
     padding-block: calc(15px + (50 - 15) * (100vw - 320px) / (1920 - 320));
   }
 
@@ -147,35 +146,38 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    padding: 0.75rem 1.75rem;
+    max-height: 45px;
+    border-width: 1px;
+    //max-width: 155px;
+    border-style: solid;
+    text-decoration: none;
     box-sizing: border-box;
     vertical-align: middle;
-    text-decoration: none;
-    border-style: solid;
-    border-width: 1px;
-    max-height: 45px;
-    //max-width: 155px;
     @include mix.d-inline-flex;
     @include mix.align-items-center;
+    padding-block: calc(6px + (12 - 6) * (100vw - 320px) / (1920 - 320));
+    padding-inline: calc(18px + (28 - 18) * (100vw - 320px) / (1920 - 320));
 
-    &.btn-block {
-      display: block;
-      width: 100%;
-    }
-
-    .btn-lg {
-      padding: 1.125rem 1.875rem;
+    &.btn-lg {
       max-height: 50px;
+      padding-block: calc(10px + (18 - 10) * (100vw - 320px) / (1920 - 320));
+      padding-inline: calc(18px + (30 - 18) * (100vw - 320px) / (1920 - 320));
     }
 
-    .btn-sm {
-      padding: 0.675rem 1.5rem;
+    &.btn-sm {
       max-height: 35px;
+      padding-block: calc(5px + (10 - 5) * (100vw - 320px) / (1920 - 320));
+      padding-inline: calc(16px + (24 - 16) * (100vw - 320px) / (1920 - 320));
     }
 
     &.btn-custom, &.btn-light, &.btn-light-revert, &.btn-dark, &.btn-dark-revert {
       border-width: 2px !important;
       border-style: solid !important;
+    }
+
+    &.btn-block {
+      display: block;
+      width: 100%;
     }
 
   }
@@ -230,19 +232,17 @@ body {
 
   .section-title {
 
-    h2 {
-
-    }
+    h2 {}
 
     .btn {
+      padding-inline: 0;
       border-width: 2px;
       border-style: solid;
-      padding-inline: 0;
       transition: all 1s ease-in-out;
 
       &:hover, &:focus, &:active, &:focus-within {
-        padding-inline: 1.75rem;
         transition: all 1s ease-in-out;
+        padding-inline: calc(18px + (28 - 18) * (100vw - 320px) / (1920 - 320));
       }
 
     }
