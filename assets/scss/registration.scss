@@ -13,23 +13,29 @@ body {
       }
 
       .login-wrap {
+        @include mix.flex-column;
+        @include mix.flex-both-center;
         padding-inline: 0;
-        padding-top: calc(20px + (40 - 20) * (100vw - 320px) / (1920 - 320));
-        padding-bottom: calc(25px + (50 - 25) * (100vw - 320px) / (1920 - 320));
+        //padding-top: calc(20px + (40 - 20) * (100vw - 320px) / (1920 - 320));
+        //padding-bottom: calc(25px + (50 - 25) * (100vw - 320px) / (1920 - 320));
 
         .form-registration {
           padding: calc(16px + (30 - 16) * (100vw - 320px) / (1920 - 320));
+          @include mix.flex-column;
+          @include mix.flex-both-center;
+          width: 100%;
 
           .form-title, .social-btn-wrap {
             text-align: center;
           }
 
           .form-title {
-            margin: 2rem auto 2.5rem;
+            margin-inline: auto;
+            margin-top: calc(20px + (32 - 20) * (100vw - 320px) / (1920 - 320));
+            margin-bottom: calc(25px + (40 - 25) * (100vw - 320px) / (1920 - 320));
           }
 
           .dob-wrap {
-
           }
 
           .auth-link-wrap {
@@ -39,7 +45,9 @@ body {
           }
 
           .social-btn-wrap {
-            margin: 2rem auto 1.75rem;
+            margin-inline: auto;
+            margin-top: calc(20px + (32 - 20) * (100vw - 320px) / (1920 - 320));
+            margin-bottom: calc(18px + (30 - 18) * (100vw - 320px) / (1920 - 320));
 
             .social-btn {
               border-radius: 1.565rem;
@@ -48,14 +56,13 @@ body {
 
                 &.icon-wrap {
                   display: inline-flex;
-                  margin-right: 0.5rem;
+                  margin-right: calc(4px + (8 - 4) * (100vw - 320px) / (1920 - 320));
                   border-radius: 50%;
                   border: 1px solid #E2E2E2;
-                  padding: 0.35rem;
+                  padding: calc(2px + (5 - 2) * (100vw - 320px) / (1920 - 320));
                 }
 
                 &.text-wrap {
-
                 }
 
               }

@@ -8,7 +8,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarMain">
-        <ul class="navbar-nav mgl-lg-auto mgt-0 mgr-lg-4 mgr-xl-5">
+        <ul class="navbar-nav mgl-md-auto mgt-0 mgr-md-4 mgr-xl-5">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>

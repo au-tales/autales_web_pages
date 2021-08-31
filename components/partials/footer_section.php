@@ -1,15 +1,15 @@
 <footer id="site-footer" class="site-footer background-tertiary">
 
-    <div class="footer-top pdy-lg-16 pdy-8">
+    <div class="footer-top pdy-md-16 pdy-8">
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-lg-1"></div>
-                <div class="col-12 col-lg-10">
+                <div class="col-12 col-md-1"></div>
+                <div class="col-12 col-md-10">
                     <div class="row no-gutters">
                         <div class="col-12 col-sm-6 col-xl-3">
                             <div class="footer-widget">
-                                <div class="widget-title mgb-3 mgb-lg-4">
+                                <div class="widget-title mgb-3 mgb-md-4">
                                     <h4 class="font-weight-bold">Community</h4>
                                 </div>
                                 <div class="widget-content">
@@ -50,7 +50,7 @@
                         </div>
                         <div class="col-12 col-sm-6 col-xl-3">
                             <div class="footer-widget">
-                                <div class="widget-title mgb-3 mgb-lg-4">
+                                <div class="widget-title mgb-3 mgb-md-4">
                                     <h4 class="font-weight-bold">Categories</h4>
                                 </div>
                                 <div class="widget-content">
@@ -86,11 +86,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6 col-xl-6">
+                        <div class="col-12 col-md-6 col-xl-6">
                             <div class="row no-gutters">
                                 <div class="col-12 col-sm-6">
                                     <div class="footer-widget">
-                                        <div class="widget-title mgb-3 mgb-lg-4">
+                                        <div class="widget-title mgb-3 mgb-md-4">
                                             <h4 class="font-weight-bold">Main Menu</h4>
                                         </div>
                                         <div class="widget-content">
@@ -119,7 +119,7 @@
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="footer-widget">
-                                        <div class="widget-title mgb-3 mgb-lg-4">
+                                        <div class="widget-title mgb-3 mgb-md-4">
                                             <h4 class="font-weight-bold">About</h4>
                                         </div>
                                         <div class="widget-content">
@@ -151,7 +151,7 @@
                                 </div>
                             </div>
                             <div class="row no-gutters ">
-                                <div class="col-12 col-lg-10">
+                                <div class="col-12 col-md-10">
                                     <div class="footer-widget">
                                         <div class="widget-content">
                                             <div class="newsletter-form">

@@ -13,7 +13,7 @@
 
                 <main class="login-wrap position-relative">
 
-                    <div class="form-registration signup-form">
+                    <div class="form-registration signup-form mg-auto">
 
                         <h4 class="form-title">Sign up</h4>
 
