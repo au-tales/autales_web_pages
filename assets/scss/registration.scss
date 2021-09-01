@@ -35,6 +35,10 @@ body {
             margin-bottom: calc(25px + (40 - 25) * (100vw - 320px) / (1920 - 320));
           }
 
+          form {
+            width: 100%;
+          }
+
           .dob-wrap {
           }
 
