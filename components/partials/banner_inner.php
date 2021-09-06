@@ -7,20 +7,9 @@
             <div class="slide-content wp-100">
                 <div class="section-title slide-text pdy-2">
                     <h2 class="">Pakistan's Best Mobile Selling Purchasing Website </h2>
-                    <a class="btn btn-light-revert mgy-4 pdx-3 pdx-sm-5 pdx-md-7">Learn More</a>
+                    <a role="button" href="javascript:void(0);" class="btn btn-light-revert mgy-4 pdx-3 pdx-sm-5 pdx-md-7">Learn More</a>
                 </div>
-                <div class="newsletter-form">
-                    <form action="" class="form-inline">
-                        <div class="form-group mgb-0">
-                            <label for="subscribe_email" class="sr-only"></label>
-                            <input type="email" name="subscribe_email" id="subscribe_email"
-                                   placeholder="Search Mobile Phones">
-                        </div>
-                        <button type="submit" name="subscribe_submit" id="subscribe_submit" class="subscribe_submit">
-                            <img class="" src="assets/images/search.png" alt="search">
-                        </button>
-                    </form>
-                </div>
+                <?php require "newsletter_form.php" ?>
             </div>
             <div class="slide-image hp-100 d-none d-md-flex align-items-center justify-content-center justify-content-md-end">
                 <img src="assets/images/iphone-x.png" alt="" class="">
@@ -33,23 +22,14 @@
             <div class="slide-content wp-100">
                 <div class="section-title slide-text pdy-2">
                     <h2 class="">Pakistan's Best Mobile Selling Purchasing Website </h2>
-                    <a class="btn btn-light-revert mgy-4 pdx-3 pdx-sm-5 pdx-md-7">Learn More</a>
+                    <a role="button" href="javascript:void(0);"
+                       class="btn btn-light-revert mgy-4 pdx-3 pdx-sm-5 pdx-md-7">Learn More</a>
                 </div>
-                <div class="newsletter-form">
-                    <form action="" class="form-inline">
-                        <div class="form-group mgb-0">
-                            <label for="subscribe_email" class="sr-only"></label>
-                            <input type="email" name="subscribe_email" id="subscribe_email"
-                                   placeholder="Search Mobile Phones">
-                        </div>
-                        <button type="submit" name="subscribe_submit" id="subscribe_submit" class="subscribe_submit">
-                            <img class="" src="assets/images/search.png" alt="search">
-                        </button>
-                    </form>
-                </div>
+                <?php require "newsletter_form.php" ?>
+
             </div>
             <div class="slide-image hp-100 d-none d-md-flex align-items-center justify-content-center justify-content-md-end">
-                <img src="assets/images/iphone-x.png" alt="" class="">
+                <img src="assets/images/iphone-x.png" alt="iphone" class="">
             </div>
         </div>
     </div>
@@ -59,30 +39,20 @@
             <div class="slide-content wp-100">
                 <div class="section-title slide-text pdy-2">
                     <h2 class="">Pakistan's Best Mobile Selling Purchasing Website </h2>
-                    <a class="btn btn-light-revert mgy-4 pdx-3 pdx-sm-5 pdx-md-7">Learn More</a>
+                    <a role="button" href="javascript:void(0);"
+                       class="btn btn-light-revert mgy-4 pdx-3 pdx-sm-5 pdx-md-7">Learn More</a>
                 </div>
-                <div class="newsletter-form">
-                    <form action="" class="form-inline">
-                        <div class="form-group mgb-0">
-                            <label for="subscribe_email" class="sr-only"></label>
-                            <input type="email" name="subscribe_email" id="subscribe_email"
-                                   placeholder="Search Mobile Phones">
-                        </div>
-                        <button type="submit" name="subscribe_submit" id="subscribe_submit" class="subscribe_submit">
-                            <img class="" src="assets/images/search.png" alt="search">
-                        </button>
-                    </form>
-                </div>
+                <?php require "newsletter_form.php" ?>
             </div>
             <div class="slide-image hp-100 d-none d-md-flex align-items-center justify-content-center justify-content-md-end">
-                <img src="assets/images/iphone-x.png" alt="" class="">
+                <img src="assets/images/iphone-x.png" alt="iphone" class="">
             </div>
         </div>
     </div>
 
     <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a role="button" href="javascript:void(0);" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a role="button" href="javascript:void(0);" class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
 

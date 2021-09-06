@@ -4,7 +4,7 @@
             <div class="card review_card">
                 <div class="card-img d-flex justify-content-center">
                     <span class="card-img-wrap">
-                        <img src="assets/images/review_image_1.png" alt="">
+                        <img src="assets/images/review_image_1.png" alt="Review Image">
                     </span>
                 </div>
                 <div class="card-body justify-content-center text-center pdx-md-16 pdx-md-8 pdx-md-6 pdx-4 pdt-10 pdb-8">
@@ -27,7 +27,7 @@
             <div class="card review_card">
                 <div class="card-img d-flex justify-content-center">
                     <span class="card-img-wrap">
-                        <img src="assets/images/review_image_1.png" alt="">
+                        <img src="assets/images/review_image_1.png" alt="Review Image">
                     </span>
                 </div>
                 <div class="card-body justify-content-center text-center pdx-md-16 pdx-md-8 pdx-md-6 pdx-4 pdt-10 pdb-8">
@@ -50,7 +50,7 @@
             <div class="card review_card">
                 <div class="card-img d-flex justify-content-center">
                     <span class="card-img-wrap">
-                        <img src="assets/images/review_image_1.png" alt="">
+                        <img src="assets/images/review_image_1.png" alt="Review Image">
                     </span>
                 </div>
                 <div class="card-body justify-content-center text-center pdx-md-16 pdx-md-8 pdx-md-6 pdx-4 pdt-10 pdb-8">

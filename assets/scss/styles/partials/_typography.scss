@@ -335,6 +335,10 @@ body {
       line-height: 1.75;
     }
 
+    p {
+      line-height: 1.5;
+    }
+
     .btn {
     }
 
@@ -438,6 +442,58 @@ body {
 
     &.page-content {
 
+      .banner-section {
+
+        .slideshow-container {
+
+          .prev, .next {
+            font-size: 1.125rem;
+            font-weight: bold;
+          }
+
+        }
+
+      }
+
+      .newsletter-form {
+
+        form {
+
+          .form-group {
+
+            input {
+              letter-spacing: 0.05rem;
+              font-size: 0.875rem;
+              line-height: 1.125;
+              font-weight: 300;
+
+              &[type=email] {
+
+                &:hover, &:focus, &:active, &:focus-within {
+                }
+
+              }
+
+            }
+
+          }
+
+          button {
+
+            &[type=submit] {
+
+              &:hover, &:focus, &:active, &:focus-within {
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
       .mobile-cat-section {
 
         .mobile_cat_wrap {
@@ -446,6 +502,35 @@ body {
 
             .mc_name {
               font-size: calc(12px + (16 - 12) * (100vw - 320px) / (1920 - 320));
+            }
+
+          }
+
+        }
+
+      }
+
+      .reviews-section {
+
+        .review_wrap {
+
+          .review_wrap_row {
+
+            .review_card {
+
+              .card-body {
+
+                p {
+                  font-size: 0.75rem;
+                }
+
+                .review_desc {
+                  line-height: 1.75;
+                  font-size: 0.875rem;
+                }
+
+              }
+
             }
 
           }

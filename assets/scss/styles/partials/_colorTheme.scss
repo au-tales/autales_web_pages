@@ -393,12 +393,18 @@ body {
       line-height: 1.15;
     }
 
-    .btn {
-      border-color: transparent;
-      border-bottom-color: color.$tertiary;
+    a {
 
-      &:hover, &:focus, &:active, &:focus-within {
-        border-color: color.$tertiary;
+      &.btn {
+        border-color: transparent;
+        border-bottom-color: color.$tertiary;
+
+        &:hover, &:focus, &:active, &:focus-within {
+          background-color: color.$tertiary !important;
+          border-color: color.$tertiary !important;
+          color: color.$white !important;
+        }
+
       }
 
     }
@@ -545,6 +551,73 @@ body {
 
       .banner-section {
         @include mix.bg-gradient(135deg, color.$primary, color.$secondary);
+
+        .slideshow-container {
+
+          .prev, .next {
+            color: white;
+
+            /* On hover, add a black background color with a little bit see-through */
+            &:hover, &:focus, &:active {
+              background-color: rgba(0, 0, 0, 0.8);
+            }
+
+          }
+
+          .slide-content {
+
+            .slide-text {
+              color: #f2f2f2;
+            }
+
+          }
+
+          .active, .dot:hover {
+            background-color: color.$caption;
+          }
+
+        }
+
+      }
+
+      .newsletter-form {
+
+        form {
+
+          .form-group {
+
+            input {
+
+              &[type=email] {
+                border-color: lighten(color.$light-gray, 50%);
+
+                &:hover, &:focus, &:active, &:focus-within {
+                  border-color: color.$light-gray;
+                }
+
+              }
+
+            }
+
+          }
+
+          button {
+
+            &[type=submit] {
+              background-color: color.$tertiary;
+              color: color.$white;
+
+              &:hover, &:focus, &:active, &:focus-within {
+                background-color: darken(color.$primary, 10%);
+                border-color: darken(color.$primary, 10%);
+              }
+
+            }
+
+          }
+
+        }
+
       }
 
     }

@@ -1,5 +1,5 @@
 <div class="common_wrap join_hands_wrap d-flex align-items-center">
-    <img class="bgImg" src="assets/images/bg-join.png" alt="">
+    <img class="bgImg" src="assets/images/bg-join.png" alt="Join Hands Background">
     <div class="row no-gutters join_hands_wrap_row align-items-center">
         <div class="col-12 col-md-6 align-self-center">
             <div class="common_text_wrapper join_hands_text_wrapper pdx-5 pdx-md-7">
@@ -12,13 +12,14 @@
                         ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
                         type specimen book. It has survived not only five centuries, but also the leap into electronic
                         typesetting, remaining essentially unchanged.</p>
-                    <a class="btn btn-light pdx-3 pdx-sm-5 pdx-md-7">Contact Us</a>
+                    <a role="button" href="javascript:void(0);" class="btn btn-light pdx-3 pdx-sm-5 pdx-md-7">Contact
+                        Us</a>
                 </div>
             </div>
         </div>
         <div class="col-12 col-md-6 align-self-center">
             <div class="common_img_wrapper join_hands_img_wrapper text-center">
-                <img src="assets/images/join-hands.png" alt="" class="img-fluid">
+                <img src="assets/images/join-hands.png" alt="Join Hand Image" class="img-fluid">
             </div>
         </div>
     </div>

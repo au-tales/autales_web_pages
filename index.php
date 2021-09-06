@@ -58,7 +58,7 @@
                 <div class="col-12 col-md-10">
                     <div class="section-title mgt-0 mgb-8 d-flex flex-column flex-md-row align-items-center justify-content-md-between justify-content-center">
                         <h2 class="mgy-0 text-center text-md-left">Mobile Phone Categories</h2>
-                        <a class="btn btn-link">View More</a>
+                        <a role="button" href="javascript:void(0);" class="btn btn-link">View More</a>
                     </div>
                     <?php require "components/partials/mobile_cat_wrap.php" ?>
                 </div>
@@ -76,7 +76,7 @@
                 <div class="col-12 col-md-10">
                     <div class="section-title mgt-0 mgb-8 d-flex flex-column flex-md-row align-items-center justify-content-md-between justify-content-center">
                         <h2 class="mgy-0 text-center text-md-left">Our Mobile Reviews Videos</h2>
-                        <a class="btn btn-link">View More</a>
+                        <a role="button" href="javascript:void(0);" class="btn btn-link">View More</a>
                     </div>
                     <?php require "components/partials/video_wrap.php" ?>
                 </div>

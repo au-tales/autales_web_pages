@@ -4,7 +4,7 @@
         <div class="col-12 col-md-10">
             <div class="video_wrapper wp-80 wp-md-90 wp-xl-100 mgx-auto text-center">
                 <!--                <video src=""></video>-->
-                <img src="assets/images/video.png" alt="" class="img-fluid">
+                <img src="assets/images/video.png" alt="Video Image" class="img-fluid">
             </div>
         </div>
         <div class="col-12 col-md-1"></div>

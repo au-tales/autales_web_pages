@@ -16,7 +16,7 @@
         </div>
         <div class="col-12 col-md-6 order-md-1 align-self-center">
             <div class="common_img_wrapper get_started_img_wrapper text-center">
-                <img src="assets/images/main-section.png" alt="" class="img-fluid">
+                <img src="assets/images/main-section.png" alt="Main Section Background" class="img-fluid">
             </div>
         </div>
     </div>
