@@ -1,9 +1,10 @@
 <!--    Header Starts   -->
 <?php require "includes/header.php" ?>
 
-<div class="container">
+<div class="container page-registration-container">
     <div class="row">
         <div class="col-12">
+
             <div class="page-registration page-login">
 
                 <?php require "components/partials/register_header_section.php" ?>
@@ -11,9 +12,9 @@
 
                 <!--    Main Starts   -->
 
-                <main class="login-wrap">
+                <main class="login-wrap position-relative">
 
-                    <div class="form-registration login-form">
+                    <div class="form-registration login-form mg-auto">
 
                         <h4 class="form-title">Login</h4>
 
@@ -102,7 +103,7 @@
 
                         <div class="signup-wrap font-weight-light d-flex flex-column align-items-center">
                             <span>Don't have an account?</span>
-                            <a href="register.php" class="">Create</a>
+                            <a href="signup.php" class="">Create</a>
                         </div>
 
 
@@ -115,6 +116,7 @@
                 <!--    Footer Starts   -->
                 <?php require "components/partials/register_footer_section.php" ?>
             </div>
+
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 @use "sass:math";
-
 @for $i from 0 through 16 {
+
   // Padding Starts
 
   .pd-#{$i} {
@@ -8,13 +8,11 @@
   }
 
   .pdx-#{$i} {
-    padding-left: #{ math.div($i, 4)}rem !important;
-    padding-right: #{ math.div($i, 4)}rem !important;
+    padding-inline: #{ math.div($i, 4)}rem !important;
   }
 
   .pdy-#{$i} {
-    padding-top: #{ math.div($i, 4)}rem !important;
-    padding-bottom: #{ math.div($i, 4)}rem !important;
+    padding-block: #{ math.div($i, 4)}rem !important;
   }
 
   .pdt-#{$i} {
@@ -42,13 +40,11 @@
   }
 
   .mgx-#{$i} {
-    margin-left: #{ math.div($i, 4)}rem !important;
-    margin-right: #{ math.div($i, 4)}rem !important;
+    margin-inline: #{ math.div($i, 4)}rem !important;
   }
 
   .mgy-#{$i} {
-    margin-top: #{ math.div($i, 4)}rem !important;
-    margin-bottom: #{ math.div($i, 4)}rem !important;
+    margin-block: #{ math.div($i, 4)}rem !important;
   }
 
   .mgt-#{$i} {
@@ -76,13 +72,11 @@
   }
 
   .mgx-n#{$i} {
-    margin-left: -#{ math.div($i, 4)}rem !important;
-    margin-right: -#{ math.div($i, 4)}rem !important;
+    margin-inline: -#{ math.div($i, 4)}rem !important;
   }
 
   .mgy-n#{$i} {
-    margin-top: -#{ math.div($i, 4)}rem !important;
-    margin-bottom: -#{ math.div($i, 4)}rem !important;
+    margin-block: -#{ math.div($i, 4)}rem !important;
   }
 
   .mgt-n#{$i} {
@@ -110,13 +104,11 @@
 }
 
 .mgx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin-inline: auto !important;
 }
 
 .mgy-auto {
-  margin-top: auto !important;
-  margin-bottom: auto !important;
+  margin-block: auto !important;
 }
 
 .mgt-auto {
@@ -147,13 +139,11 @@
     }
 
     .pdx-sm-#{$i} {
-      padding-left: #{ math.div($i, 4)}rem !important;
-      padding-right: #{ math.div($i, 4)}rem !important;
+      padding-inline: #{ math.div($i, 4)}rem !important;
     }
 
     .pdy-sm-#{$i} {
-      padding-top: #{ math.div($i, 4)}rem !important;
-      padding-bottom: #{ math.div($i, 4)}rem !important;
+      padding-block: #{ math.div($i, 4)}rem !important;
     }
 
     .pdt-sm-#{$i} {
@@ -181,13 +171,11 @@
     }
 
     .mgx-sm-#{$i} {
-      margin-left: #{ math.div($i, 4)}rem !important;
-      margin-right: #{ math.div($i, 4)}rem !important;
+      margin-inline: #{ math.div($i, 4)}rem !important;
     }
 
     .mgy-sm-#{$i} {
-      margin-top: #{ math.div($i, 4)}rem !important;
-      margin-bottom: #{ math.div($i, 4)}rem !important;
+      margin-block: #{ math.div($i, 4)}rem !important;
     }
 
     .mgt-sm-#{$i} {
@@ -215,13 +203,11 @@
     }
 
     .mgx-sm-n#{$i} {
-      margin-left: -#{ math.div($i, 4)}rem !important;
-      margin-right: -#{ math.div($i, 4)}rem !important;
+      margin-inline: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgy-sm-n#{$i} {
-      margin-top: -#{ math.div($i, 4)}rem !important;
-      margin-bottom: -#{ math.div($i, 4)}rem !important;
+      margin-block: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgt-sm-n#{$i} {
@@ -247,13 +233,11 @@
   }
 
   .mgx-sm-auto {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin-inline: auto !important;
   }
 
   .mgy-sm-auto {
-    margin-top: auto !important;
-    margin-bottom: auto !important;
+    margin-block: auto !important;
   }
 
   .mgt-sm-auto {
@@ -285,13 +269,11 @@
     }
 
     .pdx-md-#{$i} {
-      padding-left: #{ math.div($i, 4)}rem !important;
-      padding-right: #{ math.div($i, 4)}rem !important;
+      padding-inline: #{ math.div($i, 4)}rem !important;
     }
 
     .pdy-md-#{$i} {
-      padding-top: #{ math.div($i, 4)}rem !important;
-      padding-bottom: #{ math.div($i, 4)}rem !important;
+      padding-block: #{ math.div($i, 4)}rem !important;
     }
 
     .pdt-md-#{$i} {
@@ -319,13 +301,11 @@
     }
 
     .mgx-md-#{$i} {
-      margin-left: #{ math.div($i, 4)}rem !important;
-      margin-right: #{ math.div($i, 4)}rem !important;
+      margin-inline: #{ math.div($i, 4)}rem !important;
     }
 
     .mgy-md-#{$i} {
-      margin-top: #{ math.div($i, 4)}rem !important;
-      margin-bottom: #{ math.div($i, 4)}rem !important;
+      margin-block: #{ math.div($i, 4)}rem !important;
     }
 
     .mgt-md-#{$i} {
@@ -353,13 +333,11 @@
     }
 
     .mgx-md-n#{$i} {
-      margin-left: -#{ math.div($i, 4)}rem !important;
-      margin-right: -#{ math.div($i, 4)}rem !important;
+      margin-inline: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgy-md-n#{$i} {
-      margin-top: -#{ math.div($i, 4)}rem !important;
-      margin-bottom: -#{ math.div($i, 4)}rem !important;
+      margin-block: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgt-md-n#{$i} {
@@ -387,13 +365,11 @@
   }
 
   .mgx-md-auto {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin-inline: auto !important;
   }
 
   .mgy-md-auto {
-    margin-top: auto !important;
-    margin-bottom: auto !important;
+    margin-block: auto !important;
   }
 
   .mgt-md-auto {
@@ -426,13 +402,11 @@
     }
 
     .pdx-lg-#{$i} {
-      padding-left: #{ math.div($i, 4)}rem !important;
-      padding-right: #{ math.div($i, 4)}rem !important;
+      padding-inline: #{ math.div($i, 4)}rem !important;
     }
 
     .pdy-lg-#{$i} {
-      padding-top: #{ math.div($i, 4)}rem !important;
-      padding-bottom: #{ math.div($i, 4)}rem !important;
+      padding-block: #{ math.div($i, 4)}rem !important;
     }
 
     .pdt-lg-#{$i} {
@@ -460,13 +434,11 @@
     }
 
     .mgx-lg-#{$i} {
-      margin-left: #{ math.div($i, 4)}rem !important;
-      margin-right: #{ math.div($i, 4)}rem !important;
+      margin-inline: #{ math.div($i, 4)}rem !important;
     }
 
     .mgy-lg-#{$i} {
-      margin-top: #{ math.div($i, 4)}rem !important;
-      margin-bottom: #{ math.div($i, 4)}rem !important;
+      margin-block: #{ math.div($i, 4)}rem !important;
     }
 
     .mgt-lg-#{$i} {
@@ -494,13 +466,11 @@
     }
 
     .mgx-lg-n#{$i} {
-      margin-left: -#{ math.div($i, 4)}rem !important;
-      margin-right: -#{ math.div($i, 4)}rem !important;
+      margin-inline: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgy-lg-n#{$i} {
-      margin-top: -#{ math.div($i, 4)}rem !important;
-      margin-bottom: -#{ math.div($i, 4)}rem !important;
+      margin-block: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgt-lg-n#{$i} {
@@ -528,13 +498,11 @@
   }
 
   .mgx-lg-auto {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin-inline: auto !important;
   }
 
   .mgy-lg-auto {
-    margin-top: auto !important;
-    margin-bottom: auto !important;
+    margin-block: auto !important;
   }
 
   .mgt-lg-auto {
@@ -570,13 +538,11 @@
     }
 
     .pdx-xl-#{$i} {
-      padding-left: #{ math.div($i, 4)}rem !important;
-      padding-right: #{ math.div($i, 4)}rem !important;
+      padding-inline: #{ math.div($i, 4)}rem !important;
     }
 
     .pdy-xl-#{$i} {
-      padding-top: #{ math.div($i, 4)}rem !important;
-      padding-bottom: #{ math.div($i, 4)}rem !important;
+      padding-block: #{ math.div($i, 4)}rem !important;
     }
 
     .pdt-xl-#{$i} {
@@ -604,13 +570,11 @@
     }
 
     .mgx-xl-#{$i} {
-      margin-left: #{ math.div($i, 4)}rem !important;
-      margin-right: #{ math.div($i, 4)}rem !important;
+      margin-inline: #{ math.div($i, 4)}rem !important;
     }
 
     .mgy-xl-#{$i} {
-      margin-top: #{ math.div($i, 4)}rem !important;
-      margin-bottom: #{ math.div($i, 4)}rem !important;
+      margin-block: #{ math.div($i, 4)}rem !important;
     }
 
     .mgt-xl-#{$i} {
@@ -638,13 +602,11 @@
     }
 
     .mgx-xl-n#{$i} {
-      margin-left: -#{ math.div($i, 4)}rem !important;
-      margin-right: -#{ math.div($i, 4)}rem !important;
+      margin-inline: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgy-xl-n#{$i} {
-      margin-top: -#{ math.div($i, 4)}rem !important;
-      margin-bottom: -#{ math.div($i, 4)}rem !important;
+      margin-block: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgt-xl-n#{$i} {
@@ -672,13 +634,11 @@
   }
 
   .mgx-xl-auto {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin-inline: auto !important;
   }
 
   .mgy-xl-auto {
-    margin-top: auto !important;
-    margin-bottom: auto !important;
+    margin-block: auto !important;
   }
 
   .mgt-xl-auto {
@@ -710,13 +670,11 @@
     }
 
     .pdx-xxl-#{$i} {
-      padding-left: #{ math.div($i, 4)}rem !important;
-      padding-right: #{ math.div($i, 4)}rem !important;
+      padding-inline: #{ math.div($i, 4)}rem !important;
     }
 
     .pdy-xxl-#{$i} {
-      padding-top: #{ math.div($i, 4)}rem !important;
-      padding-bottom: #{ math.div($i, 4)}rem !important;
+      padding-block: #{ math.div($i, 4)}rem !important;
     }
 
     .pdt-xxl-#{$i} {
@@ -744,13 +702,11 @@
     }
 
     .mgx-xxl-#{$i} {
-      margin-left: #{ math.div($i, 4)}rem !important;
-      margin-right: #{ math.div($i, 4)}rem !important;
+      margin-inline: #{ math.div($i, 4)}rem !important;
     }
 
     .mgy-xxl-#{$i} {
-      margin-top: #{ math.div($i, 4)}rem !important;
-      margin-bottom: #{ math.div($i, 4)}rem !important;
+      margin-block: #{ math.div($i, 4)}rem !important;
     }
 
     .mgt-xxl-#{$i} {
@@ -778,13 +734,11 @@
     }
 
     .mgx-xxl-n#{$i} {
-      margin-left: -#{ math.div($i, 4)}rem !important;
-      margin-right: -#{ math.div($i, 4)}rem !important;
+      margin-inline: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgy-xxl-n#{$i} {
-      margin-top: -#{ math.div($i, 4)}rem !important;
-      margin-bottom: -#{ math.div($i, 4)}rem !important;
+      margin-block: -#{ math.div($i, 4)}rem !important;
     }
 
     .mgt-xxl-n#{$i} {
@@ -812,13 +766,11 @@
   }
 
   .mgx-xxl-auto {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin-inline: auto !important;
   }
 
   .mgy-xxl-auto {
-    margin-top: auto !important;
-    margin-bottom: auto !important;
+    margin-block: auto !important;
   }
 
   .mgt-xxl-auto {

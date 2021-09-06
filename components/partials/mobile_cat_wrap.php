@@ -1,7 +1,7 @@
 <div class="mobile_cat_wrap">
-    <div class="row no-gutters mobile_cat_wrap_row pdt-5 pdt-lg-10">
-        <div class="col-12 col-lg-1"></div>
-        <div class="col-12 col-lg-10">
+    <div class="row no-gutters mobile_cat_wrap_row pdt-5 pdt-md-10">
+        <div class="col-12 col-md-1"></div>
+        <div class="col-12 col-md-10">
             <div class="mobile_cat_wrapper d-flex align-items-center justify-content-center flex-wrap">
                 <div class="mobile_cat_item d-flex flex-column align-items-center">
                     <img class="mc_img img-fluid" src="assets/images/phone_1.png" alt="">
@@ -37,6 +37,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-lg-1"></div>
+        <div class="col-12 col-md-1"></div>
     </div>
 </div>

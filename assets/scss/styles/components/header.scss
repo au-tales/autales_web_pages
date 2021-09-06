@@ -1,57 +1,32 @@
 /*      MIXINS      */
-@use "../partials/colorVariable" as color;
-@use "../partials/mixin" as mix;
+@use "../variables/colorVariable" as color;
+@use "../variables/mixin" as mix;
 /*      /MIXINS      */
 
 /*      HEADER      */
+body {
 
-/*      /HEADER      */
+  header {
 
-header {
-  position: absolute;
-  width: 100%;
-  height: 70px;
-  left: 0;
-  top: 0;
+    &.site-header {
+      position: absolute;
+      width: 100%;
+      height: 70px;
+      z-index: 1;
+      left: 0;
+      top: 0;
 
-  &.site-header {
-    z-index: 1;
+      &.fixed-header {
+        position: fixed;
+        z-index: 10;
+      }
 
-    &.fixed-header {
-      z-index: 99;
-      position: fixed;
-      background: rgba(0, 0, 0, 0.75);
-    }
+      .navbar {
 
-    .navbar {
-
-      .navbar-nav {
-
-        li {
-
-          a {
-
-          }
-
-          &.active {
-            background-color: transparent;
-
-            a {
-
-            }
-
-          }
-
+        .navbar-toggler {
+          cursor: pointer;
         }
 
-      }
-
-      .registration-buttons {
-
-      }
-
-      .navbar-toggler {
-        cursor: pointer;
       }
 
     }
@@ -59,3 +34,5 @@ header {
   }
 
 }
+/*      /HEADER      */
+

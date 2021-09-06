@@ -1,5 +1,5 @@
 @use "sass:math";
-@use "mixin" as mix;
+@use "../variables/mixin" as mix;
 //  Width & Height Start
 
 @for $i from 0 through 100 {
@@ -227,29 +227,29 @@
 
     // %age start
 
-    .wp-lg-#{$i} {
+    .wp-md-#{$i} {
       @include mix.width($i*1%);
     }
 
-    .hp-lg-#{$i} {
+    .hp-md-#{$i} {
       @include mix.height($i*1%);
     }
 
     //@if ($i%5 == 0) {
     //
-    //  .mnwp-lg-#{$i} {
+    //  .mnwp-md-#{$i} {
     //    @include mix.min-width($i*1%);
     //  }
     //
-    //  .mwp-lg-#{$i} {
+    //  .mwp-md-#{$i} {
     //    @include mix.max-width($i*1%);
     //  }
     //
-    //  .mnhp-lg-#{$i} {
+    //  .mnhp-md-#{$i} {
     //    @include mix.min-height($i*1%);
     //  }
     //
-    //  .mhp-lg-#{$i} {
+    //  .mhp-md-#{$i} {
     //    @include mix.max-height($i*1%);
     //  }
     //
@@ -258,27 +258,27 @@
 
   }
 
-  .w-lg-auto {
+  .w-md-auto {
     width: auto !important;
   }
 
-  .mnw-lg-unset {
+  .mnw-md-unset {
     min-width: unset !important;
   }
 
-  .mw-lg-unset {
+  .mw-md-unset {
     max-width: unset !important;
   }
 
-  .h-lg-auto {
+  .h-md-auto {
     height: auto !important;
   }
 
-  .mnh-lg-unset {
+  .mnh-md-unset {
     min-height: unset !important;
   }
 
-  .mh-lg-unset {
+  .mh-md-unset {
     max-height: unset !important;
   }
 

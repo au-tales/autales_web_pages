@@ -1,0 +1,669 @@
+/*      VARIABLES      */
+@use 'colorVariable' as color;
+/*      VARIABLES      */
+
+@mixin bg-rpt-center-contain {
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@mixin bg-nrpt-center-contain {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@mixin bg-rpt-center-cover {
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin bg-nrpt-center-cover {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin bg-rpt-tpl-contain {
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: contain;
+}
+
+@mixin bg-nrpt-tpl-contain {
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+}
+
+@mixin bg-rpt-tpl-cover {
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
+@mixin bg-nrpt-tpl-cover {
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
+@mixin bg-rpt-tpr-contain {
+  background-repeat: repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
+@mixin bg-nrpt-tpr-contain {
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
+@mixin bg-rpt-tpr-cover {
+  background-repeat: repeat;
+  background-position: top right;
+  background-size: cover;
+}
+
+@mixin bg-nrpt-tpr-cover {
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+}
+
+@mixin bg-rpt-bml-contain {
+  background-repeat: repeat;
+  background-position: bottom left;
+  background-size: contain;
+}
+
+@mixin bg-nrpt-bml-contain {
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: contain;
+}
+
+@mixin bg-rpt-bml-cover {
+  background-repeat: repeat;
+  background-position: bottom left;
+  background-size: cover;
+}
+
+@mixin bg-nrpt-bml-cover {
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+}
+
+@mixin bg-rpt-bmr-cover {
+  background-repeat: repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+
+@mixin bg-nrpt-bmr-cover {
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+
+@mixin bg-rpt-bmr-cover {
+  background-repeat: repeat;
+  background-position: bottom right;
+  background-size: cover;
+}
+
+@mixin bg-nrpt-bmr-cover {
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+}
+
+@mixin bg-rpt-tmc-contain {
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+@mixin bg-nrpt-tmc-contain {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+@mixin bg-rpt-tmc-cover {
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+@mixin bg-nrpt-tmc-cover {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+@mixin bg-rpt-bmc-contain {
+  background-repeat: repeat;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+@mixin bg-nrpt-bmc-contain {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+@mixin bg-rpt-bmc-cover {
+  background-repeat: repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+@mixin bg-nrpt-bmc-cover {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+@mixin bg-gradient($angle, $color1, $color2) {
+  background-image: linear-gradient($angle, $color1, $color1, $color2, $color2);
+}
+
+@mixin rotation($angle) {
+  -webkit-transform: rotate(#{$angle}deg);
+  -moz-transform: rotate(#{$angle}deg);
+  -o-transform: rotate(#{$angle}deg);
+  -ms-transform: rotate(#{$angle}deg);
+  transform: rotate(#{$angle}deg);
+}
+
+@mixin rotationX($angle) {
+  -webkit-transform: rotateX(#{$angle}deg);
+  -moz-transform: rotateX(#{$angle}deg);
+  -o-transform: rotateX(#{$angle}deg);
+  -ms-transform: rotateX(#{$angle}deg);
+  transform: rotateX(#{$angle}deg);
+}
+
+@mixin rotationY($angle) {
+  -webkit-transform: rotateY(#{$angle}deg);
+  -moz-transform: rotateY(#{$angle}deg);
+  -o-transform: rotateY(#{$angle}deg);
+  -ms-transform: rotateY(#{$angle}deg);
+  transform: rotateY(#{$angle}deg);
+}
+
+@mixin transition-plain {
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+@mixin transition-scale-normal {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  @include transition-plain;
+}
+
+@mixin transition-scale-hover {
+  z-index: 1;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  @include transition-plain;
+}
+
+@mixin shadow($color) {
+  -webkit-box-shadow: 0 2px 5px $color;
+  -moz-box-shadow: 0 2px 5px $color;
+  box-shadow: 0 2px 5px $color;
+}
+
+@mixin shadow1($color) {
+  -webkit-box-shadow: 2px 2px 5px $color;
+  -moz-box-shadow: 2px 2px 5px $color;
+  box-shadow: 2px 2px 5px $color;
+}
+
+@mixin shadow2($color) {
+  -webkit-box-shadow: 2px 2px 10px $color;
+  -moz-box-shadow: 2px 2px 10px $color;
+  box-shadow: 2px 2px 10px $color;
+}
+
+@mixin noshadow {
+  outline: 0;
+  box-shadow: none;
+}
+
+@mixin shadowButton($color) {
+  -webkit-box-shadow: 2px 2px 5px 1px $color;
+  box-shadow: 2px 2px 5px 1px $color;
+  //margin: 0.125rem;
+}
+
+@mixin shadowDrop($color) {
+  -webkit-filter: drop-shadow(-1px 0 6px $color);
+  filter: drop-shadow(-1px 0 6px $color);
+}
+
+@mixin shadowDrop1($color) {
+  -webkit-filter: drop-shadow(2px 2px 5px $color);
+  filter: drop-shadow(2px 2px 5px $color);
+}
+
+@mixin shadowDrop2($color) {
+  -webkit-filter: drop-shadow(2px 2px 10px $color);
+  filter: drop-shadow(2px 2px 10px $color);
+}
+
+@mixin fill-100 {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin width($width) {
+  width: $width;
+}
+
+@mixin min-width($minWidth) {
+  min-width: $minWidth;
+}
+
+@mixin max-width($maxWidth) {
+  max-width: $maxWidth;
+}
+
+@mixin height($height) {
+  height: $height;
+}
+
+@mixin min-height($minHeight) {
+  min-height: $minHeight;
+}
+
+@mixin max-height($maxHeight) {
+  max-height: $maxHeight;
+}
+
+@mixin bgGradient($color) {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba($color, 0.70)), color-stop(rgba($color, 1)), to(rgba($color, 1)));
+  background-image: -o-linear-gradient(top, rgba($color, 0.70), rgba($color, 1), rgba($color, 1));
+  background-image: linear-gradient(to bottom, rgba($color, 0.70), rgba($color, 1), rgba($color, 1));
+}
+
+@mixin button-hover($btnColor) {
+  background-color: $btnColor;
+  border-color: $btnColor;
+  color: color.$white;
+}
+
+@mixin button-revert-hover($btnColor) {
+  background-color: color.$white;
+  border-color: $btnColor;
+  color: $btnColor;
+}
+
+@mixin fontFamily($nameFamily) {
+  font-family: $nameFamily;
+}
+
+@mixin fontWeight($nameWeight) {
+  font-weight: $nameWeight;
+}
+
+@mixin fontStyle($nameStyle) {
+  font-style: $nameStyle;
+}
+
+@mixin textTransform($nameTransform) {
+  text-transform: $nameTransform;
+}
+
+@mixin textAlign($nameAlign) {
+  text-align: $nameAlign;
+}
+
+@mixin vertAlign($nameVAlign) {
+  vertical-align: $nameVAlign;
+}
+
+@mixin textDecoration($nameDecoration) {
+  text-decoration: $nameDecoration;
+}
+
+@mixin borderType($borderType) {
+  border-style: $borderType;
+}
+
+@mixin borderRadius($borderRadiusType) {
+  -webkit-border-radius: $borderRadiusType;
+  border-radius: $borderRadiusType;
+}
+
+@mixin border-radius-none {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: none;
+}
+
+@mixin color($color) {
+  color: $color;
+}
+
+@mixin border-color($color) {
+  border-color: $color;
+}
+
+@mixin background-color($color) {
+  background-color: $color;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin font-size($size: 12, $base: 16) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}
+
+@mixin line-height($height: 12, $base: 16) {
+  line-height: $height + px;
+  line-height: ($height / $base) * 1rem;
+}
+
+@mixin d-inline-grid {
+  display: -ms-inline-grid;
+  display: inline-grid;
+}
+
+@mixin d-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+@mixin d-inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@mixin d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+@mixin flex-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+
+@mixin flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@mixin flex-column-reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+@mixin justify-items-start {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+}
+
+@mixin justify-items-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-items: center;
+}
+
+@mixin justify-items-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-items: end;
+}
+
+@mixin justify-items-stretch {
+  -webkit-box-pack: stretch;
+  -ms-flex-pack: stretch;
+  justify-items: stretch;
+}
+
+@mixin justify-content-start {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+@mixin justify-content-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+@mixin justify-content-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@mixin justify-content-evenly {
+  -webkit-box-pack: space-evenly !important;
+  -ms-flex-pack: space-evenly !important;
+  justify-content: space-evenly !important;
+}
+
+@mixin justify-content-around {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+@mixin justify-content-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@mixin align-items-start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+@mixin align-items-end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+@mixin align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@mixin align-items-stretch {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+@mixin align-items-baseline {
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+@mixin align-content-start {
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+}
+
+@mixin align-content-end {
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
+}
+
+@mixin align-content-around {
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+}
+
+@mixin align-content-between {
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+}
+
+@mixin align-content-center {
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+@mixin align-content-stretch {
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+}
+
+@mixin flex-wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@mixin flex-nowrap {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+@mixin flex-wrap-reverse {
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+@mixin flex-flow-row-wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+@mixin flex-flow-row-nowrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+@mixin flex-flow-column-wrap {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+@mixin flex-flow-column-nowrap {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+@mixin flex-horizontally-start {
+  @include d-flex;
+  @include justify-content-start;
+}
+
+@mixin flex-horizontally-center {
+  @include d-flex;
+  @include justify-content-center;
+}
+
+@mixin flex-horizontally-end {
+  @include d-flex;
+  @include justify-content-end;
+}
+
+@mixin flex-horizontally-between {
+  @include d-flex;
+  @include justify-content-between;
+}
+
+@mixin flex-vertically-start {
+  @include d-flex;
+  @include align-items-start;
+}
+
+@mixin flex-vertically-center {
+  @include d-flex;
+  @include align-items-center;
+}
+
+@mixin flex-vertically-end {
+  @include d-flex;
+  @include align-items-end;
+}
+
+@mixin flex-vertically-stretch {
+  @include d-flex;
+  @include align-items-stretch;
+}
+
+@mixin flex-both-center {
+  @include d-flex;
+  @include align-items-center;
+  @include justify-content-center;
+}
+
+@mixin flex-both-extended {
+  @include d-flex;
+  @include align-items-stretch;
+  @include justify-content-between;
+}
+
+@mixin grid-vertically-center {
+  @include d-grid;
+  @include align-items-center;
+}
+
+@mixin grid-horizontally-center {
+  @include d-grid;
+  @include justify-items-center;
+}

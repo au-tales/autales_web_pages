@@ -1,0 +1,44 @@
+//Position Vars Start
+
+$initial: initial;
+$inherit: inherit;
+$static: static;
+$relative: relative;
+$absolute: absolute;
+$fixed: fixed;
+$sticky: sticky;
+$unset: unset;
+
+$position-range: (
+        'initial': $initial,
+        'inherit': $inherit,
+        'static': $static,
+        'relative': $relative,
+        'absolute': $absolute,
+        'fixed': $fixed,
+        'sticky': $sticky,
+        'unset': $unset,
+);
+//Position Vars End
+
+//Overflow Vars Start
+
+$initial: initial;
+$inherit: inherit;
+$visible: visible;
+$hidden: hidden;
+$scroll: scroll;
+$auto: auto;
+$unset: unset;
+
+$overflow-range: (
+        'initial': $initial,
+        'inherit': $inherit,
+        'visible': $visible,
+        'hidden': $hidden,
+        'scroll': $scroll,
+        'auto': $auto,
+        'unset': $unset,
+);
+
+//Overflow Vars Start

@@ -1,54 +1,23 @@
+@use '../variables/variable' as vars;
 //Position Start
 
-.position-static {
-  position: static !important;
-}
+@each $namePos, $valPos in vars.$position-range {
 
-.position-relative {
-  position: relative !important;
-}
+  .position-#{$namePos} {
+    position: $valPos !important;
+  }
 
-.position-absolute {
-  position: absolute !important;
-}
-
-.position-fixed {
-  position: fixed !important;
-}
-
-.position-sticky {
-  position: sticky !important;
-}
-
-.position-unset {
-  position: unset !important;
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 
-  .position-sm-static {
-    position: static !important;
-  }
+  @each $namePos, $valPos in vars.$position-range {
 
-  .position-sm-relative {
-    position: relative !important;
-  }
+    .position-sm-#{$namePos} {
+      position: $valPos !important;
+    }
 
-  .position-sm-absolute {
-    position: absolute !important;
-  }
-
-  .position-sm-fixed {
-    position: fixed !important;
-  }
-
-  .position-sm-sticky {
-    position: sticky !important;
-  }
-
-  .position-sm-unset {
-    position: unset !important;
   }
 
 }
@@ -57,28 +26,12 @@
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
-  .position-md-static {
-    position: static !important;
-  }
+  @each $namePos, $valPos in vars.$position-range {
 
-  .position-md-relative {
-    position: relative !important;
-  }
+    .position-md-#{$namePos} {
+      position: $valPos !important;
+    }
 
-  .position-md-absolute {
-    position: absolute !important;
-  }
-
-  .position-md-fixed {
-    position: fixed !important;
-  }
-
-  .position-md-sticky {
-    position: sticky !important;
-  }
-
-  .position-md-unset {
-    position: unset !important;
   }
 
 }
@@ -86,28 +39,12 @@
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
-  .position-lg-static {
-    position: static !important;
-  }
+  @each $namePos, $valPos in vars.$position-range {
 
-  .position-lg-relative {
-    position: relative !important;
-  }
+    .position-lg-#{$namePos} {
+      position: $valPos !important;
+    }
 
-  .position-lg-absolute {
-    position: absolute !important;
-  }
-
-  .position-lg-fixed {
-    position: fixed !important;
-  }
-
-  .position-lg-sticky {
-    position: sticky !important;
-  }
-
-  .position-lg-unset {
-    position: unset !important;
   }
 
 }
@@ -119,28 +56,12 @@
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 
-  .position-xl-static {
-    position: static !important;
-  }
+  @each $namePos, $valPos in vars.$position-range {
 
-  .position-xl-relative {
-    position: relative !important;
-  }
+    .position-xl-#{$namePos} {
+      position: $valPos !important;
+    }
 
-  .position-xl-absolute {
-    position: absolute !important;
-  }
-
-  .position-xl-fixed {
-    position: fixed !important;
-  }
-
-  .position-xl-sticky {
-    position: sticky !important;
-  }
-
-  .position-xl-unset {
-    position: unset !important;
   }
 
 }
@@ -148,28 +69,12 @@
 /* Extra extra large devices (1400px and up)*/
 @media (min-width: 1400px) {
 
-  .position-xxl-static {
-    position: static !important;
-  }
+  @each $namePos, $valPos in vars.$position-range {
 
-  .position-xxl-relative {
-    position: relative !important;
-  }
+    .position-xxl-#{$namePos} {
+      position: $valPos !important;
+    }
 
-  .position-xxl-absolute {
-    position: absolute !important;
-  }
-
-  .position-xxl-fixed {
-    position: fixed !important;
-  }
-
-  .position-xxl-sticky {
-    position: sticky !important;
-  }
-
-  .position-xxl-unset {
-    position: unset !important;
   }
 
 }
